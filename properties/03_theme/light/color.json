@@ -1,0 +1,16 @@
+{
+  "color": {
+    "yellow": {
+      "base": { "value": "{color.yellow.50.value}" }
+    },
+    "green": {
+      "base": { "value": "{color.green.50.value}" }
+    },
+    "blue": {
+      "base": { "value": "{color.blue.50.value}" }
+    },
+    "red": {
+      "base": { "value": "{color.red.50.value}" }
+    }
+  }
+}

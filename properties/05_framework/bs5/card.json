@@ -1,0 +1,5 @@
+{
+  "card-bg": { "value": "{card.color.background.value}" },
+  "card-1-bg": { "value": "{card-sub-1.color.background.value}" },
+  "card-2-bg": { "value": "{card-sub-2.color.background.value}" }
+}

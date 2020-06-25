@@ -1,0 +1,9 @@
+{
+  "button": {
+    "font": {
+      "size": { "value": "{type.scale.button.value}" },
+      "weight": { "value": "{type.weight.bold.value}" },
+      "line-height": { "value": "{type.line-height.normal.value}" }
+    }
+  }
+}

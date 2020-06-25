@@ -1,0 +1,19 @@
+{
+  "layer": {
+    "background": {
+      "base": { "value": "{color.gray.15.value}" }
+    },
+    "level-0": {
+      "base": { "value": "{color.white.base.value}" },
+      "accent": { "value": "{color.gray.10.value}" }
+    },
+    "level-1": {
+      "base": { "value": "{color.gray.15.value}" },
+      "accent": { "value": "{color.gray.20.value}" }
+    },
+    "level-2": {
+      "base": { "value": "{color.gray.25.value}" },
+      "accent": { "value": "{color.gray.30.value}" }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "btn-font-size": { "value": "{button.font.size.value}" },
+  "btn-font-weight": { "value": "{button.font.weight.value}" }
+}

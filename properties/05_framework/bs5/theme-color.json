@@ -1,0 +1,14 @@
+{
+  "success": { "value": "{utility.action.base.value}" },
+  "success-hover": { "value": "{utility.action.hover.value}" },
+  "success-active": { "value": "{utility.action.active.value}" },
+  "info": { "value": "{utility.information.base.value}" },
+  "info-hover": { "value": "{utility.information.hover.value}" },
+  "info-active": { "value": "{utility.information.active.value}" },
+  "warning": { "value": "{utility.warning.base.value}" },
+  "warning-hover": { "value": "{utility.warning.hover.value}" },
+  "warning-active": { "value": "{utility.warning.active.value}" },
+  "danger": { "value": "{utility.critical.base.value}" },
+  "danger-hover": { "value": "{utility.critical.hover.value}" },
+  "danger-active": { "value": "{utility.critical.active.value}" }
+}

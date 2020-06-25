@@ -1,0 +1,4 @@
+{
+  "$input-bg": { "value": "{input.color.background.value}" },
+  "$form-label-font-size": { "value": "{type.scale.label.value}" }
+}

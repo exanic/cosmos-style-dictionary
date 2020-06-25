@@ -1,0 +1,21 @@
+{
+  "font-family-sans-serif": { "value": "{type.face.sans-serif.value}" },
+  "font-size-base": { "value": "{type.scale.body.value}" },
+
+  "font-weight-light": { "value": "{type.weight.light.value}" },
+  "font-weight-normal": { "value": "{type.weight.normal.value}" },
+  "font-weight-bold": { "value": "{type.weight.bold.value}" },
+
+  "line-height-base": { "value": "{type.line-height.normal.value}" },
+
+  "h1-font-size": { "value": "{type.scale.heading1.value}" },
+  "h2-font-size": { "value": "{type.scale.heading2.value}" },
+  "h3-font-size": { "value": "{type.scale.heading3.value}" },
+  "headings-font-weight": { "value": "{type.weight.normal.value}" },
+
+  "subtle-font-size": { "value": "{type.scale.subtitle.value}" },
+  "subtle-font-weight": { "value": "{type.weight.light.value}" },
+  "subtle-color": { "value": "{content.color.subtle.value}" },
+
+  "figure-caption-font-size": { "value": "{type.scale.caption.value}" }
+}

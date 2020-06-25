@@ -1,0 +1,22 @@
+{
+  "source": [
+    "properties/01_base/*.json",
+    "properties/02_brands/exanic/*.json",
+    "properties/03_theme/light/*.json",
+    "properties/04_component/*.json",
+    "properties/05_framework/**/*.json"
+
+  ],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/bs5/light/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    }
+  }
+}

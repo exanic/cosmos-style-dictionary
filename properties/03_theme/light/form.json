@@ -1,0 +1,7 @@
+{
+  "input": {
+    "color": {
+      "background": { "value": "{color.white.base.value}" }
+    }
+  }
+}

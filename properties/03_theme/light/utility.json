@@ -1,0 +1,24 @@
+{
+  "utility": {
+    "action": {
+      "base": { "value": "{color.green.50.value}" },
+      "hover": { "value": "{color.green.70.value}" },
+      "active": { "value": "{color.green.70.value}" }
+    },
+    "critical": {
+      "base": { "value": "{color.red.50.value}" },
+      "hover": { "value": "{color.red.70.value}" },
+      "active": { "value": "{color.red.70.value}" }
+    },
+    "information": {
+      "base": { "value": "{color.blue.50.value}" },
+      "hover": { "value": "{color.blue.70.value}" },
+      "active": { "value": "{color.blue.70.value}" }
+    },
+    "warning": {
+      "base": { "value": "{color.yellow.50.value}" },
+      "hover": { "value": "{color.yellow.70.value}" },
+      "active": { "value": "{color.yellow.70.value}" }
+    }
+  }
+}
