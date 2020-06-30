@@ -1,7 +1,11 @@
 {
-  "success": { "value": "{utility.action.base.value}" },
-  "success-hover": { "value": "{utility.action.hover.value}" },
-  "success-active": { "value": "{utility.action.active.value}" },
+  "primary": { "value": "{utility.action.base.value}" },
+  "primary-hover": { "value": "{utility.action.hover.value}" },
+  "primary-active": { "value": "{utility.action.active.value}" },
+
+  "success": { "value": "{utility.confirmation.base.value}" },
+  "success-hover": { "value": "{utility.confirmation.hover.value}" },
+  "success-active": { "value": "{utility.confirmation.active.value}" },
   "info": { "value": "{utility.information.base.value}" },
   "info-hover": { "value": "{utility.information.hover.value}" },
   "info-active": { "value": "{utility.information.active.value}" },
