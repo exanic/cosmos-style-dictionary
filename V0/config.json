@@ -1,11 +1,10 @@
 {
   "source": [
-    "properties/01_base/*.json",
-    "properties/02_brands/exanic/*.json",
-    "properties/03_theme/light/*.json",
-    "properties/04_component/*.json",
-    "properties/05_framework/**/*.json"
-
+    "V0/01_base/*.json",
+    "V0/02_brands/exanic/*.json",
+    "V0/03_theme/light/*.json",
+    "V0/04_component/*.json",
+    "V0/05_framework/**/*.json"
   ],
   "platforms": {
     "scss": {
