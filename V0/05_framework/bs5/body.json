@@ -1,4 +1,0 @@
-{
-  "body-bg": { "value": "{layer.background.base.value}" },
-  "body-color": { "value": "{content.color.standard.value}" }
-}

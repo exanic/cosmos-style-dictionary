@@ -1,7 +1,0 @@
-{
-  "input": {
-    "color": {
-      "background": { "value": "{color.gray.70.value}" }
-    }
-  }
-}

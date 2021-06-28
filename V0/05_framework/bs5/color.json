@@ -1,7 +1,0 @@
-{
-  "white": { "value": "{color.white.base.value}" },
-  "yellow": { "value": "{color.yellow.base.value}" },
-  "green": { "value": "{color.green.base.value}" },
-  "blue": { "value": "{color.blue.base.value}" },
-  "red": { "value": "{color.red.base.value}" }
-}

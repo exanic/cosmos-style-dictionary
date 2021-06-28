@@ -1,7 +1,0 @@
-{
-  "brand": {
-    "primary": { "value": "rgb(255, 140, 0)" },
-    "secondary": { "value": "rgb(90, 90, 90)" },
-    "tertiary": { "value": "rgb(222, 222, 222)" }
-  }
-}

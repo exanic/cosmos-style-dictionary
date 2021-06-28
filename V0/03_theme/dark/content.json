@@ -1,9 +1,0 @@
-{
-  "content": {
-    "color": {
-      "contrast": { "value": "{color.white.contrast.value}" },
-      "standard": { "value": "{color.white.standard.value}" },
-      "subtle": { "value": "{color.white.subtle.value}" }
-    }
-  }
-}
