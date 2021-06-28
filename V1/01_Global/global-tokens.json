@@ -498,6 +498,9 @@
   },
   "colors": {
     "Theme": {
+      "white-base": {
+        "value": "#ffffff"
+      },
       "gray-0": {
         "value": "#fdfdfd"
       },
@@ -562,28 +565,28 @@
     "Content": {
       "black-O25": {
         "description": "disabled",
-        "value": "#00000047"
+        "value": "rgba(0,0,0,0.28)"
       },
       "black-O50": {
-        "value": "#0000008f"
+        "value": "rgba(0,0,0,0.56)"
       },
       "black-O75": {
-        "value": "#000000bf"
+        "value": "rgba(0,0,0,0.75)"
       },
       "black-O100": {
-        "value": "#000000e0"
+        "value": "rgba(0,0,0,0.88)"
       },
       "white-O25": {
-        "value": "#ffffff96"
+        "value": "rgba(255,255,255,0.59)"
       },
       "white-O50": {
-        "value": "#ffffffc4"
+        "value": "rgba(255,255,255,0.77)"
       },
       "white-O75": {
-        "value": "#ffffffde"
+        "value": "rgba(255,255,255,0.87)"
       },
       "white-O100": {
-        "value": "#ffffff"
+        "value": "rgba(255,255,255,1.0)"
       }
     },
     "Utility": {
