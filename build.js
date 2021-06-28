@@ -24,7 +24,7 @@ function getStyleDictionaryConfig() {
                 "files": [
                     {
                         "destination": "tokens.json",
-                        "format": "json/flat"
+                        "format": "json/figma"
                     }
                 ]
             }
@@ -34,9 +34,9 @@ function getStyleDictionaryConfig() {
 
 // REGISTER CUSTOM FORMATS
 StyleDictionaryPackage.registerFormat({
-    name: 'json/flat',
-    formatter: function (dictionary) {
-        return JSON.stringify(dictionary.allProperties, null, 2);
+    name: 'json/figma',
+    formatter: function ({ dictionary, platform, options, file }) {
+        return JSON.stringify(dictionary.tokens, null, 2);
     }
 });
 
