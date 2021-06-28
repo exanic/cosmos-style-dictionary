@@ -1,0 +1,22 @@
+{
+  "name": "cosmos.style-dictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exanic/cosmos-style-dictionary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exanic/cosmos-style-dictionary/issues"
+  },
+  "homepage": "https://github.com/exanic/cosmos-style-dictionary#readme",
+  "devDependencies": {
+    "style-dictionary": "^3.0.1"
+  }
+}
