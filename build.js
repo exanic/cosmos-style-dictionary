@@ -5,7 +5,8 @@ function getStyleDictionaryConfig() {
     return {
         "source": [
             "01_Global/*.json",
-            "02_Theme/*.json"
+            "02_Theme/*.json",
+            "02_Typography/*.json"
         ],
         "platforms": {
             "scss": {

@@ -18,6 +18,15 @@
       },
       "background-color_disabled": {
         "value": "{colors.Theme.gray-250.value}"
+      },
+      "header_background-color": {
+        "value": "{colors.Theme.white-base.value}"
+      },
+      "content_background-color": {
+        "value": "{colors.Theme.gray-200.value}"
+      },
+      "nav_background-color": {
+        "value": "{colors.Theme.gray-50.value}"
       }
     },
     "Alternative": {
