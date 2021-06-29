@@ -91,8 +91,8 @@ console.log('\n==============================================');
 
 const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig());
 
-StyleDictionary.buildPlatform('json');
 StyleDictionary.buildPlatform('scss');
+StyleDictionary.buildPlatform('json');
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');
