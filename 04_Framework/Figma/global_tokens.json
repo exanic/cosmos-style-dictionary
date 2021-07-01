@@ -18,6 +18,18 @@
       "value": "{font.weight.bold.value}"
     }
   },
+  "typographie": {
+    "headline-1": {
+      "value": {
+        "fontFamily": "{fontFamilies.font-roboto.value}",
+        "fontWeight": "{fontWeights.font-roboto-0.value}",
+        "lineHeight": "{typography.headline-1.line-height.value}",
+        "fontSize": "{typography.headline-1.font-size.value}",
+        "letterSpacing": "{typography.headline-1.letter-spacing.value}",
+        "paragraphSpacing": "{typography.headline-1.paragraph-spacing.value}"
+      }
+    }
+  },
   "spacing": {
     "none": {
       "value": "{size.spacing.none.value}"
