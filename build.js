@@ -2,13 +2,13 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFiles) {
+function getStyleDictionaryConfig(theme, includeFile, outputFile) {
     return {
         "source": [
             "01_Global/*.json",
             `02_Theme/${theme}/*.json`,
             "03_Component/*.json",
-            includeFiles
+            includeFile
         ],
         "platforms": {
             "web/material": {
@@ -16,7 +16,7 @@ function getStyleDictionaryConfig(theme, includeFiles) {
                 "buildPath": `build/scss/material-design/${theme}/`,
                 "files": [
                     {
-                        "destination": "_variables.scss",
+                        "destination": outputFile,
                         "format": "scss/variables"
                     }
                 ]
@@ -26,8 +26,9 @@ function getStyleDictionaryConfig(theme, includeFiles) {
                 "buildPath": "build/json/figma/",
                 "files": [
                     {
-                        "destination": "tokens.json",
-                        "format": "json/figma"
+                        "destination": outputFile,
+                        "format": "json/figma",
+                        "filter": { "filePath": includeFile }
                     }
                 ]
             }
@@ -89,13 +90,15 @@ console.log('\n==============================================');
 
 // Material Var Files
 ['light', 'dark'].map(function (theme) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json'));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json', '_variables.scss'));
     StyleDictionary.buildPlatform("web/material");
-})
+});
 
 // Figma
-const StyleDictionaryFigma = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', '04_Framework/Figma/*.json'));
-StyleDictionaryFigma.buildPlatform("json/figma");
+['global_tokens.json', 'theme_tokens.json'].map(function (file) {
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}`, '' + file, file));
+    StyleDictionary.buildPlatform("json/figma");
+});
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');

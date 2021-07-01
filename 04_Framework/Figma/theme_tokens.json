@@ -1,6 +1,6 @@
 {
   "colors": {
-    "Global": {
+    "Theme": {
       "white-base": {
         "value": "{color.white.base.value}"
       }
