@@ -1,0 +1,50 @@
+{
+  "size": {
+    "spacing": {
+      "none": {
+        "value": "0px"
+      },
+      "xs": {
+        "value": "4px"
+      },
+      "s": {
+        "value": "8px"
+      },
+      "m": {
+        "value": "16px"
+      },
+      "l": {
+        "value": "24px"
+      },
+      "xl": {
+        "value": "32px"
+      },
+      "xxl": {
+        "value": "48px"
+      }
+    },
+    "border-radius": {
+      "none": {
+        "value": "0px"
+      },
+      "xs": {
+        "value": "2px"
+      },
+      "s": {
+        "value": "4px"
+      },
+      "m": {
+        "value": "8px"
+      },
+      "l": {
+        "value": "16px"
+      },
+      "xl": {
+        "value": "24px"
+      },
+      "circle": {
+        "value": "50%"
+      }
+    }
+  }
+}

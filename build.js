@@ -6,8 +6,8 @@ function getStyleDictionaryConfig() {
     return {
         "source": [
             "01_Global/*.json",
-            "02_Theme/*.json",
-            "02_Typography/*.json"
+            "02_Theme/light/*.json",
+            "03_Component/*.json"
         ],
         "platforms": {
             "scss": {
@@ -64,7 +64,7 @@ StyleDictionaryPackage.registerTransform({
 // Grouping of Transforms
 StyleDictionaryPackage.registerTransformGroup({
     name: 'tokens-json-figma',
-    transforms: ["name/cti/kebab", "FigmaFontFix"]
+    transforms: ["attribute/cti", "color/rgb", "name/cti/kebab", "FigmaFontFix"]
 });
 
 
