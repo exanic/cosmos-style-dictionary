@@ -2,17 +2,18 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig() {
+function getStyleDictionaryConfig(theme, includeFiles) {
     return {
         "source": [
             "01_Global/*.json",
-            "02_Theme/light/*.json",
-            "03_Component/*.json"
+            `02_Theme/${theme}/*.json`,
+            "03_Component/*.json",
+            includeFiles
         ],
         "platforms": {
-            "scss": {
-                "transformGroup": "scss",
-                "buildPath": "build/scss/material-design/",
+            "web/material": {
+                "transformGroup": "scss-material",
+                "buildPath": `build/scss/material-design/${theme}/`,
                 "files": [
                     {
                         "destination": "_variables.scss",
@@ -20,8 +21,8 @@ function getStyleDictionaryConfig() {
                     }
                 ]
             },
-            "json": {
-                "transformGroup": "tokens-json-figma",
+            "json/figma": {
+                "transformGroup": "json-figma",
                 "buildPath": "build/json/figma/",
                 "files": [
                     {
@@ -44,6 +45,7 @@ StyleDictionaryPackage.registerFormat({
     }
 });
 
+
 // REGISTER CUSTOM TRANSFORMS
 
 // Replace Font to Roboto for Figma
@@ -57,25 +59,43 @@ StyleDictionaryPackage.registerTransform({
     transformer: (token) => {
         return "Roboto";
     }
-})
+});
+
 
 // REGISTER CUSTOM TRANSFORMS GROUPS
 
-// Grouping of Transforms
+// SCSS Material
 StyleDictionaryPackage.registerTransformGroup({
-    name: 'tokens-json-figma',
-    transforms: ["attribute/cti", "color/rgb", "name/cti/kebab", "FigmaFontFix"]
+    name: 'scss-material',
+    transforms: [
+        'attribute/cti',
+        'name/cti/kebab',
+    ]
 });
 
+// Json / Figma
+StyleDictionaryPackage.registerTransformGroup({
+    name: 'json-figma',
+    transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "FigmaFontFix"
+    ]
+});
 
 // START BUILD
 console.log('Build started...');
 console.log('\n==============================================');
 
-const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig());
+// Material Var Files
+['light', 'dark'].map(function (theme) {
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json'));
+    StyleDictionary.buildPlatform("web/material");
+})
 
-StyleDictionary.buildPlatform('scss');
-StyleDictionary.buildPlatform('json');
+// Figma
+const StyleDictionaryFigma = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', '04_Framework/Figma/*.json'));
+StyleDictionaryFigma.buildPlatform("json/figma");
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');

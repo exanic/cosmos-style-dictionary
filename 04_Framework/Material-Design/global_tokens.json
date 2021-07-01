@@ -1,0 +1,9 @@
+{
+  "colors": {
+    "Theme": {
+      "white-base": {
+        "value": "{color.white.base.value}"
+      }
+    }
+  }
+}
