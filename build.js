@@ -1,4 +1,5 @@
 const StyleDictionaryPackage = require('style-dictionary');
+const { toFigmaDictionary } = require('./helpers');
 
 // CONFIG
 function getStyleDictionaryConfig() {
@@ -34,54 +35,36 @@ function getStyleDictionaryConfig() {
 }
 
 // REGISTER CUSTOM FORMATS
-// Output Format
+
+// Figma Output Format
 StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
-        return JSON.stringify(dictionary.tokens, null, 2);
+        return JSON.stringify(toFigmaDictionary(dictionary.tokens), null, 2);
     }
 });
 
 // REGISTER CUSTOM TRANSFORMS
-// Manipulate Single Values
+
+// Replace Font to Roboto for Figma
 StyleDictionaryPackage.registerTransform({
     type: 'value',
     transitive: false,
-    name: 'FigmaValue',
+    name: 'FigmaFontFix',
     matcher: (token) => {
-        return token.value != "";
+        return token.name == "font-families-font-roboto";
     },
     transformer: (token) => {
-        // token.value will be resolved and transformed at this point
-        try {
-            return "crazy-" + token.value;
-        } catch {
-            return "";
-        }
+        return "Roboto";
     }
 })
 
-StyleDictionaryPackage.registerTransform({
-    type: 'name',
-    transitive: false,
-    name: 'FigmaName',
-    matcher: (token) => {
-        return token.value != "";
-    },
-    transformer: (token) => {
-        // token.value will be resolved and transformed at this point
-        try {
-            return "woho-" + token.name;
-        } catch {
-            return "";
-        }
-    }
-})
+// REGISTER CUSTOM TRANSFORMS GROUPS
 
 // Grouping of Transforms
 StyleDictionaryPackage.registerTransformGroup({
     name: 'tokens-json-figma',
-    transforms: ["attribute/cti", "name/cti/kebab", "size/px", "color/css", "FigmaValue", "FigmaName" ]
+    transforms: ["name/cti/kebab", "FigmaFontFix"]
 });
 
 
