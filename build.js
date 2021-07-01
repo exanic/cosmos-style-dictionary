@@ -52,16 +52,51 @@ StyleDictionaryPackage.registerFormat({
 // Replace Font to Roboto for Figma
 StyleDictionaryPackage.registerTransform({
     type: 'value',
-    transitive: false,
+    transitive: true,
     name: 'FigmaFontFix',
     matcher: (token) => {
-        return token.name == "font-families-font-roboto";
+        return token.name == 'font-families-font-roboto';
     },
     transformer: (token) => {
-        return "Roboto";
+        return 'Roboto';
     }
 });
 
+StyleDictionaryPackage.registerTransform({
+    type: 'value',
+    transitive: true,
+    name: 'FigmaPxToNone',
+    matcher: (token) => {
+        return token.attributes.category === 'size';
+    },
+    transformer: (token) => {
+        if (token.value.endsWith)
+            return parseFloat(token.value.replace('px', ''));
+        else
+            return token.value;
+    }
+});
+
+StyleDictionaryPackage.registerTransform({
+    type: 'value',
+    transitive: true,
+    name: 'FigmaFontWeightToName',
+    matcher: (token) => {
+        return token.attributes.category === 'font';
+    },
+    transformer: (token) => {
+        if (token.value == '300')
+            return 'Light';
+        else if (token.value == '400')
+            return 'Regular';
+        else if (token.value == '600')
+            return 'Medium';
+        else if (token.value == '700')
+            return 'Bold';
+        else
+            return token.value;
+    }
+});
 
 // REGISTER CUSTOM TRANSFORMS GROUPS
 
@@ -78,9 +113,11 @@ StyleDictionaryPackage.registerTransformGroup({
 StyleDictionaryPackage.registerTransformGroup({
     name: 'json-figma',
     transforms: [
-        "attribute/cti",
-        "name/cti/kebab",
-        "FigmaFontFix"
+        'attribute/cti',
+        'name/cti/kebab',
+        'FigmaFontFix',
+        'FigmaPxToNone',
+        'FigmaFontWeightToName'
     ]
 });
 
@@ -96,7 +133,7 @@ console.log('\n==============================================');
 
 // Figma
 ['global_tokens.json', 'theme_tokens.json'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}`, '' + file, file));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}`, file));
     StyleDictionary.buildPlatform("json/figma");
 });
 

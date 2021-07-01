@@ -35,11 +35,11 @@ function toFigmaDictionary(obj) {
 
     if (obj.hasOwnProperty('value')) {
         // Mapped Property
-        if (obj.original.value.startsWith('{')) {
-            // Create Figma Mapped Poperty
-            var mappedValue = "$" + obj.original.value.replace("{", "").replace("}", "");
-            return new Object({ value: mappedValue });
-        }
+        //if (obj.original.value.startsWith('{')) {
+        //    // Create Figma Mapped Poperty
+        //    var mappedValue = "$" + obj.original.value.replace("{", "").replace("}", "");
+        //    return new Object({ value: mappedValue });
+        //}
         
         // Source Property
         return new Object({ value: obj.value })
