@@ -2,7 +2,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFile, outputFile) {
+function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
     return {
         "source": [
             "01_Global/*.json",
@@ -13,10 +13,10 @@ function getStyleDictionaryConfig(theme, includeFile, outputFile) {
         "platforms": {
             "web/material": {
                 "transformGroup": "scss-material",
-                "buildPath": `build/scss/material-design/${theme}/`,
+                "buildPath": `build/scss/material-design/`,
                 "files": [
                     {
-                        "destination": outputFile,
+                        "destination": `${outputFileName}.scss`,
                         "format": "scss/variables"
                     }
                 ]
@@ -26,7 +26,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFile) {
                 "buildPath": "build/json/figma/",
                 "files": [
                     {
-                        "destination": outputFile,
+                        "destination": `${outputFileName}.json`,
                         "format": "json/figma",
                         "filter": { "filePath": includeFile }
                     }
@@ -127,14 +127,21 @@ console.log('\n==============================================');
 
 // Material Var Files
 ['light', 'dark'].map(function (theme) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json', '_variables.scss'));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json', `_variables_${theme}`));
     StyleDictionary.buildPlatform("web/material");
 });
 
 // Figma
-['global_tokens.json', 'theme_tokens.json'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}`, file));
+['global_tokens'].map(function (file) {
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('', `04_Framework/Figma/${file}.json`, file));
     StyleDictionary.buildPlatform("json/figma");
+});
+
+['theme_tokens'].map(function (file) {
+    ['light', 'dark'].map(function (theme) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
+        StyleDictionary.buildPlatform("json/figma");
+    });
 });
 
 console.log('\n==============================================');

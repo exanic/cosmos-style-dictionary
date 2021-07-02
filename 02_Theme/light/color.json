@@ -1,6 +1,32 @@
 {
+  "layer": {
+    "level-0": {
+      "background-color": {
+        "value": "{color.gray.200.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    },
+    "level-1": {
+      "background-color": {
+        "value": "{color.gray.100.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    },
+    "level-2": {
+      "background-color": {
+        "value": "{color.white.base.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    }
+  },
   "content": {
-    "base": {
+    "default": {
       "color": {
         "base": {
           "value": "{color.black.o75.value}"
@@ -12,7 +38,7 @@
           "value": "{color.black.o25.value}"
         }
       },
-      "background": {
+      "background-color": {
         "base": {
           "value": "{color.white.base.value}"
         },
@@ -21,21 +47,6 @@
         },
         "disabled": {
           "value": "{color.gray.250.value}"
-        }
-      },
-      "header": {
-        "background-color": {
-          "value": "{color.white.base.value}"
-        }
-      },
-      "content": {
-        "background-color": {
-          "value": "{color.gray.200.value}"
-        }
-      },
-      "nav": {
-        "background-color": {
-          "value": "{color.gray.50.value}"
         }
       }
     },
@@ -116,12 +127,32 @@
         }
       },
       "border-color": {
-        "value": "{color.gray.100.value}"
+        "base": {
+          "value": "{color.gray.100.value}"
+        }
+      }
+    },
+    "tertiary": {
+      "color": {
+        "base": {
+          "value": "{color.blue.700.value}"
+        },
+        "disabled": {
+          "value": "{color.black.o25.value}"
+        }
+      },
+      "background-color": {
+        "focus": {
+          "value": "{color.blue.50.value}"
+        },
+        "hover": {
+          "value": "{color.blue.50.value}"
+        }
       }
     }
   },
   "utility": {
-    "critical": {
+    "danger": {
       "color": {
         "base": {
           "value": "{color.black.o100.value}"
@@ -193,7 +224,7 @@
         }
       }
     },
-    "confirmation": {
+    "success": {
       "color": {
         "base": {
           "value": "{color.black.o100.value}"
