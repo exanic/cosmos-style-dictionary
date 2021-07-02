@@ -7,7 +7,10 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
         "source": [
             "01_Global/*.json",
             `02_Theme/${theme}/*.json`,
-            "03_Component/*.json",
+            "03_Component/*.json"
+            
+        ],
+        "include": [
             includeFile
         ],
         "platforms": {

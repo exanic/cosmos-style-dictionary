@@ -18,7 +18,7 @@
       "value": "{font.weight.bold.value}"
     }
   },
-  "typographie": {
+  "typography": {
     "headline-1": {
       "value": {
         "fontFamily": "{fontFamilies.font-roboto.value}",
