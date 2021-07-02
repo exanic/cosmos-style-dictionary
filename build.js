@@ -8,7 +8,6 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
             "01_Global/*.json",
             `02_Theme/${theme}/*.json`,
             "03_Component/*.json"
-            
         ],
         "include": [
             includeFile
