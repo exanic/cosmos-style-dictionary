@@ -14,7 +14,7 @@
         "value": "{color.white.o100.value}"
       },
       "disabled": {
-        "value": "{color.white.o25.value}"
+        "value": "{color.black.o25.value}"
       }
     },
     "background-color": {
@@ -67,7 +67,7 @@
         "value": "{color.blue.700.value}"
       },
       "disabled": {
-        "value": "{color.white.o25.value}"
+        "value": "{color.black.o25.value}"
       }
     },
     "background-color": {
@@ -120,7 +120,7 @@
         "value": "{color.blue.700.value}"
       },
       "disabled": {
-        "value": "{color.white.o25.value}"
+        "value": "{color.black.o25.value}"
       }
     },
     "background-color": {
