@@ -117,10 +117,10 @@
           "value": "{color.white.base.value}"
         },
         "focus": {
-          "value": "{color.blue.500.value}"
+          "value": "{color.blue.50.value}"
         },
         "hover": {
-          "value": "{color.blue.500.value}"
+          "value": "{color.blue.50.value}"
         },
         "disabled": {
           "value": "{color.gray.250.value}"
