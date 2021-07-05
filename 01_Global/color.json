@@ -271,6 +271,11 @@
       "A700": {
         "value": "rgb(0, 200, 83)"
       }
+    },
+    "transparent": {
+      "base": {
+        "value": "transparent"
+      }
     }
   }
 }

@@ -1,0 +1,61 @@
+{
+  "layer": {
+    "level-0": {
+      "text-color": {
+        "value": "{color.white.o75.value}"
+      },
+      "link-color": {
+        "base": {
+          "value": "{color.blue.200.value}"
+        },
+        "hover": {
+          "value": "{color.blue.500.value}"
+        }
+      },
+      "background-color": {
+        "value": "{color.gray.800.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    },
+    "level-1": {
+      "text-color": {
+        "value": "{color.white.o75.value}"
+      },
+      "link-color": {
+        "base": {
+          "value": "{color.blue.200.value}"
+        },
+        "hover": {
+          "value": "{color.blue.500.value}"
+        }
+      },
+      "background-color": {
+        "value": "{color.gray.950.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    },
+    "level-2": {
+      "text-color": {
+        "value": "{color.white.o75.value}"
+      },
+      "link-color": {
+        "base": {
+          "value": "{color.blue.200.value}"
+        },
+        "hover": {
+          "value": "{color.blue.500.value}"
+        }
+      },
+      "background-color": {
+        "value": "{color.black.base.value}"
+      },
+      "border-color": {
+        "value": "{color.gray.400.value}"
+      }
+    }
+  }
+}

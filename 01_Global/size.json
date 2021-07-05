@@ -4,11 +4,14 @@
       "none": {
         "value": "0px"
       },
-      "xs": {
+      "xxs": {
         "value": "4px"
       },
-      "s": {
+      "xs": {
         "value": "8px"
+      },
+      "s": {
+        "value": "12px"
       },
       "m": {
         "value": "16px"
