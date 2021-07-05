@@ -264,7 +264,7 @@
       }
     }
   },
-  "information": {
+  "informative": {
     "text-color": {
       "base": {
         "value": "{color.white.o100.value}"

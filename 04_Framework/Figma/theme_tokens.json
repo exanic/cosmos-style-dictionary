@@ -114,24 +114,24 @@
         "value": "{danger.background-color.disabled.value}"
       }
     },
-    "Information": {
+    "Informative": {
       "info_text-color": {
-        "value": "{information.text-color.base.value}"
+        "value": "{informative.text-color.base.value}"
       },
       "info_text-color_disabled": {
-        "value": "{information.text-color.disabled.value}"
+        "value": "{informative.text-color.disabled.value}"
       },
       "info_background-color": {
-        "value": "{information.background-color.base.value}"
+        "value": "{informative.background-color.base.value}"
       },
       "info_background-color_focus": {
-        "value": "{information.background-color.focus.value}"
+        "value": "{informative.background-color.focus.value}"
       },
       "info_background-color_hover": {
-        "value": "{information.background-color.hover.value}"
+        "value": "{informative.background-color.hover.value}"
       },
       "info_background-color_disabled": {
-        "value": "{information.background-color.disabled.value}"
+        "value": "{informative.background-color.disabled.value}"
       }
     },
     "Warning": {
