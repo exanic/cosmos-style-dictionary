@@ -7,7 +7,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
         "source": [
             "01_Global/*.json",
             `02_Theme/${theme}/*.json`,
-            "03_Component/*.json"
+            "03_Component/*.json",
         ],
         "include": [
             includeFile
@@ -135,7 +135,7 @@ console.log('\n==============================================');
 
 // Figma
 ['global_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('', `04_Framework/Figma/${file}.json`, file));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file));
     StyleDictionary.buildPlatform("json/figma");
 });
 

@@ -1,1 +1,7 @@
-{}
+{
+  "sidenav": {
+    "background-color": {
+      "value": "{layer.level-1.background-color.value}"
+    }
+  }
+}

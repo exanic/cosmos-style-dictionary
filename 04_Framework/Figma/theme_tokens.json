@@ -11,13 +11,13 @@
         "value": "{layer.level-2.text-color.value}"
       },
       "header_background-color": {
-        "value": "{layer.level-2.background-color.value}"
+        "value": "{header.background-color.value}"
       },
       "content_background-color": {
-        "value": "{layer.level-2.background-color.value}"
+        "value": "{card.background-color.value}"
       },
       "nav_background-color": {
-        "value": "{layer.level-1.background-color.value}"
+        "value": "{sidenav.background-color.value}"
       }
     },
     "Alternative": {

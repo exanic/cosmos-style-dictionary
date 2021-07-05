@@ -1,5 +1,5 @@
 {
-  "header": {
+  "card": {
     "background-color": {
       "value": "{layer.level-2.background-color.value}"
     }
