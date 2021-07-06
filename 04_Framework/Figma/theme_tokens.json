@@ -2,13 +2,13 @@
   "colors": {
     "Base": {
       "text-color": {
-        "value": "{layer.level-2.text-color.value}"
+        "value": "{font.text-color.standard.value}"
       },
       "text-color_hover": {
-        "value": "{layer.level-2.link-color.hover.value}"
+        "value": "{font.link-color.hover.value}"
       },
       "background-color": {
-        "value": "{layer.level-2.text-color.value}"
+        "value": "{layer.level-2.background-color.value}"
       },
       "header_background-color": {
         "value": "{layer.level-2.background-color.value}"

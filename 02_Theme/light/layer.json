@@ -1,17 +1,6 @@
 {
   "layer": {
     "level-0": {
-      "text-color": {
-        "value": "{color.black.o75.value}"
-      },
-      "link-color": {
-        "base": {
-          "value": "{color.blue.700.value}"
-        },
-        "hover": {
-          "value": "{color.blue.500.value}"
-        }
-      },
       "background-color": {
         "value": "{color.gray.200.value}"
       },
@@ -20,17 +9,6 @@
       }
     },
     "level-1": {
-      "text-color": {
-        "value": "{color.black.o75.value}"
-      },
-      "link-color": {
-        "base": {
-          "value": "{color.blue.700.value}"
-        },
-        "hover": {
-          "value": "{color.blue.500.value}"
-        }
-      },
       "background-color": {
         "value": "{color.gray.100.value}"
       },
@@ -39,17 +17,6 @@
       }
     },
     "level-2": {
-      "text-color": {
-        "value": "{color.black.o75.value}"
-      },
-      "link-color": {
-        "base": {
-          "value": "{color.blue.700.value}"
-        },
-        "hover": {
-          "value": "{color.blue.500.value}"
-        }
-      },
       "background-color": {
         "value": "{color.white.base.value}"
       },

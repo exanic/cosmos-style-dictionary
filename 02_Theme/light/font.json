@@ -1,0 +1,26 @@
+{
+  "font": {
+    "text-color": {
+      "contrast": {
+        "value": "{color.black.o100.value}"
+      },
+      "standard": {
+        "value": "{color.black.o75.value}"
+      },
+      "subtle": {
+        "value": "{color.black.o50.value}"
+      },
+      "divider": {
+        "value": "{color.black.o25.value}"
+      }
+    },
+    "link-color": {
+      "base": {
+        "value": "{color.blue.700.value}"
+      },
+      "hover": {
+        "value": "{color.blue.500.value}"
+      }
+    }
+  }
+}
