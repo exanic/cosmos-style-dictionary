@@ -1,5 +1,5 @@
 const StyleDictionaryPackage = require('style-dictionary');
-const { toFigmaDictionary } = require('./helpers');
+const { fileHeader, toFigmaDictionary } = require('./helpers');
 
 // CONFIG
 function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
@@ -13,7 +13,19 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
             includeFile
         ],
         "platforms": {
-            "web/material": {
+            "web/material/palette": {
+                "transformGroup": "scss-material",
+                "buildPath": `build/scss/material-design/`,
+                "files": [
+                    {
+                        "destination": `${outputFileName}.scss`,
+                        "format": "scss/map-deep-angular-color",
+                        "filter": { "filePath": includeFile },
+                        "mapName": "app-color-palette"
+                    }
+                ]
+            },
+            "web/material/theme": {
                 "transformGroup": "scss-material",
                 "buildPath": `build/scss/material-design/`,
                 "files": [
@@ -40,6 +52,18 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
 }
 
 // REGISTER CUSTOM FORMATS
+
+// Angular Material Color Palette Format
+StyleDictionaryPackage.registerFormat({
+    name: 'scss/map-deep-angular-color',
+    formatter: function ({ dictionary, options, file }) {
+        const fs = require('fs');
+        const _template = require('lodash/template');
+        const template = _template(fs.readFileSync(__dirname + '/templates/map-deep-angular-color.template'));
+        return template({ dictionary, file, options, fileHeader });
+    }
+});
+
 
 // Figma Output Format
 StyleDictionaryPackage.registerFormat({
@@ -128,10 +152,15 @@ StyleDictionaryPackage.registerTransformGroup({
 console.log('Build started...');
 console.log('\n==============================================');
 
-// Material Var Files
+// Angular Material
+['color-palette'].map(function (file) {
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, file));
+    StyleDictionary.buildPlatform("web/material/palette");
+});
+
 ['light', 'dark'].map(function (theme) {
     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/tokens.json', `${theme}/_tokens`));
-    StyleDictionary.buildPlatform("web/material");
+    StyleDictionary.buildPlatform("web/material/theme");
 });
 
 // Figma

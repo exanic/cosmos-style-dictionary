@@ -1,0 +1,96 @@
+{
+  "app-light-primary-text": {
+    "value": "{color.white.o75.value}"
+  },
+  "app-dark-primary-text": {
+    "value": "{color.black.o75.value}"
+  },
+  "app-grey-palette": {
+    "50": {
+      "value": "{color.gray.50.value}"
+    },
+    "100": {
+      "value": "{color.gray.100.value}"
+    },
+    "200": {
+      "value": "{color.gray.200.value}"
+    },
+    "300": {
+      "value": "{color.gray.300.value}"
+    },
+    "400": {
+      "value": "{color.gray.400.value}"
+    },
+    "500": {
+      "value": "{color.gray.500.value}"
+    },
+    "600": {
+      "value": "{color.gray.600.value}"
+    },
+    "700": {
+      "value": "{color.gray.700.value}"
+    },
+    "800": {
+      "value": "{color.gray.800.value}"
+    },
+    "900": {
+      "value": "{color.gray.900.value}"
+    },
+    "A100": {
+      "value": "#ffffff"
+    },
+    "A200": {
+      "value": "#eeeeee"
+    },
+    "A400": {
+      "value": "#bdbdbd"
+    },
+    "A700": {
+      "value": "#616161"
+    },
+    "contrast": {
+      "50": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "100": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "200": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "300": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "400": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "500": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "600": {
+        "value": "{app-light-primary-text.value}"
+      },
+      "700": {
+        "value": "{app-light-primary-text.value}"
+      },
+      "800": {
+        "value": "{app-light-primary-text.value}"
+      },
+      "900": {
+        "value": "{app-light-primary-text.value}"
+      },
+      "A100": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "A200": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "A400": {
+        "value": "{app-dark-primary-text.value}"
+      },
+      "A700": {
+        "value": "{app-light-primary-text.value}"
+      }
+    }
+  }
+}

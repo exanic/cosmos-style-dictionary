@@ -16,5 +16,6 @@
  * @module formatHelpers
  */
 module.exports = {
+    fileHeader: require('./fileHeader'),
     toFigmaDictionary: require('./toFigmaDictionary')
 }
