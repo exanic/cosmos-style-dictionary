@@ -19,7 +19,8 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                 "files": [
                     {
                         "destination": `${outputFileName}.scss`,
-                        "format": "scss/variables"
+                        "format": "scss/variables",
+                        "filter": { "filePath": includeFile }
                     }
                 ]
             },
@@ -129,7 +130,7 @@ console.log('\n==============================================');
 
 // Material Var Files
 ['light', 'dark'].map(function (theme) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/*.json', `_variables_${theme}`));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/tokens.json', `${theme}/_tokens`));
     StyleDictionary.buildPlatform("web/material");
 });
 
