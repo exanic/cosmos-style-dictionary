@@ -18,7 +18,7 @@
     //
     dictionary.allTokens.forEach(function(prop) {
         var output = '';
-        output += '$' + prop.name + ': ' + (prop.attributes.category==='asset' ? '"'+prop.value+'"' : prop.value) + ' !default;'
+        output += '$' + prop.name + ': ' + (prop.attributes.category==='asset' ? '"'+prop.value+'"' : prop.value) + ';'
         if(prop.comment) {
         output += ' // ' + prop.comment;
         }
@@ -46,7 +46,7 @@
             output += Object.keys(obj).map(function(newKey) {
             var newProp = obj[newKey];
             var indent = '  '.repeat(depth+1);
-            return `${indent}'${newKey}': ${processJsonNode(newProp, depth + 1)}`;
+            return `${indent}${newKey}: ${processJsonNode(newProp, depth + 1)}`;
             }).join(',\n');
             output += '\n' + '  '.repeat(depth) + ')';
         }
