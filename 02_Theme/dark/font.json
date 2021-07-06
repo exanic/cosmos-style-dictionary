@@ -12,6 +12,9 @@
       },
       "divider": {
         "value": "{color.white.o25.value}"
+      },
+      "disabled": {
+        "value": "{color.white.o25.value}"
       }
     },
     "link-color": {
