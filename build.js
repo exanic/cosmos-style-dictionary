@@ -154,7 +154,7 @@ console.log('\n==============================================');
 
 // Angular Material
 ['color-palette'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, file));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `_${file}`));
     StyleDictionary.buildPlatform("web/material/palette");
 });
 

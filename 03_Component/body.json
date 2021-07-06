@@ -2,6 +2,9 @@
   "body": {
     "background-color": {
       "value": "{layer.level-0.background-color.value}"
+    },
+    "border-color": {
+      "value": "{layer.level-0.border-color.value}"
     }
   }
 }

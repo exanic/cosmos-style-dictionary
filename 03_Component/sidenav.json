@@ -2,6 +2,9 @@
   "sidenav": {
     "background-color": {
       "value": "{layer.level-1.background-color.value}"
+    },
+    "border-color": {
+      "value": "{layer.level-1.border-color.value}"
     }
   }
 }
