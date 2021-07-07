@@ -173,7 +173,7 @@
         "value": "{color.black.o75.value}"
       },
       "disabled": {
-        "value": "{color.white.o25.value}"
+        "value": "{color.black.o25.value}"
       }
     },
     "background-color": {
