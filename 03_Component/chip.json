@@ -22,55 +22,54 @@
         },
         "text-color": {
             "base": {
-                "value": "{primary.text-color.base.value}"
+                "value": "{alternative.text-color.base.value}"
             },
             "active": {
-                "value": "{primary.text-color.active.value}"
+                "value": "{alternative.text-color.active.value}"
             },
             "focus": {
-                "value": "{primary.text-color.focus.value}"
+                "value": "{alternative.text-color.focus.value}"
             },
             "hover": {
-                "value": "{primary.text-color.hover.value}"
+                "value": "{alternative.text-color.hover.value}"
             },
             "disabled": {
-                "value": "{primary.text-color.disabled.value}"
+                "value": "{alternative.text-color.disabled.value}"
             }
         },
         "background-color": {
             "base": {
-                "value": "{primary.background-color.base.value}"
+                "value": "{alternative.background-color.base.value}"
             },
             "active": {
-                "value": "{primary.background-color.active.value}"
+                "value": "{alternative.background-color.active.value}"
             },
             "focus": {
-                "value": "{primary.background-color.focus.value}"
+                "value": "{alternative.background-color.focus.value}"
             },
             "hover": {
-                "value": "{primary.background-color.hover.value}"
+                "value": "{alternative.background-color.hover.value}"
             },
             "disabled": {
-                "value": "{primary.background-color.disabled.value}"
+                "value": "{alternative.background-color.disabled.value}"
             }
         },
         "border-color": {
             "base": {
-                "value": "{primary.border-color.base.value}"
+                "value": "{alternative.border-color.base.value}"
             },
             "active": {
-                "value": "{primary.border-color.active.value}"
+                "value": "{alternative.border-color.active.value}"
             },
             "focus": {
-                "value": "{primary.border-color.focus.value}"
+                "value": "{alternative.border-color.focus.value}"
             },
             "hover": {
-                "value": "{primary.border-color.hover.value}"
+                "value": "{alternative.border-color.hover.value}"
             },
             "disabled": {
-                "value": "{primary.border-color.disabled.value}"
+                "value": "{alternative.border-color.disabled.value}"
             }
         }
     }
-}
 }

@@ -1,10 +1,10 @@
 {
   "header": {
     "background-color": {
-      "value": "{layer.level-2.background-color.value}"
+      "value": "{layer.level-2.background-color.base.value}"
     },
     "border-color": {
-      "value": "{layer.level-2.border-color.value}"
+      "value": "{layer.level-2.border-color.base.value}"
     }
   }
 }

@@ -7,17 +7,62 @@
       "text-color_hover": {
         "value": "{font.link-color.hover.value}"
       },
-      "background-color": {
-        "value": "{layer.level-2.background-color.value}"
+      "level-2": {
+        "background-color": {
+          "base": {
+            "value": "{layer.level-2.background-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-2.background-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-2.background-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-2.background-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-2.background-color.disabled.value}"
+          }
+        }
       },
-      "header_background-color": {
-        "value": "{layer.level-2.background-color.value}"
+      "level-1": {
+        "background-color": {
+          "base": {
+            "value": "{layer.level-1.background-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-1.background-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-1.background-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-1.background-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-1.background-color.disabled.value}"
+          }
+        }
       },
-      "content_background-color": {
-        "value": "{layer.level-0.background-color.value}"
-      },
-      "nav_background-color": {
-        "value": "{layer.level-1.background-color.value}"
+      "level-0": {
+        "background-color": {
+          "base": {
+            "value": "{layer.level-0.background-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-0.background-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-0.background-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-0.background-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-0.background-color.disabled.value}"
+          }
+        }
       }
     },
     "Alternative": {
