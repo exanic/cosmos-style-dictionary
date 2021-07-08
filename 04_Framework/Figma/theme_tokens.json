@@ -24,6 +24,23 @@
           "disabled": {
             "value": "{layer.level-2.background-color.disabled.value}"
           }
+        },
+        "border-color": {
+          "base": {
+            "value": "{layer.level-2.border-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-2.border-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-2.border-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-2.border-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-2.border-color.disabled.value}"
+          }
         }
       },
       "level-1": {
@@ -43,6 +60,23 @@
           "disabled": {
             "value": "{layer.level-1.background-color.disabled.value}"
           }
+        },
+        "border-color": {
+          "base": {
+            "value": "{layer.level-1.border-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-1.border-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-1.border-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-1.border-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-1.border-color.disabled.value}"
+          }
         }
       },
       "level-0": {
@@ -61,6 +95,23 @@
           },
           "disabled": {
             "value": "{layer.level-0.background-color.disabled.value}"
+          }
+        },
+        "border-color": {
+          "base": {
+            "value": "{layer.level-0.border-color.base.value}"
+          },
+          "active": {
+            "value": "{layer.level-0.border-color.active.value}"
+          },
+          "focus": {
+            "value": "{layer.level-0.border-color.focus.value}"
+          },
+          "hover": {
+            "value": "{layer.level-0.border-color.hover.value}"
+          },
+          "disabled": {
+            "value": "{layer.level-0.border-color.disabled.value}"
           }
         }
       }
