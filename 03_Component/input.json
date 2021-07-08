@@ -1,0 +1,21 @@
+{
+  "input": {
+    "border-color": {
+      "base": {
+        "value": "{alternative.border-color.base.value}"
+      },
+      "active": {
+        "value": "{alternative.border-color.active.value}"
+      },
+      "focus": {
+        "value": "{alternative.border-color.focus.value}"
+      },
+      "hover": {
+        "value": "{alternative.border-color.hover.value}"
+      },
+      "disabled": {
+        "value": "{alternative.border-color.disabled.value}"
+      }
+    }
+  }
+}

@@ -1,7 +1,12 @@
 {
   "sidenav": {
     "background-color": {
-      "value": "{layer.level-1.background-color.base.value}"
+      "base": {
+        "value": "{layer.level-1.background-color.base.value}"
+      },
+      "hover": {
+        "value": "{layer.level-1.background-color.hover.value}"
+      }
     },
     "border-color": {
       "value": "{layer.level-1.border-color.base.value}"

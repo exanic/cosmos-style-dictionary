@@ -37,16 +37,20 @@
       "value": "{color.gray.900.value}"
     },
     "A100": {
-      "value": "#ffffff"
+      "value": "#ffffff",
+      "comment": "NOT MAPPED"
     },
     "A200": {
-      "value": "#eeeeee"
+      "value": "#eeeeee",
+      "comment": "NOT MAPPED"
     },
     "A400": {
-      "value": "#bdbdbd"
+      "value": "#bdbdbd",
+      "comment": "NOT MAPPED"
     },
     "A700": {
-      "value": "#616161"
+      "value": "#616161",
+      "comment": "NOT MAPPED"
     },
     "contrast": {
       "50": {
@@ -125,16 +129,16 @@
       "value": "{color.blue.900.value}"
     },
     "A100": {
-      "value": "#b5d4ff"
+      "value": "{color.blue.A100.value}"
     },
     "A200": {
-      "value": "#82b6ff"
+      "value": "{color.blue.A200.value}"
     },
     "A400": {
-      "value": "#4f98ff"
+      "value": "{color.blue.A400.value}"
     },
     "A700": {
-      "value": "#3689ff"
+      "value": "{color.blue.A700.value}"
     },
     "contrast": {
       "50": {
@@ -213,16 +217,16 @@
       "value": "{color.green.900.value}"
     },
     "A100": {
-      "value": "#b0ffb2"
+      "value": "{color.green.A100.value}"
     },
     "A200": {
-      "value": "#7dff80"
+      "value": "{color.green.A200.value}"
     },
     "A400": {
-      "value": "#4aff4e"
+      "value": "{color.green.A400.value}"
     },
     "A700": {
-      "value": "#30ff35"
+      "value": "{color.green.A700.value}"
     },
     "contrast": {
       "50": {
@@ -301,16 +305,16 @@
       "value": "{color.yellow.900.value}"
     },
     "A100": {
-      "value": "#ffff8d"
+      "value": "{color.yellow.A100.value}"
     },
     "A200": {
-      "value": "#ffff00"
+      "value": "{color.yellow.A200.value}"
     },
     "A400": {
-      "value": "#ffea00"
+      "value": "{color.yellow.A400.value}"
     },
     "A700": {
-      "value": "#ffd600"
+      "value": "{color.yellow.A700.value}"
     },
     "contrast": {
       "50": {
@@ -389,16 +393,16 @@
       "value": "{color.red.900.value}"
     },
     "A100": {
-      "value": "#ffffff"
+      "value": "{color.red.A100.value}"
     },
     "A200": {
-      "value": "#ffd1d1"
+      "value": "{color.red.A200.value}"
     },
     "A400": {
-      "value": "#ff9f9e"
+      "value": "{color.red.A400.value}"
     },
     "A700": {
-      "value": "#ff8585"
+      "value": "{color.red.A700.value}"
     },
     "contrast": {
       "50": {
