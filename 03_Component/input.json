@@ -1,5 +1,10 @@
 {
   "input": {
+    "text-color": {
+      "placeholder": {
+        "value": "{font.text-color.placeholder.value}"
+      }
+    },
     "border-color": {
       "base": {
         "value": "{alternative.border-color.base.value}"
@@ -15,6 +20,20 @@
       },
       "disabled": {
         "value": "{alternative.border-color.disabled.value}"
+      }
+    },
+    "padding": {
+      "top": {
+        "value": "{size.spacing.s.value}"
+      },
+      "right": {
+        "value": "{size.spacing.m.value}"
+      },
+      "bottom": {
+        "value": "{size.spacing.s.value}"
+      },
+      "left": {
+        "value": "{size.spacing.m.value}"
       }
     }
   }

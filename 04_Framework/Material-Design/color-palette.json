@@ -37,20 +37,16 @@
       "value": "{color.gray.900.value}"
     },
     "A100": {
-      "value": "#ffffff",
-      "comment": "NOT MAPPED"
+      "value": "{color.gray.A100.value}"
     },
     "A200": {
-      "value": "#eeeeee",
-      "comment": "NOT MAPPED"
+      "value": "{color.gray.A200.value}"
     },
     "A400": {
-      "value": "#bdbdbd",
-      "comment": "NOT MAPPED"
+      "value": "{color.gray.A400.value}"
     },
     "A700": {
-      "value": "#616161",
-      "comment": "NOT MAPPED"
+      "value": "{color.gray.A700.value}"
     },
     "contrast": {
       "50": {

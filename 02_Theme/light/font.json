@@ -10,6 +10,9 @@
       "subtle": {
         "value": "{color.black.o50.value}"
       },
+      "placeholder": {
+        "value": "{color.black.o25.value}"
+      },
       "divider": {
         "value": "{color.black.o25.value}"
       },
