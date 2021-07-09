@@ -1,0 +1,226 @@
+{
+    "stepper": {
+        "padding": {
+            "top": {
+                "value": "{size.spacing.none.value}"
+            },
+            "right": {
+                "value": "{size.spacing.none.value}"
+            },
+            "bottom": {
+                "value": "{size.spacing.none.value}"
+            },
+            "left": {
+                "value": "{size.spacing.none.value}"
+            }
+        },
+        "gap": {
+            "value": "{size.spacing.xs.value}"
+        },
+        "border-radius": {
+            "value": "{size.border-radius.none.value}"
+        },
+        "text-color": {
+            "base": {
+                "value": "{alternative.text-color.base.value}"
+            },
+            "active": {
+                "value": "{alternative.text-color.active.value}"
+            },
+            "focus": {
+                "value": "{alternative.text-color.focus.value}"
+            },
+            "hover": {
+                "value": "{alternative.text-color.hover.value}"
+            },
+            "disabled": {
+                "value": "{alternative.text-color.disabled.value}"
+            },
+            "comment": "TEMP REFERENCE"
+        },
+        "step-standard": {
+            "comment": "GLOBAL MAPPED",
+            "icon": {
+                "text-color": {
+                    "base": {
+                        "value": "{color.white.o75}"
+                    },
+                    "active": {
+                        "value": "{color.white.o75}"
+                    },
+                    "focus": {
+                        "value": "{color.white.o75}"
+                    },
+                    "hover": {
+                        "value": "{color.white.o75}"
+                    },
+                    "disabled": {
+                        "value": "{color.white.o25}"
+                    },
+                    "background-color": {
+                        "base": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "active": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "focus": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "hover": {
+                            "value": "{color.blue.700.value}"
+                        },
+                        "disabled": {
+                            "value": "{color.gray.250.value}"
+                        }
+                    },
+                    "border-color": {
+                        "base": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "active": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "focus": {
+                            "value": "{color.gray.750.value}"
+                        },
+                        "hover": {
+                            "value": "{color.blue.700.value}"
+                        },
+                        "disabled": {
+                            "value": "{color.gray.250.value}"
+                        }
+                    }
+                }
+            },
+            "container": {
+                "background-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                }
+            }
+        },
+        "step-current": {
+            "comment": "GLOBAL MAPPED",
+            "icon": {
+                "text-color": {
+                    "base": {
+                        "value": "{color.white.o75}"
+                    },
+                    "active": {
+                        "value": "{color.white.o75}"
+                    },
+                    "focus": {
+                        "value": "{color.white.o75}"
+                    },
+                    "hover": {
+                        "value": "{color.white.o75}"
+                    },
+                    "disabled": {
+                        "value": "{color.white.o75}"
+                    }
+                },
+                "background-color": {
+                    "base": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "active": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "focus": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.blue.700.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "active": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "focus": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.blue.700.value}"
+                    }
+                }
+            },
+            "container": {
+                "background-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                }
+            }
+        }
+    }
+}

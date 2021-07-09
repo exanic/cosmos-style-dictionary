@@ -306,16 +306,16 @@
         "value": "{color.black.o100.value}"
       },
       "white-O25": {
-        "value": "{color.black.o25.value}"
+        "value": "{color.white.o25.value}"
       },
       "white-O50": {
-        "value": "{color.black.o50.value}"
+        "value": "{color.white.o50.value}"
       },
       "white-O75": {
-        "value": "{color.black.o75.value}"
+        "value": "{color.white.o75.value}"
       },
       "white-O100": {
-        "value": "{color.black.o100.value}"
+        "value": "{color.white.o100.value}"
       }
     },
     "Utility": {
@@ -487,6 +487,17 @@
       "green-A700": {
         "value": "{color.green.A700.value}"
       }
+    }
+  },
+  "opacity": {
+    "25%": {
+      "value": "{opacity.25.value}"
+    },
+    "50%": {
+      "value": "{opacity.50.value}"
+    },
+    "80%": {
+      "value": "{opacity.80.value}"
     }
   }
 }
