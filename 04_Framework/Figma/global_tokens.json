@@ -488,5 +488,16 @@
         "value": "{color.green.A700.value}"
       }
     }
+  },
+  "opacity": {
+    "25%": {
+      "value": "{opacity.25.value}"
+    },
+    "50%": {
+      "value": "{opacity.50.value}"
+    },
+    "80%": {
+      "value": "{opacity.80.value}"
+    }
   }
 }

@@ -35,9 +35,11 @@
             },
             "disabled": {
                 "value": "{alternative.text-color.disabled.value}"
-            }
+            },
+            "comment": "TEMP REFERENCE"
         },
         "step-standard": {
+            "comment": "GLOBAL MAPPED",
             "icon": {
                 "text-color": {
                     "base": {
@@ -129,6 +131,7 @@
             }
         },
         "step-current": {
+            "comment": "GLOBAL MAPPED",
             "icon": {
                 "text-color": {
                     "base": {
