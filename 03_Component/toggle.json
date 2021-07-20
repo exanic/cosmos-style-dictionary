@@ -93,11 +93,11 @@
                     },
                     "focus": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-50"
+                        "comment": "opacity-25"
                     },
                     "hover": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-25"
+                        "comment": "opacity-10"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"
@@ -113,11 +113,11 @@
                     },
                     "focus": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-50"
+                        "comment": "opacity-25"
                     },
                     "hover": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-25"
+                        "comment": "opacity-10"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"
@@ -218,11 +218,11 @@
                     },
                     "focus": {
                         "value": "{color.blue.700.value}",
-                        "comment": "opacity-50"
+                        "comment": "opacity-25"
                     },
                     "hover": {
                         "value": "{color.blue.700.value}",
-                        "comment": "opacity-25"
+                        "comment": "opacity-10"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"
@@ -238,11 +238,11 @@
                     },
                     "focus": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-50"
+                        "comment": "opacity-25"
                     },
                     "hover": {
                         "value": "{color.gray.350.value}",
-                        "comment": "opacity-25"
+                        "comment": "opacity-10"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"

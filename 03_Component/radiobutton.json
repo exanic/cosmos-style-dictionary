@@ -1,0 +1,132 @@
+{
+    "radiobutton": {
+        "off": {
+            "icon-color": {
+                "base": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "active": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "focus": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "hover": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "disabled": {
+                    "value": "{font.text-color.disabled.value}"
+                }
+            },
+            "ripple": {
+                "border-radius": {
+                    "value": "{size.border-radius.circle.value}"
+                },
+                "background-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-50"
+                    },
+                    "focus": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-25"
+                    },
+                    "hover": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-10"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-50"
+                    },
+                    "focus": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-25"
+                    },
+                    "hover": {
+                        "value": "{color.gray.350.value}",
+                        "comment": "opacity-10"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                }
+            }
+        },
+        "on": {
+            "icon-color": {
+                "base": {
+                    "value": "{color.blue.700.value}"
+                },
+                "active": {
+                    "value": "{color.blue.700.value}"
+                },
+                "focus": {
+                    "value": "{color.blue.700.value}"
+                },
+                "hover": {
+                    "value": "{color.blue.700.value}"
+                },
+                "disabled": {
+                    "value": "{color.blue.200.value}"
+                }
+            },
+            "ripple": {
+                "border-radius": {
+                    "value": "{size.border-radius.circle.value}"
+                },
+                "background-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-50"
+                    },
+                    "focus": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-25"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-10"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-50"
+                    },
+                    "focus": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-25"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}",
+                        "comment": "opacity-10"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                }
+            }
+        }
+    }
+}
