@@ -184,6 +184,9 @@
     "none": {
       "value": "{size.spacing.none.value}"
     },
+    "xxs": {
+      "value": "{size.spacing.xxs.value}"
+    },
     "xs": {
       "value": "{size.spacing.xs.value}"
     },
@@ -490,6 +493,9 @@
     }
   },
   "opacity": {
+    "10%": {
+      "value": "{opacity.10.value}"
+    },
     "25%": {
       "value": "{opacity.25.value}"
     },

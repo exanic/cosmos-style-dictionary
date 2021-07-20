@@ -72,7 +72,7 @@
     },
     "background-color": {
       "base": {
-        "value": "{color.white.base.value}"
+        "value": "{color.transparent.base.value}"
       },
       "active": {
         "value": "{color.blue.50.value}"
@@ -84,7 +84,7 @@
         "value": "{color.blue.50.value}"
       },
       "disabled": {
-        "value": "{color.gray.250.value}"
+        "value": "{color.transparent.base.value}"
       }
     },
     "border-color": {
