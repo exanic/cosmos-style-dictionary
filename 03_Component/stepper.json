@@ -22,21 +22,20 @@
         },
         "text-color": {
             "base": {
-                "value": "{alternative.text-color.base.value}"
+                "value": "{font.text-color.standard.value}"
             },
             "active": {
-                "value": "{alternative.text-color.active.value}"
+                "value": "{font.text-color.standard.value}"
             },
             "focus": {
-                "value": "{alternative.text-color.focus.value}"
+                "value": "{font.text-color.standard.value}"
             },
             "hover": {
-                "value": "{alternative.text-color.hover.value}"
+                "value": "{font.text-color.standard.value}"
             },
             "disabled": {
-                "value": "{alternative.text-color.disabled.value}"
-            },
-            "comment": "TEMP REFERENCE"
+                "value": "{font.text-color.disabled.value}"
+            }
         },
         "step-standard": {
             "comment": "GLOBAL MAPPED",

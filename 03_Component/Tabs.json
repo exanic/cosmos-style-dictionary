@@ -1,0 +1,136 @@
+{
+    "tab": {
+        "padding": {
+            "top": {
+                "value": "{size.spacing.none.value}"
+            },
+            "right": {
+                "value": "{size.spacing.none.value}"
+            },
+            "bottom": {
+                "value": "{size.spacing.none.value}"
+            },
+            "left": {
+                "value": "{size.spacing.none.value}"
+            }
+        },
+        "border-radius": {
+            "value": "{size.border-radius.none.value}"
+        },
+        "text-color": {
+            "base": {
+                "value": "{font.text-color.standard.value}"
+            },
+            "active": {
+                "value": "{font.text-color.standard.value}"
+            },
+            "focus": {
+                "value": "{font.text-color.standard.value}"
+            },
+            "hover": {
+                "value": "{font.text-color.standard.value}"
+            },
+            "disabled": {
+                "value": "{font.text-color.disabled.value}"
+            }
+        },
+        "tab-standard": {
+            "comment": "GLOBAL MAPPED",
+            "background-color": {
+                "base": {
+                    "value": "{color.transparent.base.value}"
+                },
+                "active": {
+                    "value": "{color.gray.350.value}"
+                },
+                "focus": {
+                    "value": "{color.gray.150.value}"
+                },
+                "hover": {
+                    "value": "{color.transparent.base.value}"
+                },
+                "disabled": {
+                    "value": "{color.transparent.base.value}"
+                }
+            },
+            "border-color": {
+                "base": {
+                    "value": "{color.transparent.base.value}"
+                },
+                "active": {
+                    "value": "{color.gray.350.value}"
+                },
+                "focus": {
+                    "value": "{color.gray.150.value}"
+                },
+                "hover": {
+                    "value": "{color.transparent.base.value}"
+                },
+                "disabled": {
+                    "value": "{color.transparent.base.value}"
+                }
+            }
+        },
+        "tab-selected": {
+            "comment": "GLOBAL MAPPED",
+            "icon-color": {
+                "base": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "active": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "focus": {
+                    "value": "{font.text-color.standard.value}"
+                },
+                "hover": {
+                    "value": "{font.text-color.contrast.value}"
+                },
+                "disabled": {
+                    "value": "{font.text-color.standard.value}"
+                }
+            },
+            "container": {
+                "background-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.350.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.150.value}"
+                    },
+                    "hover": {
+                        "value": "{color.transparent.base.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.transparent.base.value}"
+                    }
+                },
+                "indicator": {
+                    "base": {
+                        "value": "{color.blue.700.value}"
+                    }
+                }
+            }
+        }
+    }
+}

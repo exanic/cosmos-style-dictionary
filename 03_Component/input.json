@@ -6,20 +6,51 @@
       }
     },
     "border-color": {
+      "comment": "GLOBAL MAPPED",
       "base": {
-        "value": "{alternative.border-color.base.value}"
+        "value": "{color.gray.400.value}"
       },
       "active": {
-        "value": "{alternative.border-color.active.value}"
+        "value": "{color.blue.700.value}"
       },
       "focus": {
-        "value": "{alternative.border-color.focus.value}"
+        "value": "{color.blue.700.value}"
       },
       "hover": {
-        "value": "{alternative.border-color.hover.value}"
+        "value": "{color.gray.400.value}"
       },
       "disabled": {
-        "value": "{alternative.border-color.disabled.value}"
+        "value": "{color.gray.250.value}"
+      },
+      "invalid": {
+        "value": "{color.red.600.value}"
+      },
+      "success": {
+        "value": "{color.green.700.value}"
+      }
+    },
+    "label-text": {
+      "comment": "GLOBAL MAPPED",
+      "base": {
+        "value": "{color.gray.400.value}"
+      },
+      "active": {
+        "value": "{color.blue.700.value}"
+      },
+      "focus": {
+        "value": "{color.blue.700.value}"
+      },
+      "hover": {
+        "value": "{color.gray.400.value}"
+      },
+      "disabled": {
+        "value": "{color.gray.250.value}"
+      },
+      "invalid": {
+        "value": "{color.red.600.value}"
+      },
+      "success": {
+        "value": "{color.green.700.value}"
       }
     },
     "padding": {
