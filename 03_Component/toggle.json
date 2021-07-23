@@ -144,7 +144,7 @@
                         "value": "{color.blue.A100.value}"
                     },
                     "disabled": {
-                        "value": "{alternative.background-color.disabled.value}"
+                        "value": "{color.blue.50.value}"
                     }
                 },
                 "border-color": {
@@ -183,7 +183,7 @@
                         "value": "{color.blue.700.value}"
                     },
                     "disabled": {
-                        "value": "{color.blue.100.value}"
+                        "value": "{color.blue.200.value}"
                     }
                 },
                 "border-color": {
@@ -200,7 +200,7 @@
                         "value": "{color.blue.700.value}"
                     },
                     "disabled": {
-                        "value": "{color.blue.100.value}"
+                        "value": "{color.blue.200.value}"
                     }
                 }
             },
