@@ -79,7 +79,7 @@
                     "value": "{color.blue.700.value}"
                 },
                 "disabled": {
-                    "value": "{color.blue.200.value}"
+                    "value": "{font.text-color.disabled.disabled}"
                 }
             },
             "ripple": {

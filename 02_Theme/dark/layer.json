@@ -76,7 +76,7 @@
     "level-2": {
       "background-color": {
         "base": {
-          "value": "{color.gray.850.value}"
+          "value": "{color.gray.750.value}"
         },
         "active": {
           "value": "{color.gray.650.value}"
