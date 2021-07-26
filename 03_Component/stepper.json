@@ -55,40 +55,40 @@
                     },
                     "disabled": {
                         "value": "{color.white.o25}"
+                    }
+                },
+                "background-color": {
+                    "base": {
+                        "value": "{color.gray.750.value}"
                     },
-                    "background-color": {
-                        "base": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "active": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "focus": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "hover": {
-                            "value": "{color.blue.700.value}"
-                        },
-                        "disabled": {
-                            "value": "{color.gray.250.value}"
-                        }
+                    "active": {
+                        "value": "{color.gray.750.value}"
                     },
-                    "border-color": {
-                        "base": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "active": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "focus": {
-                            "value": "{color.gray.750.value}"
-                        },
-                        "hover": {
-                            "value": "{color.blue.700.value}"
-                        },
-                        "disabled": {
-                            "value": "{color.gray.250.value}"
-                        }
+                    "focus": {
+                        "value": "{color.gray.750.value}"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.gray.250.value}"
+                    }
+                },
+                "border-color": {
+                    "base": {
+                        "value": "{color.gray.750.value}"
+                    },
+                    "active": {
+                        "value": "{color.gray.750.value}"
+                    },
+                    "focus": {
+                        "value": "{color.gray.750.value}"
+                    },
+                    "hover": {
+                        "value": "{color.blue.700.value}"
+                    },
+                    "disabled": {
+                        "value": "{color.gray.250.value}"
                     }
                 }
             },
