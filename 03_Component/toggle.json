@@ -132,36 +132,36 @@
                 },
                 "background-color": {
                     "base": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "active": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "focus": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "hover": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.disabled.value}"
+                        "value": "{primary-accent.color.4.value}"
                     }
                 },
                 "border-color": {
                     "base": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "active": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "focus": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "hover": {
-                        "value": "{primary-accent.color.base.value}"
+                        "value": "{primary-accent.color.1.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.disabled.value}"
+                        "value": "{primary-accent.color.4.value}"
                     }
                 }
             },
