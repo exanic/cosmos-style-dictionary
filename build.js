@@ -158,7 +158,7 @@ console.log('\n==============================================');
     StyleDictionary.buildPlatform("web/material/palette");
 });
 
-['light', 'dark'].map(function (theme) {
+['light','dark'].map(function (theme) {
     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/tokens.json', `${theme}/_tokens`));
     StyleDictionary.buildPlatform("web/material/theme");
 });
@@ -170,7 +170,7 @@ console.log('\n==============================================');
 });
 
 ['theme_tokens'].map(function (file) {
-    ['light', 'dark'].map(function (theme) {
+    ['light','dark'].map(function (theme) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
         StyleDictionary.buildPlatform("json/figma");
     });

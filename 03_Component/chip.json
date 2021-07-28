@@ -22,53 +22,53 @@
         },
         "text-color": {
             "base": {
-                "value": "{alternative.text-color.base.value}"
+                "value": "{content.standard.value}"
             },
             "active": {
-                "value": "{alternative.text-color.active.value}"
+                "value": "{content.standard.value}"
             },
             "focus": {
-                "value": "{alternative.text-color.focus.value}"
+                "value": "{content.standard.value}"
             },
             "hover": {
-                "value": "{alternative.text-color.hover.value}"
+                "value": "{content.standard.value}"
             },
             "disabled": {
-                "value": "{alternative.text-color.disabled.value}"
+                "value": "{content.disabled.value}"
             }
         },
         "background-color": {
             "base": {
-                "value": "{alternative.background-color.base.value}"
+                "value": "{neutral.8.value}"
             },
             "active": {
-                "value": "{alternative.background-color.active.value}"
+                "value": "{neutral.11.value}"
             },
             "focus": {
-                "value": "{alternative.background-color.focus.value}"
+                "value": "{neutral.9.value}"
             },
             "hover": {
-                "value": "{alternative.background-color.hover.value}"
+                "value": "{neutral.9.value}"
             },
             "disabled": {
-                "value": "{alternative.background-color.disabled.value}"
+                "value": "{neutral.6.value}"
             }
         },
         "border-color": {
             "base": {
-                "value": "{alternative.border-color.base.value}"
+                "value": "{neutral.8.value}"
             },
             "active": {
-                "value": "{alternative.border-color.active.value}"
+                "value": "{neutral.11.value}"
             },
             "focus": {
-                "value": "{alternative.border-color.focus.value}"
+                "value": "{neutral.9.value}"
             },
             "hover": {
-                "value": "{alternative.border-color.hover.value}"
+                "value": "{neutral.9.value}"
             },
             "disabled": {
-                "value": "{alternative.border-color.disabled.value}"
+                "value": "{neutral.6.value}"
             }
         }
     }

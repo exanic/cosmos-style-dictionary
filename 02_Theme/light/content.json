@@ -1,0 +1,25 @@
+{
+  "content": {
+    "contrast": {
+      "value": "{color.black.o100.value}"
+    },
+    "standard": {
+      "value": "{color.black.o75.value}"
+    },
+    "subtle": {
+      "value": "{color.black.o50.value}"
+    },
+    "disabled": {
+      "value": "{color.black.o25.value}"
+    },
+    "placeholder": {
+      "value": "{color.black.o25.value}"
+    },
+    "divider": {
+      "value": "{color.black.o25.value}"
+    },
+    "link": {
+      "value": "{primary.color.base.value}"
+    }
+  }
+}

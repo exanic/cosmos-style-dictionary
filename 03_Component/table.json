@@ -2,10 +2,10 @@
   "table": {
     "background-color": {
       "base": {
-        "value": "{layer.level-2.background-color.base.value}"
+        "value": "{neutral.0.value}"
       },
       "hover": {
-        "value": "{layer.level-2.background-color.hover.value}"
+        "value": "{neutral.1.value}"
       }
     }
   }

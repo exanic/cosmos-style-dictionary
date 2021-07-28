@@ -3,19 +3,19 @@
         "off": {
             "icon-color": {
                 "base": {
-                    "value": "{font.text-color.standard.value}"
+                    "value": "{content.standard.value}"
                 },
                 "active": {
-                    "value": "{font.text-color.standard.value}"
+                    "value": "{content.standard.value}"
                 },
                 "focus": {
-                    "value": "{font.text-color.standard.value}"
+                    "value": "{content.standard.value}"
                 },
                 "hover": {
-                    "value": "{font.text-color.standard.value}"
+                    "value": "{content.standard.value}"
                 },
                 "disabled": {
-                    "value": "{font.text-color.disabled.value}"
+                    "value": "{content.disabled.value}"
                 }
             },
             "ripple": {
@@ -27,15 +27,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {
@@ -47,15 +47,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{color.gray.350.value}",
+                        "value": "{neutral.8.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {
@@ -67,19 +67,19 @@
         "on": {
             "icon-color": {
                 "base": {
-                    "value": "{color.blue.700.value}"
+                    "value": "{primary.color.base.value}"
                 },
                 "active": {
-                    "value": "{color.blue.700.value}"
+                    "value": "{primary.color.base.value}"
                 },
                 "focus": {
-                    "value": "{color.blue.700.value}"
+                    "value": "{primary.color.base.value}"
                 },
                 "hover": {
-                    "value": "{color.blue.700.value}"
+                    "value": "{primary.color.base.value}"
                 },
                 "disabled": {
-                    "value": "{color.blue.200.value}"
+                    "value": "{content.disabled.value}"
                 }
             },
             "ripple": {
@@ -91,15 +91,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {
@@ -111,15 +111,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}",
+                        "value": "{primary.color.base.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {

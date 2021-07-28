@@ -401,6 +401,48 @@
     "blue-A700": {
       "value": "{color.blue.A700.value}"
     },
+    "teal-50": {
+      "value": "{color.teal.50.value}"
+    },
+    "teal-100": {
+      "value": "{color.teal.100.value}"
+    },
+    "teal-200": {
+      "value": "{color.teal.200.value}"
+    },
+    "teal-300": {
+      "value": "{color.teal.300.value}"
+    },
+    "teal-400": {
+      "value": "{color.teal.400.value}"
+    },
+    "teal-500": {
+      "value": "{color.teal.500.value}"
+    },
+    "teal-600": {
+      "value": "{color.teal.600.value}"
+    },
+    "teal-700": {
+      "value": "{color.teal.700.value}"
+    },
+    "teal-800": {
+      "value": "{color.teal.800.value}"
+    },
+    "teal-900": {
+      "value": "{color.teal.900.value}"
+    },
+    "teal-A100": {
+      "value": "{color.teal.A100.value}"
+    },
+    "teal-A200": {
+      "value": "{color.teal.A200.value}"
+    },
+    "teal-A400": {
+      "value": "{color.teal.A400.value}"
+    },
+    "teal-A700": {
+      "value": "{color.teal.A700.value}"
+    },
     "yellow-50": {
       "value": "{color.yellow.50.value}"
     },

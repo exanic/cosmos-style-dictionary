@@ -1,10 +1,10 @@
 {
   "body": {
     "background-color": {
-      "value": "{layer.level-0.background-color.base.value}"
+      "value": "{neutral.5.value}"
     },
     "border-color": {
-      "value": "{layer.level-0.border-color.base.value}"
+      "value": "{neutral.5.value}"
     }
   }
 }

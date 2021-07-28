@@ -22,36 +22,35 @@
         },
         "text-color": {
             "base": {
-                "value": "{font.text-color.standard.value}"
+                "value": "{content.standard.value}"
             },
             "active": {
-                "value": "{font.text-color.standard.value}"
+                "value": "{content.standard.value}"
             },
             "focus": {
-                "value": "{font.text-color.standard.value}"
+                "value": "{content.standard.value}"
             },
             "hover": {
-                "value": "{font.text-color.standard.value}"
+                "value": "{content.standard.value}"
             },
             "disabled": {
-                "value": "{font.text-color.disabled.value}"
+                "value": "{content.disabled.value}"
             }
         },
         "step-standard": {
-            "comment": "GLOBAL MAPPED",
             "icon": {
                 "text-color": {
                     "base": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "active": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "focus": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "hover": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "disabled": {
                         "value": "{color.white.o25}"
@@ -68,7 +67,7 @@
                         "value": "{color.gray.750.value}"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "disabled": {
                         "value": "{color.gray.250.value}"
@@ -85,7 +84,7 @@
                         "value": "{color.gray.750.value}"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "disabled": {
                         "value": "{color.gray.250.value}"
@@ -98,10 +97,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}"
+                        "value": "{neutral.8.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.150.value}"
+                        "value": "{neutral.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"
@@ -115,10 +114,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}"
+                        "value": "{neutral.8.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.150.value}"
+                        "value": "{neutral.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"
@@ -130,57 +129,56 @@
             }
         },
         "step-current": {
-            "comment": "GLOBAL MAPPED",
             "icon": {
                 "text-color": {
                     "base": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "active": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "focus": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "hover": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     },
                     "disabled": {
-                        "value": "{color.white.o75}"
+                        "value": "{primary.text-color.base.value}"
                     }
                 },
                 "background-color": {
                     "base": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "active": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "focus": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "disabled": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     }
                 },
                 "border-color": {
                     "base": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "active": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "focus": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "hover": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     },
                     "disabled": {
-                        "value": "{color.blue.700.value}"
+                        "value": "{primary.color.base.value}"
                     }
                 }
             },
@@ -190,10 +188,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}"
+                        "value": "{neutral.8.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.150.value}"
+                        "value": "{neutral.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"
@@ -207,10 +205,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{color.gray.350.value}"
+                        "value": "{neutral.8.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.150.value}"
+                        "value": "{neutral.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"
