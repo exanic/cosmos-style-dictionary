@@ -2,10 +2,10 @@
   "table": {
     "background-color": {
       "base": {
-        "value": "{neutral.0.value}"
+        "value": "{theme.0.value}"
       },
       "hover": {
-        "value": "{neutral.1.value}"
+        "value": "{theme.1.value}"
       }
     }
   }

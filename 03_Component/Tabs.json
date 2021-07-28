@@ -40,10 +40,10 @@
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{neutral.8.value}"
+                    "value": "{theme.8.value}"
                 },
                 "focus": {
-                    "value": "{neutral.5.value}"
+                    "value": "{theme.5.value}"
                 },
                 "hover": {
                     "value": "{color.transparent.base.value}"
@@ -57,10 +57,10 @@
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{neutral.8.value}"
+                    "value": "{theme.8.value}"
                 },
                 "focus": {
-                    "value": "{neutral.5.value}"
+                    "value": "{theme.5.value}"
                 },
                 "hover": {
                     "value": "{color.transparent.base.value}"
@@ -94,10 +94,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{neutral.8.value}"
+                        "value": "{theme.8.value}"
                     },
                     "focus": {
-                        "value": "{neutral.5.value}"
+                        "value": "{theme.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"
@@ -111,10 +111,10 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{neutral.8.value}"
+                        "value": "{theme.8.value}"
                     },
                     "focus": {
-                        "value": "{neutral.5.value}"
+                        "value": "{theme.5.value}"
                     },
                     "hover": {
                         "value": "{color.transparent.base.value}"

@@ -27,15 +27,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {
@@ -47,15 +47,15 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-50"
                     },
                     "focus": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-25"
                     },
                     "hover": {
-                        "value": "{neutral.8.value}",
+                        "value": "{theme.8.value}",
                         "comment": "opacity-10"
                     },
                     "disabled": {

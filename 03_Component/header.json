@@ -1,10 +1,10 @@
 {
   "header": {
     "background-color": {
-      "value": "{neutral.0.value}"
+      "value": "{theme.0.value}"
     },
     "border-color": {
-      "value": "{neutral.0.value}"
+      "value": "{theme.0.value}"
     }
   }
 }

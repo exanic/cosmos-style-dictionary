@@ -39,36 +39,36 @@
         },
         "background-color": {
             "base": {
-                "value": "{neutral.8.value}"
+                "value": "{theme.8.value}"
             },
             "active": {
-                "value": "{neutral.11.value}"
+                "value": "{theme.11.value}"
             },
             "focus": {
-                "value": "{neutral.9.value}"
+                "value": "{theme.9.value}"
             },
             "hover": {
-                "value": "{neutral.9.value}"
+                "value": "{theme.9.value}"
             },
             "disabled": {
-                "value": "{neutral.6.value}"
+                "value": "{theme.6.value}"
             }
         },
         "border-color": {
             "base": {
-                "value": "{neutral.8.value}"
+                "value": "{theme.8.value}"
             },
             "active": {
-                "value": "{neutral.11.value}"
+                "value": "{theme.11.value}"
             },
             "focus": {
-                "value": "{neutral.9.value}"
+                "value": "{theme.9.value}"
             },
             "hover": {
-                "value": "{neutral.9.value}"
+                "value": "{theme.9.value}"
             },
             "disabled": {
-                "value": "{neutral.6.value}"
+                "value": "{theme.6.value}"
             }
         }
     }
