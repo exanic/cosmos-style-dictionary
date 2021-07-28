@@ -321,7 +321,7 @@
       }
     },
     "danger": {
-      "danger_text-color": {
+      "danger_text-color_base": {
         "value": "{danger.text-color.base.value}"
       },
       "danger_text-color_disabled": {
@@ -344,7 +344,7 @@
       }
     },
     "info": {
-      "info_text-color": {
+      "info_text-color_base": {
         "value": "{info.text-color.base.value}"
       },
       "info_text-color_disabled": {
@@ -367,7 +367,7 @@
       }
     },
     "warning": {
-      "warning_text-color": {
+      "warning_text-color_base": {
         "value": "{warning.text-color.base.value}"
       },
       "warning_text-color_disabled": {
@@ -390,7 +390,7 @@
       }
     },
     "success": {
-      "success_text-color": {
+      "success_text-color_base": {
         "value": "{success.text-color.base.value}"
       },
       "success_text-color_disabled": {
