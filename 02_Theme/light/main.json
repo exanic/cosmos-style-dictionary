@@ -40,13 +40,13 @@
         "value": "{color.blue.A100.value}"
       },
       "2": {
-        "value": "{color.blue.A400.value}"
+        "value": "{color.blue.A200.value}"
       },
       "3": {
-        "value": "{color.blue.900.value}"
+        "value": "{color.blue.A400.value}"
       },
       "4": {
-        "value": "{color.blue.50.value}"
+        "value": "{color.blue.A700.value}"
       }
     }
   },
@@ -91,13 +91,13 @@
         "value": "{color.teal.A100.value}"
       },
       "2": {
-        "value": "{color.teal.A400.value}"
+        "value": "{color.teal.A200.value}"
       },
       "3": {
-        "value": "{color.teal.900.value}"
+        "value": "{color.teal.A400.value}"
       },
       "4": {
-        "value": "{color.teal.50.value}"
+        "value": "{color.teal.A700.value}"
       }
     }
   }

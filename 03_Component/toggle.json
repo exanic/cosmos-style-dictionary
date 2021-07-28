@@ -144,7 +144,7 @@
                         "value": "{primary-accent.color.1.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.4.value}"
+                        "value": "{color.blue.50.value}"
                     }
                 },
                 "border-color": {
@@ -161,7 +161,7 @@
                         "value": "{primary-accent.color.1.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.4.value}"
+                        "value": "{color.blue.50.value}"
                     }
                 }
             },
@@ -183,7 +183,7 @@
                         "value": "{primary.color.base.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.hover.value}"
+                        "value": "{color.blue.200.value}"
                     }
                 },
                 "border-color": {
@@ -200,7 +200,7 @@
                         "value": "{primary.color.base.value}"
                     },
                     "disabled": {
-                        "value": "{primary-accent.color.hover.value}"
+                        "value": "{color.blue.200.value}"
                     }
                 }
             },
