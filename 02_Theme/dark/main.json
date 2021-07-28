@@ -36,19 +36,16 @@
       }
     },
     "color": {
-      "base": {
+      "1": {
         "value": "{color.blue.A100.value}"
       },
-      "active": {
-        "value": "{color.blue.A100.value}"
+      "2": {
+        "value": "{color.blue.A400.value}"
       },
-      "focus": {
-        "value": "{color.blue.A100.value}"
+      "3": {
+        "value": "{color.blue.900.value}"
       },
-      "hover": {
-        "value": "{color.blue.200.value}"
-      },
-      "disabled": {
+      "4": {
         "value": "{color.blue.50.value}"
       }
     }
@@ -90,19 +87,16 @@
       }
     },
     "color": {
-      "base": {
+      "1": {
         "value": "{color.teal.A100.value}"
       },
-      "active": {
-        "value": "{color.teal.A100.value}"
+      "2": {
+        "value": "{color.teal.A400.value}"
       },
-      "focus": {
-        "value": "{color.teal.A100.value}"
+      "3": {
+        "value": "{color.teal.900.value}"
       },
-      "hover": {
-        "value": "{color.teal.A100.value}"
-      },
-      "disabled": {
+      "4": {
         "value": "{color.teal.50.value}"
       }
     }
