@@ -1,7 +1,7 @@
 {
     "theme": {
         "0": {
-            "value": "{color.white.base}"
+            "value": "{color.white.base.value}"
         },
         "1": {
             "value": "{color.gray.0.value}"
