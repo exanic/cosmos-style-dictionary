@@ -2,14 +2,14 @@
   "sidenav": {
     "background-color": {
       "base": {
-        "value": "{theme.2.value}"
+        "value": "{theme.3.value}"
       },
       "hover": {
-        "value": "{theme.2.value}"
+        "value": "{theme.3.value}"
       }
     },
     "border-color": {
-      "value": "{theme.2.value}"
+      "value": "{content.divider.value}"
     }
   }
 }

@@ -39,7 +39,7 @@
         },
         "background-color": {
             "base": {
-                "value": "{theme.8.value}"
+                "value": "{theme.7.value}"
             },
             "active": {
                 "value": "{theme.11.value}"

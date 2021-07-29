@@ -1,9 +1,9 @@
 {
   "app-light-primary-text": {
-    "value": "{color.white.o75.value}"
+    "value": "{color.white.o100.value}"
   },
   "app-dark-primary-text": {
-    "value": "{color.black.o75.value}"
+    "value": "{color.black.o100.value}"
   },
   "app-grey-palette": {
     "50": {
