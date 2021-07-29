@@ -21,7 +21,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                         "destination": `${outputFileName}.scss`,
                         "format": "scss/map-deep-angular-color",
                         "filter": { "filePath": includeFile },
-                        "mapName": "app-color-palette"
+                        "mapName": "mat-color-palette"
                     }
                 ]
             },
@@ -33,6 +33,16 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                         "destination": `${outputFileName}.scss`,
                         "format": "scss/variables",
                         "filter": { "filePath": includeFile }
+                    }
+                ]
+            },
+            "web/material/tokens": {
+                "transformGroup": "scss-material",
+                "buildPath": `build/scss/material-design/`,
+                "files": [
+                    {
+                        "destination": `${outputFileName}.scss`,
+                        "format": "scss/variables"
                     }
                 ]
             },
@@ -153,14 +163,19 @@ console.log('Build started...');
 console.log('\n==============================================');
 
 // Angular Material
-['color-palette'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `_${file}`));
-    StyleDictionary.buildPlatform("web/material/palette");
-});
-
-['light','dark'].map(function (theme) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, '04_Framework/Material-Design/tokens.json', `${theme}/_tokens`));
-    StyleDictionary.buildPlatform("web/material/theme");
+['light', 'dark'].map(function (theme) {
+    ['mat-color-palette'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        StyleDictionary.buildPlatform("web/material/palette");
+    });
+    ['mat-theme-tokens'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        StyleDictionary.buildPlatform("web/material/theme");
+    });
+    ['design-tokens'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        StyleDictionary.buildPlatform("web/material/tokens");
+    });
 });
 
 // Figma
@@ -169,8 +184,8 @@ console.log('\n==============================================');
     StyleDictionary.buildPlatform("json/figma");
 });
 
-['theme_tokens'].map(function (file) {
-    ['light','dark'].map(function (theme) {
+['light', 'dark'].map(function (theme) {
+    ['theme_tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
         StyleDictionary.buildPlatform("json/figma");
     });
