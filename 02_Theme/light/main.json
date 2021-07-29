@@ -13,13 +13,13 @@
         "value": "{color.blue.700.value}"
       },
       "active": {
-        "value": "{color.blue.500.value}"
+        "value": "{color.blue.900.value}"
       },
       "focus": {
-        "value": "{color.blue.500.value}"
+        "value": "{color.blue.800.value}"
       },
       "hover": {
-        "value": "{color.blue.500.value}"
+        "value": "{color.blue.800.value}"
       },
       "disabled": {
         "value": "{color.blue.200.value}"
@@ -61,16 +61,16 @@
     },
     "color": {
       "base": {
-        "value": "{color.teal.700.value}"
+        "value": "{color.teal.600.value}"
       },
       "active": {
-        "value": "{color.teal.500.value}"
+        "value": "{color.teal.800.value}"
       },
       "focus": {
-        "value": "{color.teal.500.value}"
+        "value": "{color.teal.700.value}"
       },
       "hover": {
-        "value": "{color.teal.500.value}"
+        "value": "{color.teal.700.value}"
       },
       "disabled": {
         "value": "{color.teal.200.value}"
