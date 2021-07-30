@@ -348,16 +348,16 @@
       "value": "{color.red.900.value}"
     },
     "red-A100": {
-      "value": "{color.red.A100.value}"
+      "value": "{color.red.a100.value}"
     },
     "red-A200": {
-      "value": "{color.red.A200.value}"
+      "value": "{color.red.a200.value}"
     },
     "red-A400": {
-      "value": "{color.red.A400.value}"
+      "value": "{color.red.a400.value}"
     },
     "red-A700": {
-      "value": "{color.red.A700.value}"
+      "value": "{color.red.a700.value}"
     },
     "blue-50": {
       "value": "{color.blue.50.value}"
@@ -390,16 +390,16 @@
       "value": "{color.blue.900.value}"
     },
     "blue-A100": {
-      "value": "{color.blue.A100.value}"
+      "value": "{color.blue.a100.value}"
     },
     "blue-A200": {
-      "value": "{color.blue.A200.value}"
+      "value": "{color.blue.a200.value}"
     },
     "blue-A400": {
-      "value": "{color.blue.A400.value}"
+      "value": "{color.blue.a400.value}"
     },
     "blue-A700": {
-      "value": "{color.blue.A700.value}"
+      "value": "{color.blue.a700.value}"
     },
     "teal-50": {
       "value": "{color.teal.50.value}"
@@ -432,16 +432,16 @@
       "value": "{color.teal.900.value}"
     },
     "teal-A100": {
-      "value": "{color.teal.A100.value}"
+      "value": "{color.teal.a100.value}"
     },
     "teal-A200": {
-      "value": "{color.teal.A200.value}"
+      "value": "{color.teal.a200.value}"
     },
     "teal-A400": {
-      "value": "{color.teal.A400.value}"
+      "value": "{color.teal.a400.value}"
     },
     "teal-A700": {
-      "value": "{color.teal.A700.value}"
+      "value": "{color.teal.a700.value}"
     },
     "yellow-50": {
       "value": "{color.yellow.50.value}"
@@ -474,16 +474,16 @@
       "value": "{color.yellow.900.value}"
     },
     "yellow-A100": {
-      "value": "{color.yellow.A100.value}"
+      "value": "{color.yellow.a100.value}"
     },
     "yellow-A200": {
-      "value": "{color.yellow.A200.value}"
+      "value": "{color.yellow.a200.value}"
     },
     "yellow-A400": {
-      "value": "{color.yellow.A400.value}"
+      "value": "{color.yellow.a400.value}"
     },
     "yellow-A700": {
-      "value": "{color.yellow.A700.value}"
+      "value": "{color.yellow.a700.value}"
     },
     "green-50": {
       "value": "{color.green.50.value}"
@@ -516,16 +516,16 @@
       "value": "{color.green.900.value}"
     },
     "green-A100": {
-      "value": "{color.green.A100.value}"
+      "value": "{color.green.a100.value}"
     },
     "green-A200": {
-      "value": "{color.green.A200.value}"
+      "value": "{color.green.a200.value}"
     },
     "green-A400": {
-      "value": "{color.green.A400.value}"
+      "value": "{color.green.a400.value}"
     },
     "green-A700": {
-      "value": "{color.green.A700.value}"
+      "value": "{color.green.a700.value}"
     }
   },
   "opacity": {

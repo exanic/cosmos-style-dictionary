@@ -53,7 +53,7 @@
                         "value": "{primary.text-color.base.value}"
                     },
                     "disabled": {
-                        "value": "{color.white.o25}"
+                        "value": "{color.white.o25.value}"
                     }
                 },
                 "background-color": {

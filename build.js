@@ -14,7 +14,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
         ],
         "platforms": {
             "web/material/palette": {
-                "transformGroup": "scss-material",
+                "transformGroup": "scss-material-base",
                 "buildPath": `build/scss/material-design/`,
                 "files": [
                     {
@@ -26,7 +26,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                 ]
             },
             "web/material/theme": {
-                "transformGroup": "scss-material",
+                "transformGroup": "scss-material-base",
                 "buildPath": `build/scss/material-design/`,
                 "files": [
                     {
@@ -37,7 +37,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                 ]
             },
             "web/material/tokens": {
-                "transformGroup": "scss-material",
+                "transformGroup": "scss-material-tokens",
                 "buildPath": `build/scss/material-design/`,
                 "files": [
                     {
@@ -47,7 +47,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                 ]
             },
             "web/material/classes": {
-                "transformGroup": "scss-material",
+                "transformGroup": "scss-material-tokens",
                 "buildPath": `build/scss/material-design/`,
                 "files": [
                     {
@@ -101,7 +101,7 @@ var utilities = [
         "name": "margin-left",
         "tokenType": "size",
         "tokenSubType": "spacing",
-        "CSSprop": "margin-left"
+        "CSSprop": "margin_left"
     }
 ];
 
@@ -116,7 +116,7 @@ StyleDictionaryPackage.registerFormat({
             utilities.forEach(function (utility) {
                 if (tokenType === utility.tokenType) {
                     if (tokenSubType === utility.tokenSubType || utility.tokenSubType === 'all') {
-                        var utilityClass = utility.name + "-" + prop.path[2];
+                        var utilityClass = utility.name + "_" + prop.path[2];
                         output += `.${utilityClass} { ${utility.CSSprop}: ${prop.value}; }\n`;
                     }
                 }
@@ -125,7 +125,6 @@ StyleDictionaryPackage.registerFormat({
         return output;
     }
 });
-
 
 // Figma Output Format
 StyleDictionaryPackage.registerFormat({
@@ -137,6 +136,19 @@ StyleDictionaryPackage.registerFormat({
 
 
 // REGISTER CUSTOM TRANSFORMS
+
+// Snake / Kebab Case for Tokens
+StyleDictionaryPackage.registerTransform({
+    type: 'name',
+    transitive: true,
+    name: 'name/cti/snake-kebab',
+    matcher: (token) => {
+        return true;
+    },
+    transformer: (token) => {
+        return token.path.join('_');
+    }
+});
 
 // Replace Font to Roboto for Figma
 StyleDictionaryPackage.registerTransform({
@@ -191,10 +203,18 @@ StyleDictionaryPackage.registerTransform({
 
 // SCSS Material
 StyleDictionaryPackage.registerTransformGroup({
-    name: 'scss-material',
+    name: 'scss-material-base',
     transforms: [
         'attribute/cti',
         'name/cti/kebab',
+    ]
+});
+
+StyleDictionaryPackage.registerTransformGroup({
+    name: 'scss-material-tokens',
+    transforms: [
+        'attribute/cti',
+        'name/cti/snake-kebab',
     ]
 });
 
@@ -216,20 +236,20 @@ console.log('\n==============================================');
 
 // Angular Material
 ['light', 'dark'].map(function (theme) {
-    ['mat-color-palette'].map(function (file) {
+    ['mat_color-palette'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
         StyleDictionary.buildPlatform("web/material/palette");
     });
-    ['mat-theme-tokens'].map(function (file) {
+    ['mat_theme-tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
         StyleDictionary.buildPlatform("web/material/theme");
     });
-    ['design-tokens'].map(function (file) {
+    ['design_tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
         StyleDictionary.buildPlatform("web/material/tokens");
     });
-    ['design-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design-classes`));
+    ['design_tokens'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`));
         StyleDictionary.buildPlatform("web/material/classes");
     });
 });
