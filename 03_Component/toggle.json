@@ -19,7 +19,7 @@
                         "value": "{theme.11.value}"
                     },
                     "disabled": {
-                        "value": "{theme.6.value}"
+                        "value": "{theme.5.value}"
                     }
                 },
                 "border-color": {
@@ -36,7 +36,7 @@
                         "value": "{theme.11.value}"
                     },
                     "disabled": {
-                        "value": "{theme.6.value}"
+                        "value": "{theme.5.value}"
                     }
                 }
             },

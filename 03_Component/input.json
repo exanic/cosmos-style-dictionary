@@ -19,7 +19,7 @@
         "value": "{theme.9.value}"
       },
       "disabled": {
-        "value": "{theme.6.value}"
+        "value": "{theme.5.value}"
       },
       "invalid": {
         "value": "{danger.color.base.value}"
@@ -42,7 +42,7 @@
         "value": "{theme.9.value}"
       },
       "disabled": {
-        "value": "{theme.6.value}"
+        "value": "{theme.5.value}"
       },
       "invalid": {
         "value": "{danger.color.base.value}"
