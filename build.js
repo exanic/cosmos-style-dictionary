@@ -46,6 +46,16 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                     }
                 ]
             },
+            "web/material/classes": {
+                "transformGroup": "scss-material",
+                "buildPath": `build/scss/material-design/`,
+                "files": [
+                    {
+                        "destination": `${outputFileName}.scss`,
+                        "format": "css/utility-classes"
+                    }
+                ]
+            },
             "json/figma": {
                 "transformGroup": "json-figma",
                 "buildPath": "build/json/figma/",
@@ -71,6 +81,48 @@ StyleDictionaryPackage.registerFormat({
         const _template = require('lodash/template');
         const template = _template(fs.readFileSync(__dirname + '/templates/map-deep-angular-color.template'));
         return template({ dictionary, file, options, fileHeader });
+    }
+});
+
+var utilities = [
+    //{
+    //    "name": "color",
+    //    "tokenType": "color",
+    //    "tokenSubType": "all",
+    //    "CSSprop": "color"
+    //},
+    //{
+    //    "name": "background-color",
+    //    "tokenType": "color",
+    //    "tokenSubType": "all",
+    //    "CSSprop": "background-color"
+    //},
+    {
+        "name": "padding-left",
+        "tokenType": "size",
+        "tokenSubType": "spacing",
+        "CSSprop": "padding-left"
+    }
+];
+
+StyleDictionaryPackage.registerFormat({
+    name: 'css/utility-classes',
+    formatter: function (dictionary, platform) {
+        let output = '';
+        dictionary.allProperties.forEach(function (prop) {
+            var tokenType = prop.path.slice(0, 1)[0];
+            var tokenSubType = prop.path.slice(1, 2)[0];
+            
+            utilities.forEach(function (utility) {
+                if (tokenType === utility.tokenType) {
+                    if (tokenSubType === utility.tokenSubType || utility.tokenSubType === 'all') {
+                        var utilityClass = utility.name + "-" + prop.path[2];
+                        output += `.${utilityClass} { ${utility.CSSprop}: ${prop.value}; }\n`;
+                    }
+                }
+            });
+        });
+        return output;
     }
 });
 
@@ -175,6 +227,10 @@ console.log('\n==============================================');
     ['design-tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
         StyleDictionary.buildPlatform("web/material/tokens");
+    });
+    ['design-tokens'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design-classes`));
+        StyleDictionary.buildPlatform("web/material/classes");
     });
 });
 
