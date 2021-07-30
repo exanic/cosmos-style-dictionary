@@ -98,10 +98,10 @@ var utilities = [
     //    "CSSprop": "background-color"
     //},
     {
-        "name": "padding-left",
+        "name": "margin-left",
         "tokenType": "size",
         "tokenSubType": "spacing",
-        "CSSprop": "padding-left"
+        "CSSprop": "margin-left"
     }
 ];
 
