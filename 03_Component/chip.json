@@ -51,7 +51,7 @@
                 "value": "{theme.9.value}"
             },
             "disabled": {
-                "value": "{theme.6.value}"
+                "value": "{theme.7.value}"
             }
         },
         "border-color": {
@@ -68,7 +68,7 @@
                 "value": "{theme.9.value}"
             },
             "disabled": {
-                "value": "{theme.6.value}"
+                "value": "{theme.7.value}"
             }
         }
     }
