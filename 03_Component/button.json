@@ -35,7 +35,7 @@
                     "value": "{primary.text-color.base.value}"
                 },
                 "disabled": {
-                    "value": "{primary.text-color.disabled.value}"
+                    "value": "{content.disabled.value}"
                 }
             },
             "background-color": {
@@ -52,7 +52,7 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{primary.color.disabled.value}"
+                    "value": "{theme.5.value}"
                 }
             },
             "border-color": {
@@ -69,7 +69,7 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{primary.color.disabled.value}"
+                    "value": "{theme.5.value}"
                 }
             }
         },
@@ -88,21 +88,24 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{theme.6.value}"
+                    "value": "{theme.5.value}"
                 }
             },
-            "color": {
+            "background-color": {
                 "base": {
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 25%"
                 },
                 "focus": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 10%"
                 },
                 "hover": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 10%"
                 },
                 "disabled": {
                     "value": "{color.transparent.base.value}"
@@ -110,19 +113,19 @@
             },
             "border-color": {
                 "base": {
-                    "value": "{theme.3.value}"
+                    "value": "{theme.8.value}"
                 },
                 "active": {
-                    "value": "{theme.3.value}"
+                    "value": "{theme.8.value}"
                 },
                 "focus": {
-                    "value": "{theme.3.value}"
+                    "value": "{theme.8.value}"
                 },
                 "hover": {
-                    "value": "{theme.3.value}"
+                    "value": "{theme.8.value}"
                 },
                 "disabled": {
-                    "value": "{theme.3.value}"
+                    "value": "{theme.5.value}"
                 }
             }
         },
@@ -141,21 +144,24 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{theme.6.value}"
+                    "value": "{content.disabled.value}"
                 }
             },
-            "color": {
+            "background-color": {
                 "base": {
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 25%"
                 },
                 "focus": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 10%"
                 },
                 "hover": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{primary.color.base.value}",
+                    "comment": "opacity 10%"
                 },
                 "disabled": {
                     "value": "{color.transparent.base.value}"
