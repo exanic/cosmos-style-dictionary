@@ -101,7 +101,7 @@ var utilities = [
         "name": "margin-left",
         "tokenType": "size",
         "tokenSubType": "spacing",
-        "CSSprop": "margin_left"
+        "CSSprop": "margin-left"
     }
 ];
 
