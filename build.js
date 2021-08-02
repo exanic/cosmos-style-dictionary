@@ -85,24 +85,62 @@ StyleDictionaryPackage.registerFormat({
 });
 
 var utilities = [
-    //{
-    //    "name": "color",
-    //    "tokenType": "color",
-    //    "tokenSubType": "all",
-    //    "CSSprop": "color"
-    //},
-    //{
-    //    "name": "background-color",
-    //    "tokenType": "color",
-    //    "tokenSubType": "all",
-    //    "CSSprop": "background-color"
-    //},
     {
-        "name": "margin-left",
-        "tokenType": "size",
-        "tokenSubType": "spacing",
-        "CSSprop": "margin-left"
-    }
+        'name': 'content_color',
+        'tokenType': 'content',
+        'classes': [
+            {
+                'className': 'content_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'margin',
+        'tokenType': 'size',
+        'tokenSubType': 'spacing',
+        'classes': [
+            {
+                'className': 'margin_top',
+                'cssProperty': 'margin-top',
+            },
+            {
+                'className': 'margin_right',
+                'cssProperty': 'margin-right',
+            },
+            {
+                'className': 'margin_bottom',
+                'cssProperty': 'margin-bottom',
+            },
+            {
+                'className': 'margin_left',
+                'cssProperty': 'margin-left',
+            }
+        ]
+    },
+    {
+        'name': 'padding',
+        'tokenType': 'size',
+        'tokenSubType': 'spacing',
+        'classes': [
+            {
+                'className': 'padding_top',
+                'cssProperty': 'padding-top',
+            },
+            {
+                'className': 'padding_right',
+                'cssProperty': 'padding-right',
+            },
+            {
+                'className': 'padding_bottom',
+                'cssProperty': 'padding-bottom',
+            },
+            {
+                'className': 'padding_left',
+                'cssProperty': 'padding-left',
+            }
+        ]
+    },
 ];
 
 StyleDictionaryPackage.registerFormat({
@@ -112,12 +150,24 @@ StyleDictionaryPackage.registerFormat({
         dictionary.allProperties.forEach(function (prop) {
             var tokenType = prop.path.slice(0, 1)[0];
             var tokenSubType = prop.path.slice(1, 2)[0];
-            
+
             utilities.forEach(function (utility) {
                 if (tokenType === utility.tokenType) {
-                    if (tokenSubType === utility.tokenSubType || utility.tokenSubType === 'all') {
-                        var utilityClass = utility.name + "_" + prop.path[2];
-                        output += `.${utilityClass} { ${utility.CSSprop}: ${prop.value}; }\n`;
+
+                    var tokenPropertyName = '';
+
+                    if (utility.tokenSubType !== undefined) {
+                        if (tokenSubType === utility.tokenSubType) {
+                            tokenPropertyName = prop.path[2];
+                        }
+                    } else {
+                        tokenPropertyName = prop.path[1];
+                    }
+
+                    if (tokenPropertyName !== '') {
+                        utility.classes.forEach(function (outputClass) {
+                            output += `.${outputClass.className}_${tokenPropertyName} { ${outputClass.cssProperty}: ${prop.value}; }\n`;
+                        });
                     }
                 }
             });
