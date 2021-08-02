@@ -4,66 +4,66 @@ const { fileHeader, toFigmaDictionary } = require('./helpers');
 // CONFIG
 function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
     return {
-        "source": [
-            "01_Global/*.json",
+        'source': [
+            '01_Global/*.json',
             `02_Theme/${theme}/*.json`,
-            "03_Component/*.json",
+            '03_Component/*.json',
         ],
-        "include": [
+        'include': [
             includeFile
         ],
-        "platforms": {
-            "web/material/palette": {
-                "transformGroup": "scss-material-base",
-                "buildPath": `build/scss/material-design/`,
-                "files": [
+        'platforms': {
+            'web/material/palette': {
+                'transformGroup': 'scss-material-base',
+                'buildPath': `build/scss/material-design/`,
+                'files': [
                     {
-                        "destination": `${outputFileName}.scss`,
-                        "format": "scss/map-deep-angular-color",
-                        "filter": { "filePath": includeFile },
-                        "mapName": "mat-color-palette"
+                        'destination': `${outputFileName}.scss`,
+                        'format': 'scss/map-deep-angular-color',
+                        'filter': { 'filePath': includeFile },
+                        'mapName': 'mat-color-palette'
                     }
                 ]
             },
-            "web/material/theme": {
-                "transformGroup": "scss-material-base",
-                "buildPath": `build/scss/material-design/`,
-                "files": [
+            'web/material/theme': {
+                'transformGroup': 'scss-material-base',
+                'buildPath': `build/scss/material-design/`,
+                'files': [
                     {
-                        "destination": `${outputFileName}.scss`,
-                        "format": "scss/variables",
-                        "filter": { "filePath": includeFile }
+                        'destination': `${outputFileName}.scss`,
+                        'format': 'scss/variables',
+                        'filter': { 'filePath': includeFile }
                     }
                 ]
             },
-            "web/material/tokens": {
-                "transformGroup": "scss-material-tokens",
-                "buildPath": `build/scss/material-design/`,
-                "files": [
+            'web/material/tokens': {
+                'transformGroup': 'scss-material-tokens',
+                'buildPath': `build/scss/material-design/`,
+                'files': [
                     {
-                        "destination": `${outputFileName}.scss`,
-                        "format": "scss/variables"
+                        'destination': `${outputFileName}.scss`,
+                        'format': 'scss/variables'
                     }
                 ]
             },
-            "web/material/classes": {
-                "transformGroup": "scss-material-tokens",
-                "buildPath": `build/scss/material-design/`,
-                "files": [
+            'web/material/classes': {
+                'transformGroup': 'scss-material-tokens',
+                'buildPath': `build/scss/material-design/`,
+                'files': [
                     {
-                        "destination": `${outputFileName}.scss`,
-                        "format": "css/utility-classes"
+                        'destination': `${outputFileName}.scss`,
+                        'format': 'css/utility-classes'
                     }
                 ]
             },
-            "json/figma": {
-                "transformGroup": "json-figma",
-                "buildPath": "build/json/figma/",
-                "files": [
+            'json/figma': {
+                'transformGroup': 'json-figma',
+                'buildPath': 'build/json/figma/',
+                'files': [
                     {
-                        "destination": `${outputFileName}.json`,
-                        "format": "json/figma",
-                        "filter": { "filePath": includeFile }
+                        'destination': `${outputFileName}.json`,
+                        'format': 'json/figma',
+                        'filter': { 'filePath': includeFile }
                     }
                 ]
             }
@@ -288,32 +288,32 @@ console.log('\n==============================================');
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
-        StyleDictionary.buildPlatform("web/material/palette");
+        StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
-        StyleDictionary.buildPlatform("web/material/theme");
+        StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
-        StyleDictionary.buildPlatform("web/material/tokens");
+        StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`));
-        StyleDictionary.buildPlatform("web/material/classes");
+        StyleDictionary.buildPlatform('web/material/classes');
     });
 });
 
 // Figma
 ['global_tokens'].map(function (file) {
     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file));
-    StyleDictionary.buildPlatform("json/figma");
+    StyleDictionary.buildPlatform('json/figma');
 });
 
 ['light', 'dark'].map(function (theme) {
     ['theme_tokens'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
-        StyleDictionary.buildPlatform("json/figma");
+        StyleDictionary.buildPlatform('json/figma');
     });
 });
 
