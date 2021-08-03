@@ -1,5 +1,5 @@
 {
-  "checkbox": {
+  "radio": {
     "off": {
       "icon-color": {
         "base": {
@@ -24,7 +24,7 @@
         },
         "background-color": {
           "base": {
-            "value": "{color.transparent.base.value}"
+            "value": "{theme.8.value}"
           },
           "active": {
             "value": "{theme.8.value}",
@@ -44,7 +44,7 @@
         },
         "border-color": {
           "base": {
-            "value": "{theme.8.value}"
+            "value": "{color.transparent.base.value}"
           },
           "active": {
             "value": "{theme.8.value}",
@@ -67,19 +67,19 @@
     "on": {
       "icon-color": {
         "base": {
-          "value": "{primary.text-color.base.value}"
+          "value": "{primary.color.base.value}"
         },
         "active": {
-          "value": "{primary.text-color.base.value}"
+          "value": "{primary.color.base.value}"
         },
         "focus": {
-          "value": "{primary.text-color.base.value}"
+          "value": "{primary.color.base.value}"
         },
         "hover": {
-          "value": "{primary.text-color.base.value}"
+          "value": "{primary.color.base.value}"
         },
         "disabled": {
-          "value": "{primary.text-color.disabled.value}"
+          "value": "{content.disabled.value}"
         }
       },
       "ripple": {

@@ -36,15 +36,18 @@ function toFigmaDictionary(obj) {
     if (obj.hasOwnProperty('value')) {
 
         // Source Property
-        return new Object({ value: obj.value })
+        return new Object({ value: obj.value, type: obj.attributes.category });
 
     } else {
+
         for (var name in obj) {
             if (obj.hasOwnProperty(name)) {
                 toRet[name] = toFigmaDictionary(obj[name]);
             }
         }
+
     }
+
     return toRet;
 }
 

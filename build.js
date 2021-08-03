@@ -180,7 +180,8 @@ StyleDictionaryPackage.registerFormat({
 StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
-        return JSON.stringify(toFigmaDictionary(dictionary.tokens), null, 2);
+        var dictionaryFigma = toFigmaDictionary(dictionary.tokens);
+        return JSON.stringify(Object.values(dictionaryFigma), null, 2);
     }
 });
 
