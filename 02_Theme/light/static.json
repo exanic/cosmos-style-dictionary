@@ -27,14 +27,6 @@
     }
   },
   "primary-accent": {
-    "text-color": {
-      "base": {
-        "value": "{color.white.o100.value}"
-      },
-      "disabled": {
-        "value": "{color.white.o25.value}"
-      }
-    },
     "color": {
       "1": {
         "value": "{color.blue.a100.value}"
@@ -78,14 +70,6 @@
     }
   },
   "secondary-accent": {
-    "text-color": {
-      "base": {
-        "value": "{color.white.o100.value}"
-      },
-      "disabled": {
-        "value": "{color.white.o25.value}"
-      }
-    },
     "color": {
       "1": {
         "value": "{color.teal.a100.value}"

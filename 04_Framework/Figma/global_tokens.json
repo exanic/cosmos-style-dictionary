@@ -347,16 +347,16 @@
     "red-900": {
       "value": "{color.red.900.value}"
     },
-    "red-A100": {
+    "red-a100": {
       "value": "{color.red.a100.value}"
     },
-    "red-A200": {
+    "red-a200": {
       "value": "{color.red.a200.value}"
     },
-    "red-A400": {
+    "red-a400": {
       "value": "{color.red.a400.value}"
     },
-    "red-A700": {
+    "red-a700": {
       "value": "{color.red.a700.value}"
     },
     "blue-50": {
@@ -389,16 +389,16 @@
     "blue-900": {
       "value": "{color.blue.900.value}"
     },
-    "blue-A100": {
+    "blue-a100": {
       "value": "{color.blue.a100.value}"
     },
-    "blue-A200": {
+    "blue-a200": {
       "value": "{color.blue.a200.value}"
     },
-    "blue-A400": {
+    "blue-a400": {
       "value": "{color.blue.a400.value}"
     },
-    "blue-A700": {
+    "blue-a700": {
       "value": "{color.blue.a700.value}"
     },
     "teal-50": {
@@ -431,16 +431,16 @@
     "teal-900": {
       "value": "{color.teal.900.value}"
     },
-    "teal-A100": {
+    "teal-a100": {
       "value": "{color.teal.a100.value}"
     },
-    "teal-A200": {
+    "teal-a200": {
       "value": "{color.teal.a200.value}"
     },
-    "teal-A400": {
+    "teal-a400": {
       "value": "{color.teal.a400.value}"
     },
-    "teal-A700": {
+    "teal-a700": {
       "value": "{color.teal.a700.value}"
     },
     "yellow-50": {
@@ -473,16 +473,16 @@
     "yellow-900": {
       "value": "{color.yellow.900.value}"
     },
-    "yellow-A100": {
+    "yellow-a100": {
       "value": "{color.yellow.a100.value}"
     },
-    "yellow-A200": {
+    "yellow-a200": {
       "value": "{color.yellow.a200.value}"
     },
-    "yellow-A400": {
+    "yellow-a400": {
       "value": "{color.yellow.a400.value}"
     },
-    "yellow-A700": {
+    "yellow-a700": {
       "value": "{color.yellow.a700.value}"
     },
     "green-50": {
@@ -515,16 +515,16 @@
     "green-900": {
       "value": "{color.green.900.value}"
     },
-    "green-A100": {
+    "green-a100": {
       "value": "{color.green.a100.value}"
     },
-    "green-A200": {
+    "green-a200": {
       "value": "{color.green.a200.value}"
     },
-    "green-A400": {
+    "green-a400": {
       "value": "{color.green.a400.value}"
     },
-    "green-A700": {
+    "green-a700": {
       "value": "{color.green.a700.value}"
     }
   },
