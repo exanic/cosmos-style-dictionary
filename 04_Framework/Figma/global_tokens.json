@@ -181,55 +181,55 @@
     }
   },
   "spacing": {
-    "none": {
+    "spacing_none": {
       "value": "{size.spacing.none.value}"
     },
-    "xxs": {
+    "spacing_xxs": {
       "value": "{size.spacing.xxs.value}"
     },
-    "xs": {
+    "spacing_xs": {
       "value": "{size.spacing.xs.value}"
     },
-    "s": {
+    "spacing_s": {
       "value": "{size.spacing.s.value}"
     },
-    "m": {
+    "spacing_m": {
       "value": "{size.spacing.m.value}"
     },
-    "l": {
+    "spacing_l": {
       "value": "{size.spacing.l.value}"
     },
-    "xl": {
+    "spacing_xl": {
       "value": "{size.spacing.xl.value}"
     },
-    "xxl": {
+    "spacing_xxl": {
       "value": "{size.spacing.xxl.value}"
     }
   },
   "borderRadius": {
-    "none": {
+    "border-radius_none": {
       "value": "{size.border-radius.none.value}"
     },
-    "xs": {
+    "border-radius_xs": {
       "value": "{size.border-radius.xs.value}"
     },
-    "s": {
+    "border-radius_s": {
       "value": "{size.border-radius.s.value}"
     },
-    "m": {
+    "border-radius_m": {
       "value": "{size.border-radius.m.value}"
     },
-    "l": {
+    "border-radius_l": {
       "value": "{size.border-radius.l.value}"
     },
-    "xl": {
+    "border-radius_xl": {
       "value": "{size.border-radius.xl.value}"
     },
-    "circle": {
+    "border-radius_circle": {
       "value": "{size.border-radius.circle.value}"
     }
   },
-  "colors": {
+  "color": {
     "white-base": {
       "value": "{color.white.base.value}"
     },
@@ -293,28 +293,28 @@
     "gray-950": {
       "value": "{color.gray.950.value}"
     },
-    "black-O25": {
+    "black-o25": {
       "value": "{color.black.o25.value}"
     },
-    "black-O50": {
+    "black-o50": {
       "value": "{color.black.o50.value}"
     },
-    "black-O75": {
+    "black-o75": {
       "value": "{color.black.o75.value}"
     },
-    "black-O100": {
+    "black-o100": {
       "value": "{color.black.o100.value}"
     },
-    "white-O25": {
+    "white-o25": {
       "value": "{color.white.o25.value}"
     },
-    "white-O50": {
+    "white-o50": {
       "value": "{color.white.o50.value}"
     },
-    "white-O75": {
+    "white-o75": {
       "value": "{color.white.o75.value}"
     },
-    "white-O100": {
+    "white-o100": {
       "value": "{color.white.o100.value}"
     },
     "red-50": {

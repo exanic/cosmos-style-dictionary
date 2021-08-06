@@ -34,7 +34,7 @@
                 "value": "{content.standard.value}"
             },
             "disabled": {
-                "value": "{content.disabled.value}"
+                "value": "{content.standard.value}"
             }
         },
         "background-color": {
