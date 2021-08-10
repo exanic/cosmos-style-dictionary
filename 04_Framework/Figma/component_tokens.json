@@ -477,7 +477,7 @@
                 "value": "{chip.text-color.disabled.value}"
             },
             "chip_background-color_base": {
-                "value": "{chip.background-color.value}"
+                "value": "{chip.background-color.base.value}"
             },
             "chip_background-color_active": {
                 "value": "{chip.background-color.active.value}"
@@ -648,19 +648,19 @@
         },
         "tab": {
             "tab_text-color_base": {
-                "value": "{tab.text-color.base.value.value}"
+                "value": "{tab.text-color.base.value}"
             },
             "tab_text-color_active": {
-                "value": "{tab.text-color.active.value.value}"
+                "value": "{tab.text-color.active.value}"
             },
             "tab_text-color_focus": {
-                "value": "{tab.text-color.focus.value.value}"
+                "value": "{tab.text-color.focus.value}"
             },
             "tab_text-color_hover": {
-                "value": "{tab.text-color.hover.value.value}"
+                "value": "{tab.text-color.hover.value}"
             },
             "tab_text-color_disabled": {
-                "value": "{tab.text-color.disabled.value.value}"
+                "value": "{tab.text-color.disabled.value}"
             },
             "tab_tab-standard_background-color_base": {
                 "value": "{tab.tab-standard.background-color.base.value}"
