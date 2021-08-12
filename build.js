@@ -180,8 +180,25 @@ StyleDictionaryPackage.registerFormat({
 StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
+        // Create Figma Tokens (only Value and Type)
         var dictionaryFigma = toFigmaDictionary(dictionary.tokens);
-        return JSON.stringify(Object.values(dictionaryFigma), null, 2);
+
+        // Remove Root Level, create Figma specific 'json' Format
+        var transformedFigma = '';
+        for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
+
+            for (const [childKey, childValue] of Object.entries(parentValue)) {
+                if (transformedFigma !== '')
+                    transformedFigma += ',';
+                transformedFigma += '"' + childKey.toString() + '": ';
+                transformedFigma += JSON.stringify(childValue, null, 2);
+            }
+        }
+
+        // Wrap json
+        transformedFigma = '{' + transformedFigma + '}';
+
+        return transformedFigma;
     }
 });
 
