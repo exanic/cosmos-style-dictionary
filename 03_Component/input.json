@@ -16,7 +16,7 @@
         "value": "{primary.color.base.value}"
       },
       "hover": {
-        "value": "{theme.9.value}"
+        "value": "{theme.12.value}"
       },
       "disabled": {
         "value": "{theme.5.value}"
@@ -30,7 +30,7 @@
     },
     "label-text": {
       "base": {
-        "value": "{theme.9.value}"
+        "value": "{content.standard.value}"
       },
       "active": {
         "value": "{primary.color.base.value}"
@@ -39,10 +39,10 @@
         "value": "{primary.color.base.value}"
       },
       "hover": {
-        "value": "{theme.9.value}"
+        "value": "{content.standard.value}"
       },
       "disabled": {
-        "value": "{theme.5.value}"
+        "value": "{content.disabled.value}"
       },
       "invalid": {
         "value": "{danger.color.base.value}"

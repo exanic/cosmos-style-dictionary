@@ -2,16 +2,16 @@
     "stepper": {
         "padding": {
             "top": {
-                "value": "{size.spacing.none.value}"
+                "value": "{size.spacing.m.value}"
             },
             "right": {
-                "value": "{size.spacing.none.value}"
+                "value": "{size.spacing.l.value}"
             },
             "bottom": {
-                "value": "{size.spacing.none.value}"
+                "value": "{size.spacing.m.value}"
             },
             "left": {
-                "value": "{size.spacing.none.value}"
+                "value": "{size.spacing.l.value}"
             }
         },
         "gap": {
@@ -53,41 +53,41 @@
                         "value": "{primary.text-color.base.value}"
                     },
                     "disabled": {
-                        "value": "{color.white.o25.value}"
+                        "value": "{primary.text-color.base.value}"
                     }
                 },
                 "background-color": {
                     "base": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "active": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "hover": {
-                        "value": "{primary.color.base.value}"
+                        "value": "{theme.16.value}"
                     },
                     "disabled": {
-                        "value": "{color.gray.250.value}"
+                        "value": "{theme.16.value}"
                     }
                 },
                 "border-color": {
                     "base": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "active": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "focus": {
-                        "value": "{color.gray.750.value}"
+                        "value": "{theme.16.value}"
                     },
                     "hover": {
-                        "value": "{primary.color.base.value}"
+                        "value": "{theme.16.value}"
                     },
                     "disabled": {
-                        "value": "{color.gray.250.value}"
+                        "value": "{theme.16.value}"
                     }
                 }
             },

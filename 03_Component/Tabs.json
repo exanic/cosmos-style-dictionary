@@ -17,24 +17,24 @@
         "border-radius": {
             "value": "{size.border-radius.none.value}"
         },
-        "text-color": {
-            "base": {
-                "value": "{content.standard.value}"
-            },
-            "active": {
-                "value": "{content.standard.value}"
-            },
-            "focus": {
-                "value": "{content.standard.value}"
-            },
-            "hover": {
-                "value": "{content.standard.value}"
-            },
-            "disabled": {
-                "value": "{content.disabled.value}"
-            }
-        },
         "tab-standard": {
+            "text-color": {
+                "base": {
+                    "value": "{content.subtle.value}"
+                },
+                "active": {
+                    "value": "{content.standard.value}"
+                },
+                "focus": {
+                    "value": "{content.subtle.value}"
+                },
+                "hover": {
+                    "value": "{content.subtle.value}"
+                },
+                "disabled": {
+                    "value": "{content.disabled.value}"
+                }
+            },
             "background-color": {
                 "base": {
                     "value": "{color.transparent.base.value}"
@@ -71,6 +71,20 @@
             }
         },
         "tab-selected": {
+            "text-color": {
+                "base": {
+                    "value": "{content.standard.value}"
+                },
+                "active": {
+                    "value": "{content.standard.value}"
+                },
+                "focus": {
+                    "value": "{content.standard.value}"
+                },
+                "hover": {
+                    "value": "{content.standard.value}"
+                }
+            },
             "icon-color": {
                 "base": {
                     "value": "{content.standard.value}"

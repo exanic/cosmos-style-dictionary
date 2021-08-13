@@ -88,7 +88,7 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{theme.5.value}"
+                    "value": "{content.disabled.value}"
                 }
             },
             "background-color": {

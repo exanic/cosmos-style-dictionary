@@ -88,7 +88,7 @@
         },
         "background-color": {
           "base": {
-            "value": "{primary.color.base.value}"
+            "value": "{color.transparent.base.value}"
           },
           "active": {
             "value": "{primary.color.base.value}",
