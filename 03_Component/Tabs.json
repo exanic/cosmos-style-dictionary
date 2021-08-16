@@ -40,13 +40,16 @@
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 50%"
                 },
                 "focus": {
-                    "value": "{theme.5.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 25%"
                 },
                 "hover": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 10%"
                 },
                 "disabled": {
                     "value": "{color.transparent.base.value}"
@@ -57,13 +60,16 @@
                     "value": "{color.transparent.base.value}"
                 },
                 "active": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 50%"
                 },
                 "focus": {
-                    "value": "{theme.5.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 25%"
                 },
                 "hover": {
-                    "value": "{color.transparent.base.value}"
+                    "value": "{theme.8.value}",
+                    "comment": "opacity: 10%"
                 },
                 "disabled": {
                     "value": "{color.transparent.base.value}"
@@ -108,13 +114,16 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{theme.8.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 50%"
                     },
                     "focus": {
-                        "value": "{theme.5.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 25%"
                     },
                     "hover": {
-                        "value": "{color.transparent.base.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 10%"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"
@@ -125,13 +134,16 @@
                         "value": "{color.transparent.base.value}"
                     },
                     "active": {
-                        "value": "{theme.8.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 50%"
                     },
                     "focus": {
-                        "value": "{theme.5.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 25%"
                     },
                     "hover": {
-                        "value": "{color.transparent.base.value}"
+                        "value": "{theme.8.value}",
+                        "comment": "opacity: 10%"
                     },
                     "disabled": {
                         "value": "{color.transparent.base.value}"
