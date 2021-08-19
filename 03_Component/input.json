@@ -7,7 +7,7 @@
     },
     "border-color": {
       "base": {
-        "value": "{theme.9.value}"
+        "value": "{theme.8.value}"
       },
       "active": {
         "value": "{primary.color.base.value}"
