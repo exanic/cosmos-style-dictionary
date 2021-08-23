@@ -1,13 +1,23 @@
 {
   "input": {
-    "text-color": {
-      "placeholder": {
-        "value": "{content.placeholder.value}"
-      }
+    "padding-top": {
+      "value": "{size.spacing.s.value}"
+    },
+    "padding-right": {
+      "value": "{size.spacing.m.value}"
+    },
+    "padding-bottom": {
+      "value": "{size.spacing.s.value}"
+    },
+    "padding-left": {
+      "value": "{size.spacing.m.value}"
+    },
+    "border-radius": {
+      "value": "{size.border-radius.s.value}"
     },
     "border-color": {
       "base": {
-        "value": "{theme.8.value}"
+        "value": "{theme.color-8.value}"
       },
       "active": {
         "value": "{primary.color.base.value}"
@@ -16,10 +26,10 @@
         "value": "{primary.color.base.value}"
       },
       "hover": {
-        "value": "{theme.12.value}"
+        "value": "{theme.color-12.value}"
       },
       "disabled": {
-        "value": "{theme.5.value}"
+        "value": "{theme.color-5.value}"
       },
       "invalid": {
         "value": "{danger.color.base.value}"
@@ -28,9 +38,12 @@
         "value": "{success.color.base.value}"
       }
     },
-    "label-text": {
+    "text-color": {
+      "value": "{content.standard.value}"
+    },
+    "label-text-color": {
       "base": {
-        "value": "{content.standard.value}"
+        "value": "{content.subtle.value}"
       },
       "active": {
         "value": "{primary.color.base.value}"
@@ -39,7 +52,7 @@
         "value": "{primary.color.base.value}"
       },
       "hover": {
-        "value": "{content.standard.value}"
+        "value": "{content.subtle.value}"
       },
       "disabled": {
         "value": "{content.disabled.value}"
@@ -51,19 +64,8 @@
         "value": "{success.color.base.value}"
       }
     },
-    "padding": {
-      "top": {
-        "value": "{size.spacing.s.value}"
-      },
-      "right": {
-        "value": "{size.spacing.m.value}"
-      },
-      "bottom": {
-        "value": "{size.spacing.s.value}"
-      },
-      "left": {
-        "value": "{size.spacing.m.value}"
-      }
+    "placeholder-text-color": {
+      "value": "{content.placeholder.value}"
     }
   }
 }

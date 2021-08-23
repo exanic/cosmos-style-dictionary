@@ -1,18 +1,16 @@
 {
     "chip": {
-        "padding": {
-            "top": {
-                "value": "{size.spacing.xs.value}"
-            },
-            "right": {
-                "value": "{size.spacing.s.value}"
-            },
-            "bottom": {
-                "value": "{size.spacing.xs.value}"
-            },
-            "left": {
-                "value": "{size.spacing.s.value}"
-            }
+        "padding-top": {
+            "value": "{size.spacing.xs.value}"
+        },
+        "padding-right": {
+            "value": "{size.spacing.s.value}"
+        },
+        "padding-bottom": {
+            "value": "{size.spacing.xs.value}"
+        },
+        "padding-left": {
+            "value": "{size.spacing.s.value}"
         },
         "gap": {
             "value": "{size.spacing.xs.value}"
@@ -39,36 +37,36 @@
         },
         "background-color": {
             "base": {
-                "value": "{theme.7.value}"
+                "value": "{theme.color-7.value}"
             },
             "active": {
-                "value": "{theme.11.value}"
+                "value": "{theme.color-11.value}"
             },
             "focus": {
-                "value": "{theme.9.value}"
+                "value": "{theme.color-9.value}"
             },
             "hover": {
-                "value": "{theme.9.value}"
+                "value": "{theme.color-9.value}"
             },
             "disabled": {
-                "value": "{theme.7.value}"
+                "value": "{theme.color-7.value}"
             }
         },
         "border-color": {
             "base": {
-                "value": "{theme.8.value}"
+                "value": "{theme.color-8.value}"
             },
             "active": {
-                "value": "{theme.11.value}"
+                "value": "{theme.color-11.value}"
             },
             "focus": {
-                "value": "{theme.9.value}"
+                "value": "{theme.color-9.value}"
             },
             "hover": {
-                "value": "{theme.9.value}"
+                "value": "{theme.color-9.value}"
             },
             "disabled": {
-                "value": "{theme.7.value}"
+                "value": "{theme.color-7.value}"
             }
         }
     }

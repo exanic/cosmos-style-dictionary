@@ -1,66 +1,66 @@
 {
     "theme": {
-        "0": {
+        "color-0": {
             "value": "{color.gray.650.value}"
         },
-        "1": {
+        "color-1": {
             "value": "{color.gray.650.value}"
         },
-        "2": {
+        "color-2": {
             "value": "{color.gray.700.value}"
         },
-        "3": {
+        "color-3": {
             "value": "{color.gray.750.value}"
         },
-        "4": {
+        "color-4": {
             "value": "{color.gray.800.value}"
         },
-        "5": {
+        "color-5": {
             "value": "{color.gray.850.value}"
         },
-        "6": {
+        "color-6": {
             "value": "{color.gray.900.value}"
         },
-        "7": {
+        "color-7": {
             "value": "{color.gray.950.value}"
         },
-        "8": {
+        "color-8": {
             "value": "{color.gray.350.value}"
         },
-        "9": {
+        "color-9": {
             "value": "{color.gray.400.value}"
         },
-        "10": {
+        "color-10": {
             "value": "{color.gray.450.value}"
         },
-        "11": {
+        "color-11": {
             "value": "{color.gray.500.value}"
         },
-        "12": {
+        "color-12": {
             "value": "{color.gray.550.value}"
         },
-        "13": {
+        "color-13": {
             "value": "{color.gray.600.value}"
         },
-        "14": {
+        "color-14": {
             "value": "{color.gray.300.value}"
         },
-        "15": {
+        "color-15": {
             "value": "{color.gray.250.value}"
         },
-        "16": {
+        "color-16": {
             "value": "{color.gray.200.value}"
         },
-        "17": {
+        "color-17": {
             "value": "{color.gray.150.value}"
         },
-        "18": {
+        "color-18": {
             "value": "{color.gray.100.value}"
         },
-        "19": {
+        "color-19": {
             "value": "{color.gray.50.value}"
         },
-        "20": {
+        "color-20": {
             "value": "{color.gray.0.value}"
         }
     }

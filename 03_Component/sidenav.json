@@ -2,10 +2,10 @@
   "sidenav": {
     "background-color": {
       "base": {
-        "value": "{theme.3.value}"
+        "value": "{theme.color-3.value}"
       },
       "hover": {
-        "value": "{theme.3.value}"
+        "value": "{theme.color-3.value}"
       }
     },
     "border-color": {

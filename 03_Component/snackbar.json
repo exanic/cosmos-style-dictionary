@@ -13,7 +13,10 @@
             "icon-color": {
                 "value": "{success.text-color.base.value}"
             },
-            "action-color": {
+            "background-color": {
+                "value": "{success.color.base.value}"
+            },
+            "action-background-color": {
                 "base": {
                     "value": "{success.color.base.value}"
                 },
@@ -29,9 +32,6 @@
                 "disabled": {
                     "value": "{success.color.disabled.value}"
                 }
-            },
-            "background-color": {
-                "value": "{success.color.base.value}"
             }
         },
         "info": {
@@ -41,7 +41,10 @@
             "icon-color": {
                 "value": "{info.text-color.base.value}"
             },
-            "action-color": {
+            "background-color": {
+                "value": "{info.color.base.value}"
+            },
+            "action-background-color": {
                 "base": {
                     "value": "{info.color.base.value}"
                 },
@@ -57,9 +60,6 @@
                 "disabled": {
                     "value": "{info.color.disabled.value}"
                 }
-            },
-            "background-color": {
-                "value": "{info.color.base.value}"
             }
         },
         "warning": {
@@ -69,7 +69,10 @@
             "icon-color": {
                 "value": "{warning.text-color.base.value}"
             },
-            "action-color": {
+            "background-color": {
+                "value": "{warning.color.base.value}"
+            },
+            "action-background-color": {
                 "base": {
                     "value": "{warning.color.base.value}"
                 },
@@ -85,9 +88,6 @@
                 "disabled": {
                     "value": "{warning.color.disabled.value}"
                 }
-            },
-            "background-color": {
-                "value": "{warning.color.base.value}"
             }
         },
         "danger": {
@@ -97,7 +97,10 @@
             "icon-color": {
                 "value": "{danger.text-color.base.value}"
             },
-            "action-color": {
+            "background-color": {
+                "value": "{danger.color.base.value}"
+            },
+            "action-background-color": {
                 "base": {
                     "value": "{danger.color.base.value}"
                 },
@@ -113,9 +116,6 @@
                 "disabled": {
                     "value": "{danger.color.disabled.value}"
                 }
-            },
-            "background-color": {
-                "value": "{danger.color.base.value}"
             }
         }
     }

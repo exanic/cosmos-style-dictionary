@@ -20,7 +20,7 @@
   },
   "typography": {
     "typography": {
-      "headline-1": {
+      "$headline-1": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-0.value}",
@@ -30,7 +30,7 @@
           "paragraphSpacing": "{typography.headline-1.paragraph-spacing.value}"
         }
       },
-      "headline-2": {
+      "$headline-2": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-0.value}",
@@ -40,7 +40,7 @@
           "paragraphSpacing": "{typography.headline-2.paragraph-spacing.value}"
         }
       },
-      "headline-3": {
+      "$headline-3": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -50,7 +50,7 @@
           "paragraphSpacing": "{typography.headline-3.paragraph-spacing.value}"
         }
       },
-      "headline-4": {
+      "$headline-4": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -60,7 +60,7 @@
           "paragraphSpacing": "{typography.headline-4.paragraph-spacing.value}"
         }
       },
-      "headline-5": {
+      "$headline-5": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -70,7 +70,7 @@
           "paragraphSpacing": "{typography.headline-5.paragraph-spacing.value}"
         }
       },
-      "headline-6": {
+      "$headline-6": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-3.value}",
@@ -80,7 +80,7 @@
           "paragraphSpacing": "{typography.headline-6.paragraph-spacing.value}"
         }
       },
-      "headline-7": {
+      "$headline-7": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -90,7 +90,7 @@
           "paragraphSpacing": "{typography.headline-7.paragraph-spacing.value}"
         }
       },
-      "headline-8": {
+      "$headline-8": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -100,7 +100,7 @@
           "paragraphSpacing": "{typography.headline-8.paragraph-spacing.value}"
         }
       },
-      "headline-9": {
+      "$headline-9": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -110,7 +110,7 @@
           "paragraphSpacing": "{typography.headline-9.paragraph-spacing.value}"
         }
       },
-      "subtitle-1": {
+      "$subtitle-1": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -120,7 +120,7 @@
           "paragraphSpacing": "{typography.subtitle-1.paragraph-spacing.value}"
         }
       },
-      "subtitle-2": {
+      "$subtitle-2": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -130,7 +130,7 @@
           "paragraphSpacing": "{typography.subtitle-2.paragraph-spacing.value}"
         }
       },
-      "body-1": {
+      "$body-1": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -140,7 +140,7 @@
           "paragraphSpacing": "{typography.body-1.paragraph-spacing.value}"
         }
       },
-      "body-2": {
+      "$body-2": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -150,7 +150,7 @@
           "paragraphSpacing": "{typography.body-2.paragraph-spacing.value}"
         }
       },
-      "button": {
+      "$button": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -160,7 +160,7 @@
           "paragraphSpacing": "{typography.button.paragraph-spacing.value}"
         }
       },
-      "caption": {
+      "$caption": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-1.value}",
@@ -170,7 +170,7 @@
           "paragraphSpacing": "{typography.caption.paragraph-spacing.value}"
         }
       },
-      "overline": {
+      "$overline": {
         "value": {
           "fontFamily": "{fontFamilies.font-roboto.value}",
           "fontWeight": "{fontWeights.font-roboto-2.value}",
@@ -183,367 +183,367 @@
     }
   },
   "spacing": {
-    "spacing_none": {
+    "$size_spacing_none": {
       "value": "{size.spacing.none.value}"
     },
-    "spacing_xxs": {
+    "$size_spacing_xxs": {
       "value": "{size.spacing.xxs.value}"
     },
-    "spacing_xs": {
+    "$size_spacing_xs": {
       "value": "{size.spacing.xs.value}"
     },
-    "spacing_s": {
+    "$size_spacing_s": {
       "value": "{size.spacing.s.value}"
     },
-    "spacing_m": {
+    "$size_spacing_m": {
       "value": "{size.spacing.m.value}"
     },
-    "spacing_l": {
+    "$size_spacing_l": {
       "value": "{size.spacing.l.value}"
     },
-    "spacing_xl": {
+    "$size_spacing_xl": {
       "value": "{size.spacing.xl.value}"
     },
-    "spacing_xxl": {
+    "$size_spacing_xxl": {
       "value": "{size.spacing.xxl.value}"
     }
   },
   "borderRadius": {
-    "border-radius_none": {
+    "$size_border-radius_none": {
       "value": "{size.border-radius.none.value}"
     },
-    "border-radius_xs": {
+    "$size_border-radius_xs": {
       "value": "{size.border-radius.xs.value}"
     },
-    "border-radius_s": {
+    "$size_border-radius_s": {
       "value": "{size.border-radius.s.value}"
     },
-    "border-radius_m": {
+    "$size_border-radius_m": {
       "value": "{size.border-radius.m.value}"
     },
-    "border-radius_l": {
+    "$size_border-radius_l": {
       "value": "{size.border-radius.l.value}"
     },
-    "border-radius_xl": {
+    "$size_border-radius_xl": {
       "value": "{size.border-radius.xl.value}"
     },
-    "border-radius_circle": {
+    "$size_border-radius_circle": {
       "value": "{size.border-radius.circle.value}"
     }
   },
   "color": {
     "color": {
-      "white-base": {
+      "$white-base": {
         "value": "{color.white.base.value}"
       },
-      "gray-0": {
+      "$gray-0": {
         "value": "{color.gray.0.value}"
       },
-      "gray-50": {
+      "$gray-50": {
         "value": "{color.gray.50.value}"
       },
-      "gray-100": {
+      "$gray-100": {
         "value": "{color.gray.100.value}"
       },
-      "gray-150": {
+      "$gray-150": {
         "value": "{color.gray.150.value}"
       },
-      "gray-200": {
+      "$gray-200": {
         "value": "{color.gray.200.value}"
       },
-      "gray-250": {
+      "$gray-250": {
         "value": "{color.gray.250.value}"
       },
-      "gray-300": {
+      "$gray-300": {
         "value": "{color.gray.300.value}"
       },
-      "gray-350": {
+      "$gray-350": {
         "value": "{color.gray.350.value}"
       },
-      "gray-400": {
+      "$gray-400": {
         "value": "{color.gray.400.value}"
       },
-      "gray-450": {
+      "$gray-450": {
         "value": "{color.gray.450.value}"
       },
-      "gray-500": {
+      "$gray-500": {
         "value": "{color.gray.500.value}"
       },
-      "gray-550": {
+      "$gray-550": {
         "value": "{color.gray.550.value}"
       },
-      "gray-600": {
+      "$gray-600": {
         "value": "{color.gray.600.value}"
       },
-      "gray-650": {
+      "$gray-650": {
         "value": "{color.gray.650.value}"
       },
-      "gray-700": {
+      "$gray-700": {
         "value": "{color.gray.700.value}"
       },
-      "gray-750": {
+      "$gray-750": {
         "value": "{color.gray.750.value}"
       },
-      "gray-800": {
+      "$gray-800": {
         "value": "{color.gray.800.value}"
       },
-      "gray-850": {
+      "$gray-850": {
         "value": "{color.gray.850.value}"
       },
-      "gray-900": {
+      "$gray-900": {
         "value": "{color.gray.900.value}"
       },
-      "gray-950": {
+      "$gray-950": {
         "value": "{color.gray.950.value}"
       },
-      "black-o25": {
+      "$black-o25": {
         "value": "{color.black.o25.value}"
       },
-      "black-o50": {
+      "$black-o50": {
         "value": "{color.black.o50.value}"
       },
-      "black-o75": {
+      "$black-o75": {
         "value": "{color.black.o75.value}"
       },
-      "black-o100": {
+      "$black-o100": {
         "value": "{color.black.o100.value}"
       },
       "white-o25": {
         "value": "{color.white.o25.value}"
       },
-      "white-o50": {
+      "$white-o50": {
         "value": "{color.white.o50.value}"
       },
-      "white-o75": {
+      "$white-o75": {
         "value": "{color.white.o75.value}"
       },
-      "white-o100": {
+      "$white-o100": {
         "value": "{color.white.o100.value}"
       },
-      "red-50": {
+      "$red-50": {
         "value": "{color.red.50.value}"
       },
-      "red-100": {
+      "$red-100": {
         "value": "{color.red.100.value}"
       },
-      "red-200": {
+      "$red-200": {
         "value": "{color.red.200.value}"
       },
-      "red-300": {
+      "$red-300": {
         "value": "{color.red.300.value}"
       },
-      "red-400": {
+      "$red-400": {
         "value": "{color.red.400.value}"
       },
-      "red-500": {
+      "$red-500": {
         "value": "{color.red.500.value}"
       },
-      "red-600": {
+      "$red-600": {
         "value": "{color.red.600.value}"
       },
-      "red-700": {
+      "$red-700": {
         "value": "{color.red.700.value}"
       },
-      "red-800": {
+      "$red-800": {
         "value": "{color.red.800.value}"
       },
-      "red-900": {
+      "$red-900": {
         "value": "{color.red.900.value}"
       },
-      "red-a100": {
+      "$red-a100": {
         "value": "{color.red.a100.value}"
       },
-      "red-a200": {
+      "$red-a200": {
         "value": "{color.red.a200.value}"
       },
-      "red-a400": {
+      "$red-a400": {
         "value": "{color.red.a400.value}"
       },
-      "red-a700": {
+      "$red-a700": {
         "value": "{color.red.a700.value}"
       },
-      "blue-50": {
+      "$blue-50": {
         "value": "{color.blue.50.value}"
       },
-      "blue-100": {
+      "$blue-100": {
         "value": "{color.blue.100.value}"
       },
-      "blue-200": {
+      "$blue-200": {
         "value": "{color.blue.200.value}"
       },
-      "blue-300": {
+      "$blue-300": {
         "value": "{color.blue.300.value}"
       },
-      "blue-400": {
+      "$blue-400": {
         "value": "{color.blue.400.value}"
       },
-      "blue-500": {
+      "$blue-500": {
         "value": "{color.blue.500.value}"
       },
-      "blue-600": {
+      "$blue-600": {
         "value": "{color.blue.600.value}"
       },
-      "blue-700": {
+      "$blue-700": {
         "value": "{color.blue.700.value}"
       },
-      "blue-800": {
+      "$blue-800": {
         "value": "{color.blue.800.value}"
       },
-      "blue-900": {
+      "$blue-900": {
         "value": "{color.blue.900.value}"
       },
-      "blue-a100": {
+      "$blue-a100": {
         "value": "{color.blue.a100.value}"
       },
-      "blue-a200": {
+      "$blue-a200": {
         "value": "{color.blue.a200.value}"
       },
-      "blue-a400": {
+      "$blue-a400": {
         "value": "{color.blue.a400.value}"
       },
-      "blue-a700": {
+      "$blue-a700": {
         "value": "{color.blue.a700.value}"
       },
-      "teal-50": {
+      "$teal-50": {
         "value": "{color.teal.50.value}"
       },
-      "teal-100": {
+      "$teal-100": {
         "value": "{color.teal.100.value}"
       },
-      "teal-200": {
+      "$teal-200": {
         "value": "{color.teal.200.value}"
       },
-      "teal-300": {
+      "$teal-300": {
         "value": "{color.teal.300.value}"
       },
-      "teal-400": {
+      "$teal-400": {
         "value": "{color.teal.400.value}"
       },
-      "teal-500": {
+      "$teal-500": {
         "value": "{color.teal.500.value}"
       },
-      "teal-600": {
+      "$teal-600": {
         "value": "{color.teal.600.value}"
       },
-      "teal-700": {
+      "$teal-700": {
         "value": "{color.teal.700.value}"
       },
-      "teal-800": {
+      "$teal-800": {
         "value": "{color.teal.800.value}"
       },
-      "teal-900": {
+      "$teal-900": {
         "value": "{color.teal.900.value}"
       },
-      "teal-a100": {
+      "$teal-a100": {
         "value": "{color.teal.a100.value}"
       },
-      "teal-a200": {
+      "$teal-a200": {
         "value": "{color.teal.a200.value}"
       },
-      "teal-a400": {
+      "$teal-a400": {
         "value": "{color.teal.a400.value}"
       },
-      "teal-a700": {
+      "$teal-a700": {
         "value": "{color.teal.a700.value}"
       },
-      "yellow-50": {
+      "$yellow-50": {
         "value": "{color.yellow.50.value}"
       },
-      "yellow-100": {
+      "$yellow-100": {
         "value": "{color.yellow.100.value}"
       },
-      "yellow-200": {
+      "$yellow-200": {
         "value": "{color.yellow.200.value}"
       },
-      "yellow-300": {
+      "$yellow-300": {
         "value": "{color.yellow.300.value}"
       },
-      "yellow-400": {
+      "$yellow-400": {
         "value": "{color.yellow.400.value}"
       },
-      "yellow-500": {
+      "$yellow-500": {
         "value": "{color.yellow.500.value}"
       },
-      "yellow-600": {
+      "$yellow-600": {
         "value": "{color.yellow.600.value}"
       },
-      "yellow-700": {
+      "$yellow-700": {
         "value": "{color.yellow.700.value}"
       },
-      "yellow-800": {
+      "$yellow-800": {
         "value": "{color.yellow.800.value}"
       },
-      "yellow-900": {
+      "$yellow-900": {
         "value": "{color.yellow.900.value}"
       },
-      "yellow-a100": {
+      "$yellow-a100": {
         "value": "{color.yellow.a100.value}"
       },
-      "yellow-a200": {
+      "$yellow-a200": {
         "value": "{color.yellow.a200.value}"
       },
-      "yellow-a400": {
+      "$yellow-a400": {
         "value": "{color.yellow.a400.value}"
       },
-      "yellow-a700": {
+      "$yellow-a700": {
         "value": "{color.yellow.a700.value}"
       },
-      "green-50": {
+      "$green-50": {
         "value": "{color.green.50.value}"
       },
-      "green-100": {
+      "$green-100": {
         "value": "{color.green.100.value}"
       },
-      "green-200": {
+      "$green-200": {
         "value": "{color.green.200.value}"
       },
-      "green-300": {
+      "$green-300": {
         "value": "{color.green.300.value}"
       },
-      "green-400": {
+      "$green-400": {
         "value": "{color.green.400.value}"
       },
-      "green-500": {
+      "$green-500": {
         "value": "{color.green.500.value}"
       },
-      "green-600": {
+      "$green-600": {
         "value": "{color.green.600.value}"
       },
-      "green-700": {
+      "$green-700": {
         "value": "{color.green.700.value}"
       },
-      "green-800": {
+      "$green-800": {
         "value": "{color.green.800.value}"
       },
-      "green-900": {
+      "$green-900": {
         "value": "{color.green.900.value}"
       },
-      "green-a100": {
+      "$green-a100": {
         "value": "{color.green.a100.value}"
       },
-      "green-a200": {
+      "$green-a200": {
         "value": "{color.green.a200.value}"
       },
-      "green-a400": {
+      "$green-a400": {
         "value": "{color.green.a400.value}"
       },
-      "green-a700": {
+      "$green-a700": {
         "value": "{color.green.a700.value}"
 
       }
     }
   },
   "opacity": {
-    "10%": {
+    "$10%": {
       "value": "{opacity.10.value}"
     },
-    "25%": {
+    "$25%": {
       "value": "{opacity.25.value}"
     },
-    "50%": {
+    "$50%": {
       "value": "{opacity.50.value}"
     },
-    "80%": {
+    "$80%": {
       "value": "{opacity.80.value}"
     }
   }

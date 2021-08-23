@@ -154,10 +154,10 @@
     },
     "theme-background-palette": {
       "status-bar": {
-        "value": "{theme.3.value}"
+        "value": "{theme.color-3.value}"
       },
       "app-bar": {
-        "value": "{theme.3.value}"
+        "value": "{theme.color-3.value}"
       },
       "background": {
         "value": "{body.background-color.value}"
@@ -173,28 +173,28 @@
         "value": "{card.background-color.value}"
       },
       "disabled-button": {
-        "value": "{theme.5.value}"
+        "value": "{theme.color-5.value}"
       },
       "raised-button": {
         "value": "{color.white.base.value}"
       },
       "focused-button": {
-        "value": "{theme.6.value}"
+        "value": "{theme.color-6.value}"
       },
       "selected-button": {
-        "value": "{theme.7.value}"
+        "value": "{theme.color-7.value}"
       },
       "selected-disabled-button": {
-        "value": "{theme.5.value}"
+        "value": "{theme.color-5.value}"
       },
       "disabled-button-toggle": {
-        "value": "{theme.5.value}"
+        "value": "{theme.color-5.value}"
       },
       "unselected-chip": {
         "value": "{chip.background-color.base.value}"
       },
       "disabled-list-option": {
-        "value": "{theme.5.value}"
+        "value": "{theme.color-5.value}"
       },
       "tooltip": {
         "value": "{content.standard.value}"

@@ -27,19 +27,17 @@
     }
   },
   "primary-accent": {
-    "color": {
-      "1": {
-        "value": "{color.blue.a100.value}"
-      },
-      "2": {
-        "value": "{color.blue.a200.value}"
-      },
-      "3": {
-        "value": "{color.blue.a400.value}"
-      },
-      "4": {
-        "value": "{color.blue.a700.value}"
-      }
+    "color-1": {
+      "value": "{color.blue.a100.value}"
+    },
+    "color-2": {
+      "value": "{color.blue.a200.value}"
+    },
+    "color-3": {
+      "value": "{color.blue.a400.value}"
+    },
+    "color-4": {
+      "value": "{color.blue.a700.value}"
     }
   },
   "secondary": {
@@ -70,19 +68,17 @@
     }
   },
   "secondary-accent": {
-    "color": {
-      "1": {
-        "value": "{color.teal.a100.value}"
-      },
-      "2": {
-        "value": "{color.teal.a200.value}"
-      },
-      "3": {
-        "value": "{color.teal.a400.value}"
-      },
-      "4": {
-        "value": "{color.teal.a700.value}"
-      }
+    "color-1": {
+      "value": "{color.teal.a100.value}"
+    },
+    "color-2": {
+      "value": "{color.teal.a200.value}"
+    },
+    "color-3": {
+      "value": "{color.teal.a400.value}"
+    },
+    "color-4": {
+      "value": "{color.teal.a700.value}"
     }
   }
 }

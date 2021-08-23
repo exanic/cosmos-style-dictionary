@@ -1,18 +1,16 @@
 {
     "button": {
-        "padding": {
-            "top": {
-                "value": "{size.spacing.xs.value}"
-            },
-            "right": {
-                "value": "{size.spacing.m.value}"
-            },
-            "bottom": {
-                "value": "{size.spacing.xs.value}"
-            },
-            "left": {
-                "value": "{size.spacing.m.value}"
-            }
+        "padding-top": {
+            "value": "{size.spacing.xs.value}"
+        },
+        "padding-right": {
+            "value": "{size.spacing.m.value}"
+        },
+        "padding-bottom": {
+            "value": "{size.spacing.xs.value}"
+        },
+        "padding-left": {
+            "value": "{size.spacing.m.value}"
         },
         "gap": {
             "value": "{size.spacing.xs.value}"
@@ -52,7 +50,7 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{theme.5.value}"
+                    "value": "{theme.color-5.value}"
                 }
             },
             "border-color": {
@@ -69,7 +67,7 @@
                     "value": "{primary.color.hover.value}"
                 },
                 "disabled": {
-                    "value": "{theme.5.value}"
+                    "value": "{theme.color-5.value}"
                 }
             }
         },
@@ -113,19 +111,19 @@
             },
             "border-color": {
                 "base": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.color-8.value}"
                 },
                 "active": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.color-8.value}"
                 },
                 "focus": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.color-8.value}"
                 },
                 "hover": {
-                    "value": "{theme.8.value}"
+                    "value": "{theme.color-8.value}"
                 },
                 "disabled": {
-                    "value": "{theme.5.value}"
+                    "value": "{theme.color-5.value}"
                 }
             }
         },
