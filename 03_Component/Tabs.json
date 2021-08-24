@@ -4,18 +4,21 @@
             "value": "{size.spacing.none.value}"
         },
         "padding-right": {
-            "value": "{size.spacing.none.value}"
+            "value": "{size.spacing.m.value}"
         },
         "padding-bottom": {
             "value": "{size.spacing.none.value}"
         },
         "padding-left": {
-            "value": "{size.spacing.none.value}"
+            "value": "{size.spacing.m.value}"
+        },
+        "gap": {
+            "value": "{size.spacing.m.value}"
         },
         "border-radius": {
             "value": "{size.border-radius.none.value}"
         },
-        "default-tab": {
+        "default": {
             "text-color": {
                 "base": {
                     "value": "{content.subtle.value}"
@@ -74,7 +77,7 @@
                 }
             }
         },
-        "selected-tab": {
+        "selected": {
             "text-color": {
                 "base": {
                     "value": "{content.standard.value}"

@@ -21,6 +21,23 @@
           "value": "{content.disabled.value}"
         }
       },
+      "icon-background-color": {
+        "base": {
+          "value": "{color.transparent.base.value}"
+        },
+        "active": {
+          "value": "{color.transparent.base.value}"
+        },
+        "focus": {
+          "value": "{color.transparent.base.value}"
+        },
+        "hover": {
+          "value": "{color.transparent.base.value}"
+        },
+        "disabled": {
+          "value": "{color.transparent.base.value}"
+        }
+      },
       "ripple-background-color": {
         "base": {
           "value": "{color.transparent.base.value}"
@@ -79,6 +96,23 @@
         },
         "disabled": {
           "value": "{primary.text-color.disabled.value}"
+        }
+      },
+      "icon-background-color": {
+        "base": {
+          "value": "{primary.color.base.value}"
+        },
+        "active": {
+          "value": "{primary.color.base.value}"
+        },
+        "focus": {
+          "value": "{primary.color.base.value}"
+        },
+        "hover": {
+          "value": "{primary.color.base.value}"
+        },
+        "disabled": {
+          "value": "{content.disabled.value}"
         }
       },
       "ripple-background-color": {

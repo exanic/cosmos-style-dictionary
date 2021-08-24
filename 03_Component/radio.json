@@ -23,7 +23,7 @@
       },
       "ripple-background-color": {
         "base": {
-          "value": "{theme.color-8.value}"
+          "value": "{color.transparent.base.value}"
         },
         "active": {
           "value": "{theme.color-8.value}",
@@ -82,7 +82,7 @@
       },
       "ripple-background-color": {
         "base": {
-          "value": "{primary.color.base.value}"
+          "value": "{color.transparent.base.value}"
         },
         "active": {
           "value": "{primary.color.base.value}",

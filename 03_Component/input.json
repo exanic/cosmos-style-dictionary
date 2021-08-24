@@ -12,6 +12,9 @@
     "padding-left": {
       "value": "{size.spacing.m.value}"
     },
+    "gap": {
+      "value": "{size.spacing.xs.value}"
+    },
     "border-radius": {
       "value": "{size.border-radius.s.value}"
     },
