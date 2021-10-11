@@ -333,10 +333,10 @@ console.log('\n==============================================');
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
         StyleDictionary.buildPlatform('json/figma');
     });
-    ['component_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
-        StyleDictionary.buildPlatform('json/figma');
-    });
+    // ['component_tokens'].map(function (file) {
+    //     const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
+    //     StyleDictionary.buildPlatform('json/figma');
+    // });
 });
 
 console.log('\n==============================================');

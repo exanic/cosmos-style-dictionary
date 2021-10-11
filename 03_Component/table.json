@@ -5,7 +5,7 @@
         "value": "{theme.color-0.value}"
       },
       "hover": {
-        "value": "{theme.color-1.value}"
+        "value": "{theme.color-2.value}"
       }
     }
   }

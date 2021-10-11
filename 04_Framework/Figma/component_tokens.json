@@ -1,20 +1,57 @@
 {
+  "size": {
+    "height-button": {
+      "$button_medium-no-icon_height": {
+        "value": "{button.medium-no-icon.height.value}"
+      },
+      "$button_medium-with-icon_height": {
+        "value": "{button.medium-no-icon.height.value}"
+      },
+      "$button_small-no-icon_height": {
+        "value": "{button.small-no-icon.height.value}"
+      },
+      "$button_small-with-icon_height": {
+        "value": "{button.small-no-icon.height.value}"
+      }
+    }
+  },
   "spacing": {
     "spacing-button": {
-      "$button_padding-top": {
-        "value": "{button.padding-top.value}"
+      "$button_medium-no-icon_padding-right": {
+        "value": "{button.medium-no-icon.padding-right.value}"
       },
-      "$button_padding-right": {
-        "value": "{button.padding-right.value}"
+      "$button_medium-no-icon_padding-left": {
+        "value": "{button.medium-no-icon.padding-left.value}"
       },
-      "$button_padding-bottom": {
-        "value": "{button.padding-bottom.value}"
+      "$button_medium-no-icon_gap": {
+        "value": "{button.medium-no-icon.gap.value}"
       },
-      "$button_padding-left": {
-        "value": "{button.padding-left.value}"
+      "$button_medium-with-icon_padding-right": {
+        "value": "{button.medium-with-icon.padding-right.value}"
       },
-      "$button_gap": {
-        "value": "{button.gap.value}"
+      "$button_medium-with-icon_padding-left": {
+        "value": "{button.medium-with-icon.padding-left.value}"
+      },
+      "$button_medium-with-icon_gap": {
+        "value": "{button.medium-with-icon.gap.value}"
+      },
+      "$button_small-no-icon_padding-right": {
+        "value": "{button.small-no-icon.padding-right.value}"
+      },
+      "$button_small-no-icon_padding-left": {
+        "value": "{button.small-no-icon.padding-left.value}"
+      },
+      "$button_small-no-icon_gap": {
+        "value": "{button.small-no-icon.gap.value}"
+      },
+      "$button_small-with-icon_padding-right": {
+        "value": "{button.small-with-icon.padding-right.value}"
+      },
+      "$button_small-with-icon_padding-left": {
+        "value": "{button.small-with-icon.padding-left.value}"
+      },
+      "$button_small-with-icon_gap": {
+        "value": "{button.small-with-icon.gap.value}"
       }
     },
     "spacing-chip": {

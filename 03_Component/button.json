@@ -1,22 +1,72 @@
 {
     "button": {
-        "padding-top": {
-            "value": "{size.spacing.xs.value}"
+        "medium-no-icon": {
+            "padding-right": {
+                "value": "{size.spacing.m.value}"
+            },
+            "padding-left": {
+                "value": "{size.spacing.m.value}"
+            },
+            "gap": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "border-radius": {
+                "value": "{size.border-radius.s.value}"
+            },
+            "height": {
+                "value": "{size.height.m.value}"
+            }
         },
-        "padding-right": {
-            "value": "{size.spacing.m.value}"
+        "medium-with-icon": {
+            "padding-right": {
+                "value": "{size.spacing.m.value}"
+            },
+            "padding-left": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "gap": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "border-radius": {
+                "value": "{size.border-radius.s.value}"
+            },
+            "height": {
+                "value": "{size.height.m.value}"
+            }
         },
-        "padding-bottom": {
-            "value": "{size.spacing.xs.value}"
+        "small-no-icon": {
+            "padding-right": {
+                "value": "{size.spacing.m.value}"
+            },
+            "padding-left": {
+                "value": "{size.spacing.m.value}"
+            },
+            "gap": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "border-radius": {
+                "value": "{size.border-radius.s.value}"
+            },
+            "height": {
+                "value": "{size.height.l.value}"
+            }
         },
-        "padding-left": {
-            "value": "{size.spacing.m.value}"
-        },
-        "gap": {
-            "value": "{size.spacing.xs.value}"
-        },
-        "border-radius": {
-            "value": "{size.border-radius.s.value}"
+        "small-with-icon": {
+            "padding-right": {
+                "value": "{size.spacing.m.value}"
+            },
+            "padding-left": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "gap": {
+                "value": "{size.spacing.xs.value}"
+            },
+            "border-radius": {
+                "value": "{size.border-radius.s.value}"
+            },
+            "height": {
+                "value": "{size.height.l.value}"
+            }
         },
         "primary": {
             "text-color": {
