@@ -131,7 +131,7 @@
   "borderRadius": {
     "radius-button": {
       "$button_border-radius": {
-        "value": "{button.border-radius.value}"
+        "value": "{checkbox.ripple-border-radius.value}"
       }
     },
     "radius-checkbox": {

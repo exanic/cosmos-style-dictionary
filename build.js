@@ -239,10 +239,12 @@ StyleDictionaryPackage.registerTransform({
         return token.attributes.category === 'size';
     },
     transformer: (token) => {
-        if (token.value.endsWith('px'))
-            return parseFloat(token.value.replace('px', ''));
-        else
-            return token.value;
+        if (token.value.length > 0) {
+            if (token.value.endsWith('px'))
+                return parseFloat(token.value.replace('px', ''));
+            else
+                return token.value;
+        }
     }
 });
 
