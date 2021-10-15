@@ -1,17 +1,17 @@
 {
-  "size": {
+  "height": {
     "height-button": {
       "$button_medium-no-icon_height": {
         "value": "{button.medium-no-icon.height.value}"
       },
       "$button_medium-with-icon_height": {
-        "value": "{button.medium-no-icon.height.value}"
+        "value": "{button.medium-with-icon.height.value}"
       },
       "$button_small-no-icon_height": {
         "value": "{button.small-no-icon.height.value}"
       },
       "$button_small-with-icon_height": {
-        "value": "{button.small-no-icon.height.value}"
+        "value": "{button.small-with-icon.height.value}"
       }
     }
   },
@@ -131,7 +131,7 @@
   "borderRadius": {
     "radius-button": {
       "$button_border-radius": {
-        "value": "{checkbox.ripple-border-radius.value}"
+        "value": "{button.medium-no-icon.border-radius.value}"
       }
     },
     "radius-checkbox": {

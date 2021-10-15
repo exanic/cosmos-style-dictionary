@@ -14,7 +14,7 @@
                 "value": "{size.border-radius.s.value}"
             },
             "height": {
-                "value": "{size.height.m.value}"
+                "value": "{size.height.l.value}"
             }
         },
         "medium-with-icon": {
@@ -31,7 +31,7 @@
                 "value": "{size.border-radius.s.value}"
             },
             "height": {
-                "value": "{size.height.m.value}"
+                "value": "{size.height.l.value}"
             }
         },
         "small-no-icon": {
@@ -48,7 +48,7 @@
                 "value": "{size.border-radius.s.value}"
             },
             "height": {
-                "value": "{size.height.l.value}"
+                "value": "{size.height.m.value}"
             }
         },
         "small-with-icon": {
@@ -65,7 +65,7 @@
                 "value": "{size.border-radius.s.value}"
             },
             "height": {
-                "value": "{size.height.l.value}"
+                "value": "{size.height.m.value}"
             }
         },
         "primary": {
