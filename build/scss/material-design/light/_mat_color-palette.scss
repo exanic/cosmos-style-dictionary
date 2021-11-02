@@ -1,0 +1,313 @@
+
+/**
+ * Do not edit directly
+ * Generated on Thu, 21 Oct 2021 11:38:04 GMT
+ */
+
+$mat-light-primary-text: rgb(255, 255, 255);
+$mat-dark-primary-text: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-50: rgb(227, 242, 253);
+$mat-primary-palette-100: rgb(187, 222, 251);
+$mat-primary-palette-200: rgb(144, 202, 249);
+$mat-primary-palette-300: rgb(100, 181, 246);
+$mat-primary-palette-400: rgb(66, 165, 245);
+$mat-primary-palette-500: rgb(25, 118, 210);
+$mat-primary-palette-600: rgb(30, 136, 229);
+$mat-primary-palette-700: rgb(25, 118, 210);
+$mat-primary-palette-800: rgb(21, 101, 192);
+$mat-primary-palette-900: rgb(13, 71, 161);
+$mat-primary-palette-a100: rgb(130, 177, 255);
+$mat-primary-palette-a200: rgb(68, 138, 255);
+$mat-primary-palette-a400: rgb(41, 121, 255);
+$mat-primary-palette-a700: rgb(41, 98, 255);
+$mat-primary-palette-contrast-50: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-100: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-200: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-300: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-400: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-500: rgb(255, 255, 255);
+$mat-primary-palette-contrast-600: rgb(255, 255, 255);
+$mat-primary-palette-contrast-700: rgb(255, 255, 255);
+$mat-primary-palette-contrast-800: rgb(255, 255, 255);
+$mat-primary-palette-contrast-900: rgb(255, 255, 255);
+$mat-primary-palette-contrast-a100: rgba(0, 0, 0, 0.88);
+$mat-primary-palette-contrast-a200: rgb(255, 255, 255);
+$mat-primary-palette-contrast-a400: rgb(255, 255, 255);
+$mat-primary-palette-contrast-a700: rgb(255, 255, 255);
+$mat-info-palette-50: rgb(227, 242, 253);
+$mat-info-palette-100: rgb(187, 222, 251);
+$mat-info-palette-200: rgb(144, 202, 249);
+$mat-info-palette-300: rgb(100, 181, 246);
+$mat-info-palette-400: rgb(66, 165, 245);
+$mat-info-palette-500: rgb(25, 118, 210);
+$mat-info-palette-600: rgb(30, 136, 229);
+$mat-info-palette-700: rgb(25, 118, 210);
+$mat-info-palette-800: rgb(21, 101, 192);
+$mat-info-palette-900: rgb(13, 71, 161);
+$mat-info-palette-a100: rgb(130, 177, 255);
+$mat-info-palette-a200: rgb(68, 138, 255);
+$mat-info-palette-a400: rgb(41, 121, 255);
+$mat-info-palette-a700: rgb(41, 98, 255);
+$mat-info-palette-contrast-50: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-100: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-200: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-300: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-400: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-500: rgb(255, 255, 255);
+$mat-info-palette-contrast-600: rgb(255, 255, 255);
+$mat-info-palette-contrast-700: rgb(255, 255, 255);
+$mat-info-palette-contrast-800: rgb(255, 255, 255);
+$mat-info-palette-contrast-900: rgb(255, 255, 255);
+$mat-info-palette-contrast-a100: rgba(0, 0, 0, 0.88);
+$mat-info-palette-contrast-a200: rgb(255, 255, 255);
+$mat-info-palette-contrast-a400: rgb(255, 255, 255);
+$mat-info-palette-contrast-a700: rgb(255, 255, 255);
+$mat-success-palette-50: rgb(232, 245, 233);
+$mat-success-palette-100: rgb(200, 230, 201);
+$mat-success-palette-200: rgb(165, 214, 167);
+$mat-success-palette-300: rgb(129, 199, 132);
+$mat-success-palette-400: rgb(102, 187, 106);
+$mat-success-palette-500: rgb(56, 142, 60);
+$mat-success-palette-600: rgb(67, 160, 71);
+$mat-success-palette-700: rgb(56, 142, 60);
+$mat-success-palette-800: rgb(46, 125, 50);
+$mat-success-palette-900: rgb(27, 94, 32);
+$mat-success-palette-a100: rgb(185, 246, 202);
+$mat-success-palette-a200: rgb(105, 240, 174);
+$mat-success-palette-a400: rgb(0, 230, 118);
+$mat-success-palette-a700: rgb(0, 200, 83);
+$mat-success-palette-contrast-50: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-100: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-200: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-300: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-400: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-500: rgb(255, 255, 255);
+$mat-success-palette-contrast-600: rgb(255, 255, 255);
+$mat-success-palette-contrast-700: rgb(255, 255, 255);
+$mat-success-palette-contrast-800: rgb(255, 255, 255);
+$mat-success-palette-contrast-900: rgb(255, 255, 255);
+$mat-success-palette-contrast-a100: rgba(0, 0, 0, 0.88);
+$mat-success-palette-contrast-a200: rgb(255, 255, 255);
+$mat-success-palette-contrast-a400: rgb(255, 255, 255);
+$mat-success-palette-contrast-a700: rgb(255, 255, 255);
+$mat-warning-palette-50: rgb(255, 253, 231);
+$mat-warning-palette-100: rgb(255, 249, 196);
+$mat-warning-palette-200: rgb(255, 245, 157);
+$mat-warning-palette-300: rgb(255, 241, 118);
+$mat-warning-palette-400: rgb(255, 238, 88);
+$mat-warning-palette-500: rgb(253, 216, 53);
+$mat-warning-palette-600: rgb(253, 216, 53);
+$mat-warning-palette-700: rgb(251, 192, 45);
+$mat-warning-palette-800: rgb(249, 168, 37);
+$mat-warning-palette-900: rgb(245, 127, 23);
+$mat-warning-palette-a100: rgb(255, 255, 141);
+$mat-warning-palette-a200: rgb(255, 255, 0);
+$mat-warning-palette-a400: rgb(255, 234, 0);
+$mat-warning-palette-a700: rgb(255, 214, 0);
+$mat-warning-palette-contrast-50: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-100: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-200: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-300: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-400: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-500: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-600: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-700: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-800: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-900: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-a100: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-a200: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-a400: rgba(0, 0, 0, 0.88);
+$mat-warning-palette-contrast-a700: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-50: rgb(255, 235, 238);
+$mat-danger-palette-100: rgb(255, 205, 210);
+$mat-danger-palette-200: rgb(239, 154, 154);
+$mat-danger-palette-300: rgb(229, 115, 115);
+$mat-danger-palette-400: rgb(239, 83, 80);
+$mat-danger-palette-500: rgb(244, 67, 54);
+$mat-danger-palette-600: rgb(229, 57, 53);
+$mat-danger-palette-700: rgb(211, 47, 47);
+$mat-danger-palette-800: rgb(198, 40, 40);
+$mat-danger-palette-900: rgb(183, 28, 28);
+$mat-danger-palette-a100: rgb(255, 138, 128);
+$mat-danger-palette-a200: rgb(255, 82, 82);
+$mat-danger-palette-a400: rgb(255, 23, 68);
+$mat-danger-palette-a700: rgb(213, 0, 0);
+$mat-danger-palette-contrast-50: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-100: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-200: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-300: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-400: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-500: rgb(255, 255, 255);
+$mat-danger-palette-contrast-600: rgb(255, 255, 255);
+$mat-danger-palette-contrast-700: rgb(255, 255, 255);
+$mat-danger-palette-contrast-800: rgb(255, 255, 255);
+$mat-danger-palette-contrast-900: rgb(255, 255, 255);
+$mat-danger-palette-contrast-a100: rgba(0, 0, 0, 0.88);
+$mat-danger-palette-contrast-a200: rgb(255, 255, 255);
+$mat-danger-palette-contrast-a400: rgb(255, 255, 255);
+$mat-danger-palette-contrast-a700: rgb(255, 255, 255);
+
+$mat-color-palette: (
+  mat-light-primary-text: $mat-light-primary-text,
+  mat-dark-primary-text: $mat-dark-primary-text,
+  mat-primary-palette: (
+    50: $mat-primary-palette-50,
+    100: $mat-primary-palette-100,
+    200: $mat-primary-palette-200,
+    300: $mat-primary-palette-300,
+    400: $mat-primary-palette-400,
+    500: $mat-primary-palette-500,
+    600: $mat-primary-palette-600,
+    700: $mat-primary-palette-700,
+    800: $mat-primary-palette-800,
+    900: $mat-primary-palette-900,
+    a100: $mat-primary-palette-a100,
+    a200: $mat-primary-palette-a200,
+    a400: $mat-primary-palette-a400,
+    a700: $mat-primary-palette-a700,
+    contrast: (
+      50: $mat-primary-palette-contrast-50,
+      100: $mat-primary-palette-contrast-100,
+      200: $mat-primary-palette-contrast-200,
+      300: $mat-primary-palette-contrast-300,
+      400: $mat-primary-palette-contrast-400,
+      500: $mat-primary-palette-contrast-500,
+      600: $mat-primary-palette-contrast-600,
+      700: $mat-primary-palette-contrast-700,
+      800: $mat-primary-palette-contrast-800,
+      900: $mat-primary-palette-contrast-900,
+      a100: $mat-primary-palette-contrast-a100,
+      a200: $mat-primary-palette-contrast-a200,
+      a400: $mat-primary-palette-contrast-a400,
+      a700: $mat-primary-palette-contrast-a700
+    )
+  ),
+  mat-info-palette: (
+    50: $mat-info-palette-50,
+    100: $mat-info-palette-100,
+    200: $mat-info-palette-200,
+    300: $mat-info-palette-300,
+    400: $mat-info-palette-400,
+    500: $mat-info-palette-500,
+    600: $mat-info-palette-600,
+    700: $mat-info-palette-700,
+    800: $mat-info-palette-800,
+    900: $mat-info-palette-900,
+    a100: $mat-info-palette-a100,
+    a200: $mat-info-palette-a200,
+    a400: $mat-info-palette-a400,
+    a700: $mat-info-palette-a700,
+    contrast: (
+      50: $mat-info-palette-contrast-50,
+      100: $mat-info-palette-contrast-100,
+      200: $mat-info-palette-contrast-200,
+      300: $mat-info-palette-contrast-300,
+      400: $mat-info-palette-contrast-400,
+      500: $mat-info-palette-contrast-500,
+      600: $mat-info-palette-contrast-600,
+      700: $mat-info-palette-contrast-700,
+      800: $mat-info-palette-contrast-800,
+      900: $mat-info-palette-contrast-900,
+      a100: $mat-info-palette-contrast-a100,
+      a200: $mat-info-palette-contrast-a200,
+      a400: $mat-info-palette-contrast-a400,
+      a700: $mat-info-palette-contrast-a700
+    )
+  ),
+  mat-success-palette: (
+    50: $mat-success-palette-50,
+    100: $mat-success-palette-100,
+    200: $mat-success-palette-200,
+    300: $mat-success-palette-300,
+    400: $mat-success-palette-400,
+    500: $mat-success-palette-500,
+    600: $mat-success-palette-600,
+    700: $mat-success-palette-700,
+    800: $mat-success-palette-800,
+    900: $mat-success-palette-900,
+    a100: $mat-success-palette-a100,
+    a200: $mat-success-palette-a200,
+    a400: $mat-success-palette-a400,
+    a700: $mat-success-palette-a700,
+    contrast: (
+      50: $mat-success-palette-contrast-50,
+      100: $mat-success-palette-contrast-100,
+      200: $mat-success-palette-contrast-200,
+      300: $mat-success-palette-contrast-300,
+      400: $mat-success-palette-contrast-400,
+      500: $mat-success-palette-contrast-500,
+      600: $mat-success-palette-contrast-600,
+      700: $mat-success-palette-contrast-700,
+      800: $mat-success-palette-contrast-800,
+      900: $mat-success-palette-contrast-900,
+      a100: $mat-success-palette-contrast-a100,
+      a200: $mat-success-palette-contrast-a200,
+      a400: $mat-success-palette-contrast-a400,
+      a700: $mat-success-palette-contrast-a700
+    )
+  ),
+  mat-warning-palette: (
+    50: $mat-warning-palette-50,
+    100: $mat-warning-palette-100,
+    200: $mat-warning-palette-200,
+    300: $mat-warning-palette-300,
+    400: $mat-warning-palette-400,
+    500: $mat-warning-palette-500,
+    600: $mat-warning-palette-600,
+    700: $mat-warning-palette-700,
+    800: $mat-warning-palette-800,
+    900: $mat-warning-palette-900,
+    a100: $mat-warning-palette-a100,
+    a200: $mat-warning-palette-a200,
+    a400: $mat-warning-palette-a400,
+    a700: $mat-warning-palette-a700,
+    contrast: (
+      50: $mat-warning-palette-contrast-50,
+      100: $mat-warning-palette-contrast-100,
+      200: $mat-warning-palette-contrast-200,
+      300: $mat-warning-palette-contrast-300,
+      400: $mat-warning-palette-contrast-400,
+      500: $mat-warning-palette-contrast-500,
+      600: $mat-warning-palette-contrast-600,
+      700: $mat-warning-palette-contrast-700,
+      800: $mat-warning-palette-contrast-800,
+      900: $mat-warning-palette-contrast-900,
+      a100: $mat-warning-palette-contrast-a100,
+      a200: $mat-warning-palette-contrast-a200,
+      a400: $mat-warning-palette-contrast-a400,
+      a700: $mat-warning-palette-contrast-a700
+    )
+  ),
+  mat-danger-palette: (
+    50: $mat-danger-palette-50,
+    100: $mat-danger-palette-100,
+    200: $mat-danger-palette-200,
+    300: $mat-danger-palette-300,
+    400: $mat-danger-palette-400,
+    500: $mat-danger-palette-500,
+    600: $mat-danger-palette-600,
+    700: $mat-danger-palette-700,
+    800: $mat-danger-palette-800,
+    900: $mat-danger-palette-900,
+    a100: $mat-danger-palette-a100,
+    a200: $mat-danger-palette-a200,
+    a400: $mat-danger-palette-a400,
+    a700: $mat-danger-palette-a700,
+    contrast: (
+      50: $mat-danger-palette-contrast-50,
+      100: $mat-danger-palette-contrast-100,
+      200: $mat-danger-palette-contrast-200,
+      300: $mat-danger-palette-contrast-300,
+      400: $mat-danger-palette-contrast-400,
+      500: $mat-danger-palette-contrast-500,
+      600: $mat-danger-palette-contrast-600,
+      700: $mat-danger-palette-contrast-700,
+      800: $mat-danger-palette-contrast-800,
+      900: $mat-danger-palette-contrast-900,
+      a100: $mat-danger-palette-contrast-a100,
+      a200: $mat-danger-palette-contrast-a200,
+      a400: $mat-danger-palette-contrast-a400,
+      a700: $mat-danger-palette-contrast-a700
+    )
+  )
+);

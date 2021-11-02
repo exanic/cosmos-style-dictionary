@@ -112,7 +112,7 @@
           "value": "{primary.color.base.value}"
         },
         "disabled": {
-          "value": "{content.disabled.value}"
+          "value": "{theme.color-5.value}"
         }
       },
       "ripple-background-color": {

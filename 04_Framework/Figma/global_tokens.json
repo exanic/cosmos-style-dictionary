@@ -554,16 +554,16 @@
     }
   },
   "opacity": {
-    "$10%": {
+    "$opacity_10": {
       "value": "{opacity.10.value}"
     },
-    "$25%": {
+    "$opacity_25": {
       "value": "{opacity.25.value}"
     },
-    "$50%": {
+    "$opacity_50": {
       "value": "{opacity.50.value}"
     },
-    "$80%": {
+    "$opacity_80": {
       "value": "{opacity.80.value}"
     }
   }
