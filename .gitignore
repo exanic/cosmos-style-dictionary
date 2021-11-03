@@ -4,3 +4,9 @@
 
 /.vs
 /node_modules
+/build/scss
+/build/json/figma/component_tokens_dark.json
+/build/json/figma/component_tokens_light.json
+/build/json/figma/global_tokens.json
+/build/json/figma/theme_tokens_dark.json
+/build/json/figma/theme_tokens_light.json

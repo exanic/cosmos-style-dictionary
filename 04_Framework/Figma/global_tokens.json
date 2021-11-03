@@ -182,23 +182,23 @@
       }
     }
   },
-  "height":{
-    "$size_height_none":{
+  "height": {
+    "$size_height_none": {
       "value": "{size.height.none.value}"
     },
-    "$size_height_xs":{
+    "$size_height_xs": {
       "value": "{size.height.xs.value}"
     },
-    "$size_height_s":{
+    "$size_height_s": {
       "value": "{size.height.s.value}"
     },
-    "$size_height_m":{
+    "$size_height_m": {
       "value": "{size.height.m.value}"
     },
-    "$size_height_l":{
+    "$size_height_l": {
       "value": "{size.height.l.value}"
     },
-    "$size_height_xl":{
+    "$size_height_xl": {
       "value": "{size.height.xl.value}"
     }
   },
@@ -328,7 +328,7 @@
       "$black-o100": {
         "value": "{color.black.o100.value}"
       },
-      "white-o25": {
+      "$white-o25": {
         "value": "{color.white.o25.value}"
       },
       "$white-o50": {
