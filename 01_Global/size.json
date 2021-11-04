@@ -49,7 +49,7 @@
         "value": "50%"
       }
     },
-    "height": {
+    "sizing": {
       "none": {
         "value": "0px"
       },

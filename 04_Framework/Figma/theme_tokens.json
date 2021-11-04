@@ -92,24 +92,24 @@
       }
     }
   },
-  "height":{
-    "$size_height_none":{
-      "value": "{size.height.none.value}"
+  "sizing": {
+    "$size_height_none": {
+      "value": "{size.sizing.none.value}"
     },
-    "$size_height_xs":{
-      "value": "{size.height.xs.value}"
+    "$size_height_xs": {
+      "value": "{size.sizing.xs.value}"
     },
-    "$size_height_s":{
-      "value": "{size.height.s.value}"
+    "$size_height_s": {
+      "value": "{size.sizing.s.value}"
     },
-    "$size_height_m":{
-      "value": "{size.height.m.value}"
+    "$size_height_m": {
+      "value": "{size.sizing.m.value}"
     },
-    "$size_height_l":{
-      "value": "{size.height.l.value}"
+    "$size_height_l": {
+      "value": "{size.sizing.l.value}"
     },
-    "$size_height_xl":{
-      "value": "{size.height.xl.value}"
+    "$size_height_xl": {
+      "value": "{size.sizing.xl.value}"
     }
   },
   "spacing": {

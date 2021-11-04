@@ -1,5 +1,5 @@
 {
-  "height": {
+  "sizing": {
     "height-button": {
       "$button_medium-no-icon_height": {
         "value": "{button.medium-no-icon.height.value}"
