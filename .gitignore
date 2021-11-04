@@ -10,3 +10,4 @@ build/json/*
 !build/json/figma
 build/json/figma/*
 !build/json/figma/tokens.json
+!build/json/figma/tokens2.json
