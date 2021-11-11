@@ -63,9 +63,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                     {
                         'destination': `${outputFileName}.json`,
                         'format': 'json/figma',
-                        'filter': { 'filePath': includeFile }
+                        'filter': { 'filePath': includeFile },
+                        'options': { 'outputReferences': true }
                     }
-                ]
+                ],
+
             }
         }
     };
@@ -185,15 +187,17 @@ StyleDictionaryPackage.registerFormat({
 
         // Remove Root Level, create Figma specific 'json' Format
         var transformedFigma = '';
-        for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
+        //for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
 
-            for (const [childKey, childValue] of Object.entries(parentValue)) {
-                if (transformedFigma !== '')
-                    transformedFigma += ',';
-                transformedFigma += '"' + childKey.toString() + '": ';
-                transformedFigma += JSON.stringify(childValue, null, 2);
-            }
+        for (const [childKey, childValue] of Object.entries(dictionaryFigma)) {
+            if (transformedFigma !== '')
+                transformedFigma += ',';
+            transformedFigma += '"' + childKey.toString() + '": ';
+            transformedFigma += JSON.stringify(childValue, null, 2);
         }
+        //}
+
+
 
         // Wrap json
         transformedFigma = '{' + transformedFigma + '}';

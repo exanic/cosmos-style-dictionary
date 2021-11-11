@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/exanic/cosmos-style-dictionary#readme",
   "devDependencies": {
-    "style-dictionary": "^3.0.1"
+    "style-dictionary": "^3.0.3"
   }
 }
