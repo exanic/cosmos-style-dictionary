@@ -18,7 +18,7 @@
           "value": "{content.standard.value}"
         },
         "disabled": {
-          "value": "{content.disabled.value}"
+          "value": "{theme.color-5.value}"
         }
       },
       "icon-background-color": {

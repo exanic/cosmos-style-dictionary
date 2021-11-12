@@ -1,0 +1,88 @@
+{
+    "buttonToggle": {
+        "padding_right": {
+            "value": "{size.spacing.m.value}"
+        },
+        "padding_left": {
+            "value": "{size.spacing.m.value}"
+        },
+        "border-radius": {
+            "value": "{size.border-radius.s.value}"
+        },
+        "height": {
+            "value": "{size.sizing.l.value}"
+        },
+        "on": {
+            "text-color": {
+                "base": {
+                    "value": "{primary.text-color.base.value}"
+                },
+                "active": {
+                    "value": "{primary.text-color.base.value}"
+                },
+                "focus": {
+                    "value": "{primary.text-color.base.value}"
+                },
+                "hover": {
+                    "value": "{primary.text-color.base.value}"
+                },
+                "disabled": {
+                    "value": "{content.disabled.value}"
+                }
+            },
+            "background-color": {
+                "base": {
+                    "value": "{primary.color.base.value}"
+                },
+                "active": {
+                    "value": "{primary.color.active.value}"
+                },
+                "focus": {
+                    "value": "{primary.color.focus.value}"
+                },
+                "hover": {
+                    "value": "{primary.color.hover.value}"
+                },
+                "disabled": {
+                    "value": "{theme.color-8.value}"
+                }
+            }
+        },
+        "off": {
+            "text-color": {
+                "base": {
+                    "value": "{content.standard.value}"
+                },
+                "active": {
+                    "value": "{content.standard.value}"
+                },
+                "focus": {
+                    "value": "{content.standard.value}"
+                },
+                "hover": {
+                    "value": "{content.standard.value}"
+                },
+                "disabled": {
+                    "value": "{content.disabled.value}"
+                }
+            },
+            "background-color": {
+                "base": {
+                    "value": "{primary.color.base.value}"
+                },
+                "active": {
+                    "value": "{primary.color.active.value}"
+                },
+                "focus": {
+                    "value": "{primary.color.focus.value}"
+                },
+                "hover": {
+                    "value": "{primary.color.hover.value}"
+                },
+                "disabled": {
+                    "value": "{theme.color-8.value}"
+                }
+            }
+        }
+    }
+}
