@@ -2,7 +2,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { fileHeader, toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
+function getStyleDictionaryConfig(theme, includeFile, outputFileName, category) {
     return {
         'source': [
             '01_Global/*.json',
@@ -64,7 +64,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName) {
                         'destination': `${outputFileName}.json`,
                         'format': 'json/figma',
                         'filter': { 'filePath': includeFile },
-                        'options': { 'outputReferences': true }
+                        'options':
+                        {
+                            'outputReferences': true,
+                            'category': category
+                        }
                     }
                 ],
 
@@ -187,8 +191,8 @@ StyleDictionaryPackage.registerFormat({
 
         // Remove Root Level, create Figma specific 'json' Format
         var transformedFigma = '';
-        //for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
 
+        //for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
         for (const [childKey, childValue] of Object.entries(dictionaryFigma)) {
             if (transformedFigma !== '')
                 transformedFigma += ',';
@@ -197,10 +201,11 @@ StyleDictionaryPackage.registerFormat({
         }
         //}
 
-
+        // Category
+        var category = options.category;
 
         // Wrap json
-        transformedFigma = '{' + transformedFigma + '}';
+        transformedFigma = '{ "' + category + '": \n{\n' + transformedFigma + '\n}\n}';
 
         return transformedFigma;
     }
@@ -304,9 +309,14 @@ StyleDictionaryPackage.registerTransformGroup({
     ]
 });
 
+// Helper Functions
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 // START BUILD
+console.log('\n==============================================\n');
 console.log('Build started...');
-console.log('\n==============================================');
 
 // Angular Material
 ['light', 'dark'].map(function (theme) {
@@ -330,20 +340,45 @@ console.log('\n==============================================');
 
 // Figma
 ['global_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, 'Global'));
     StyleDictionary.buildPlatform('json/figma');
 });
 
 ['light', 'dark'].map(function (theme) {
     ['theme_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
-        StyleDictionary.buildPlatform('json/figma');
-    });
-    ['component_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, capitalizeFirstLetter(theme)));
         StyleDictionary.buildPlatform('json/figma');
     });
 });
 
-console.log('\n==============================================');
-console.log('\nBuild completed!');
+['component_tokens'].map(function (file) {
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, 'Component'));
+    StyleDictionary.buildPlatform('json/figma');
+});
+
+console.log('\nStyle Dicionary Build completed!');
+console.log('\n==============================================\n');
+
+// Merge json Files
+console.log('Figma Bundle started...');
+
+const jsonConcat = require('json-concat');
+
+// an array of filenames to concat
+const figmaTokensFileName = 'tokens.json';
+const figmaBuildDirectory = 'build/json/figma/'; // or whatever directory you want to read
+const figmaBuildFiles = [
+    figmaBuildDirectory + 'global_tokens.json',
+    figmaBuildDirectory + 'theme_tokens_dark.json',
+    figmaBuildDirectory + 'theme_tokens_light.json',
+    figmaBuildDirectory + 'component_tokens.json',
+];
+
+// pass the "files" to json concat
+jsonConcat({
+    src: figmaBuildFiles,
+    dest: figmaBuildDirectory + figmaTokensFileName
+}, function () {
+    console.log('Figma Bundle completed!');
+    console.log('\n==============================================');
+});
