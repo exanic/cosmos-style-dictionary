@@ -2,7 +2,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { fileHeader, toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, outputReferences) {
+function getStyleDictionaryConfig(theme, includeFile, outputFileName, outputReferences, category) {
     return {
         'source': [
             '01_Global/*.json',
@@ -21,7 +21,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, 
                         'destination': `${outputFileName}.scss`,
                         'format': 'scss/map-deep-angular-color',
                         'filter': { 'filePath': includeFile },
-                        'mapName': 'mat-color-palette'
+                        'mapName': 'mat-color-palette',
+                        'options':
+                        {
+                            'outputReferences': outputReferences
+                        }
                     }
                 ]
             },
@@ -32,7 +36,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, 
                     {
                         'destination': `${outputFileName}.scss`,
                         'format': 'scss/variables',
-                        'filter': { 'filePath': includeFile }
+                        'filter': { 'filePath': includeFile },
+                        'options':
+                        {
+                            'outputReferences': outputReferences
+                        }
                     }
                 ]
             },
@@ -42,7 +50,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, 
                 'files': [
                     {
                         'destination': `${outputFileName}.scss`,
-                        'format': 'scss/variables'
+                        'format': 'scss/variables',
+                        'options':
+                        {
+                            'outputReferences': outputReferences
+                        }
                     }
                 ]
             },
@@ -52,7 +64,11 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, 
                 'files': [
                     {
                         'destination': `${outputFileName}.scss`,
-                        'format': 'css/utility-classes'
+                        'format': 'css/utility-classes',
+                        'options':
+                        {
+                            'outputReferences': outputReferences
+                        }
                     }
                 ]
             },
@@ -320,38 +336,38 @@ console.log('Build started...');
 // Angular Material
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`, true));
         StyleDictionary.buildPlatform('web/material/classes');
     });
 });
 
 // Figma
 ['global_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, 'Global', false));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, false, 'Global'));
     StyleDictionary.buildPlatform('json/figma');
 });
 
 ['light', 'dark'].map(function (theme) {
     ['theme_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, capitalizeFirstLetter(theme), true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, true, capitalizeFirstLetter(theme)));
         StyleDictionary.buildPlatform('json/figma');
     });
 });
 
 ['component_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, 'Component', true));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, true, 'Component'));
     StyleDictionary.buildPlatform('json/figma');
 });
 
