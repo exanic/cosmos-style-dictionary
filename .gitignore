@@ -4,6 +4,8 @@
 
 /.vs
 /node_modules
+/01_Global/emer
+/01_Global/exanic
 build/*
 !build/json
 build/json/*
