@@ -26,23 +26,41 @@
  * });
  * ```
  */
-function toFigmaDictionary(obj) {
-    if (typeof obj !== 'object' || Array.isArray(obj)) {
-        return obj;
+
+String.prototype.replaceAll = function (search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+
+function toFigmaDictionary(token, useReference) {
+    if (typeof token !== 'object' || Array.isArray(token)) {
+        return token;
     }
 
     var toRet = {};
 
-    if (obj.hasOwnProperty('value')) {
+    if (token.hasOwnProperty('value')) {
 
         // Source Property
-        return new Object({ value: obj.value, type: obj.attributes.category });
+        var originalReference = '';
+        if (useReference && !token.isSource) {
+            originalReference = token.original.value;
+            if (typeof originalReference === 'string' && originalReference !== '') {
+                originalReference = originalReference.replaceAll('\.value', '');
+                originalReference = originalReference.replaceAll('{', '$').replaceAll('}', '').replaceAll('\.', '\.$');
+            }
+        }
+
+        if (originalReference !== '')
+            return new Object({ value: originalReference, type: token.attributes.category });
+        else
+            return new Object({ value: token.value, type: token.attributes.category });
 
     } else {
 
-        for (var name in obj) {
-            if (obj.hasOwnProperty(name)) {
-                toRet[name] = toFigmaDictionary(obj[name]);
+        for (var name in token) {
+            if (token.hasOwnProperty(name)) {
+                toRet[name] = toFigmaDictionary(token[name], useReference);
             }
         }
 

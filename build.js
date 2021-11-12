@@ -2,7 +2,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { fileHeader, toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFile, outputFileName, category) {
+function getStyleDictionaryConfig(theme, includeFile, outputFileName, category, outputReferences) {
     return {
         'source': [
             '01_Global/*.json',
@@ -66,7 +66,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, category) 
                         'filter': { 'filePath': includeFile },
                         'options':
                         {
-                            'outputReferences': true,
+                            'outputReferences': outputReferences,
                             'category': category
                         }
                     }
@@ -187,27 +187,26 @@ StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
         // Create Figma Tokens (only Value and Type)
-        var dictionaryFigma = toFigmaDictionary(dictionary.tokens);
+        var figmaTokens = toFigmaDictionary(dictionary.tokens, options.outputReferences);
 
         // Remove Root Level, create Figma specific 'json' Format
-        var transformedFigma = '';
+        var figmaTransformed = '';
 
         //for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
-        for (const [childKey, childValue] of Object.entries(dictionaryFigma)) {
-            if (transformedFigma !== '')
-                transformedFigma += ',';
-            transformedFigma += '"' + childKey.toString() + '": ';
-            transformedFigma += JSON.stringify(childValue, null, 2);
+        for (const [childKey, childValue] of Object.entries(figmaTokens)) {
+            if (figmaTransformed !== '')
+                figmaTransformed += ',';
+            figmaTransformed += '"' + childKey.toString() + '": ';
+            figmaTransformed += JSON.stringify(childValue, null, 2);
         }
-        //}
 
         // Category
         var category = options.category;
 
         // Wrap json
-        transformedFigma = '{ "' + category + '": \n{\n' + transformedFigma + '\n}\n}';
+        figmaTransformed = '{ "' + category + '": \n{\n' + figmaTransformed + '\n}\n}';
 
-        return transformedFigma;
+        return figmaTransformed;
     }
 });
 
@@ -340,19 +339,19 @@ console.log('Build started...');
 
 // Figma
 ['global_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, 'Global'));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, 'Global', false));
     StyleDictionary.buildPlatform('json/figma');
 });
 
 ['light', 'dark'].map(function (theme) {
     ['theme_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, capitalizeFirstLetter(theme)));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, capitalizeFirstLetter(theme), true));
         StyleDictionary.buildPlatform('json/figma');
     });
 });
 
 ['component_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, 'Component'));
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, 'Component', true));
     StyleDictionary.buildPlatform('json/figma');
 });
 
