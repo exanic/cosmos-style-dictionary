@@ -47,7 +47,8 @@ function toFigmaDictionary(token, useReference) {
             originalReference = token.original.value;
             if (typeof originalReference === 'string' && originalReference !== '') {
                 originalReference = originalReference.replaceAll('\.value', '');
-                originalReference = originalReference.replaceAll('{', '$').replaceAll('}', '').replaceAll('\.', '\.$');
+                originalReference = originalReference.replaceAll('{', '$').replaceAll('}', '');
+                originalReference = originalReference.replace('\.', '\.$');
             }
         }
 
