@@ -203,17 +203,16 @@ StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
         // Create Figma Tokens (only Value and Type)
-        var figmaTokens = toFigmaDictionary(dictionary.tokens, options.outputReferences);
+        var figmaTokens = toFigmaDictionary(dictionary, dictionary.tokens, options.outputReferences);
 
         // Remove Root Level, create Figma specific 'json' Format
         var figmaTransformed = '';
 
-        //for (const [parentKey, parentValue] of Object.entries(dictionaryFigma)) {
-        for (const [childKey, childValue] of Object.entries(figmaTokens)) {
+        for (const [key, value] of Object.entries(figmaTokens)) {
             if (figmaTransformed !== '')
                 figmaTransformed += ',';
-            figmaTransformed += '"' + childKey.toString() + '": ';
-            figmaTransformed += JSON.stringify(childValue, null, 2);
+            figmaTransformed += '"' + key.toString() + '": ';
+            figmaTransformed += JSON.stringify(value, null, 2);
         }
 
         // Category

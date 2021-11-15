@@ -32,7 +32,11 @@ String.prototype.replaceAll = function (search, replacement) {
     return target.split(search).join(replacement);
 };
 
-function toFigmaDictionary(token, useReference) {
+function toFigmaDictionary(dictionary, useReference) {
+    return toFigmaTokens(dictionary, dictionary.tokens, useReference);
+}
+
+function toFigmaTokens(dictionary, token, useReference) {
     if (typeof token !== 'object' || Array.isArray(token)) {
         return token;
     }
@@ -41,19 +45,21 @@ function toFigmaDictionary(token, useReference) {
 
     if (token.hasOwnProperty('value')) {
 
-        // Source Property
-        var originalReference = '';
-        if (useReference && !token.isSource) {
-            originalReference = token.original.value;
-            if (typeof originalReference === 'string' && originalReference !== '') {
-                originalReference = originalReference.replaceAll('\.value', '');
-                originalReference = originalReference.replaceAll('{', '$').replaceAll('}', '');
-                originalReference = originalReference.replace('\.', '\.$');
+        var reference = '';
+        if (useReference) {
+
+            if (dictionary.usesReference(token.original.value)) {
+                var referenceToken = dictionary.getReferences(token.original.value);
+                reference = referenceToken[0].original.value;
+                if (typeof reference === 'string' && reference !== '') {
+                    reference = reference.replaceAll('\.value', '');
+                    reference = reference.replace('\.', '\.$');
+                }
             }
         }
 
-        if (originalReference !== '')
-            return new Object({ value: originalReference, type: token.attributes.category });
+        if (reference !== '')
+            return new Object({ value: reference, type: token.attributes.category });
         else
             return new Object({ value: token.value, type: token.attributes.category });
 
@@ -61,7 +67,7 @@ function toFigmaDictionary(token, useReference) {
 
         for (var name in token) {
             if (token.hasOwnProperty(name)) {
-                toRet[name] = toFigmaDictionary(token[name], useReference);
+                toRet[name] = toFigmaTokens(dictionary, token[name], useReference);
             }
         }
 
