@@ -209,185 +209,95 @@
       }
     },
     "button": {
-      "$button_primary_text-color_base": {
-        "value": "{button.primary.text-color.base.value}"
+      "$button_primary-default_text-color_base": {
+        "value": "{button.primary-default.text-color.base.value}"
       },
-      "$button_primary_text-color_active": {
-        "value": "{button.primary.text-color.active.value}"
+      "$button_primary-default_text-color_disabled": {
+        "value": "{button.primary-default.text-color.disabled.value}"
       },
-      "$button_primary_text-color_focus": {
-        "value": "{button.primary.text-color.focus.value}"
+      "$button_primary-default_background-color_base": {
+        "value": "{button.primary-default.background-color.base.value}"
       },
-      "$button_primary_text-color_hover": {
-        "value": "{button.primary.text-color.hover.value}"
+      "$button_primary-default_background-color_disabled": {
+        "value": "{button.primary-default.background-color.disabled.value}"
       },
-      "$button_primary_text-color_disabled": {
-        "value": "{button.primary.text-color.disabled.value}"
+      "$button_primary-danger_text-color_base": {
+        "value": "{button.primary-danger.text-color.base.value}"
       },
-      "$button_primary_background-color_base": {
-        "value": "{button.primary.background-color.base.value}"
+      "$button_primary-danger_text-color_disabled": {
+        "value": "{button.primary-danger.text-color.disabled.value}"
       },
-      "$button_primary_background-color_active": {
-        "value": "{button.primary.background-color.active.value}"
+      "$button_primary-danger_background-color_base": {
+        "value": "{button.primary-danger.background-color.base.value}"
       },
-      "$button_primary_background-color_focus": {
-        "value": "{button.primary.background-color.focus.value}"
+      "$button_primary-danger_background-color_disabled": {
+        "value": "{button.primary-danger.background-color.disabled.value}"
       },
-      "$button_primary_background-color_hover": {
-        "value": "{button.primary.background-color.hover.value}"
+      "$button_secondary-default_text-color_base": {
+        "value": "{button.secondary-default.text-color.base.value}"
       },
-      "$button_primary_background-color_disabled": {
-        "value": "{button.primary.border-color.disabled.value}"
+      "$button_secondary-default_text-color_disabled": {
+        "value": "{button.secondary-default.text-color.disabled.value}"
       },
-      "$button_primary_border-color_base": {
-        "value": "{button.primary.border-color.base.value}"
+      "$button_secondary-default_background-color_base": {
+        "value": "{button.secondary-default.background-color.base.value}"
       },
-      "$button_primary_border-color_active": {
-        "value": "{button.primary.border-color.active.value}"
+      "$button_secondary-default_background-color_disabled": {
+        "value": "{button.secondary-default.background-color.disabled.value}"
       },
-      "$button_primary_border-color_focus": {
-        "value": "{button.primary.border-color.focus.value}"
+      "$button_secondary-default_border-color_base": {
+        "value": "{button.secondary-default.border-color.base.value}"
       },
-      "$button_primary_border-color_hover": {
-        "value": "{button.primary.border-color.hover.value}"
+      "$button_secondary-default_border-color_disabled": {
+        "value": "{button.secondary-default.border-color.disabled.value}"
       },
-      "$button_primary_border-color_disabled": {
-        "value": "{button.primary.border-color.disabled.value}"
+      "$button_secondary-danger_text-color_base": {
+        "value": "{button.secondary-danger.text-color.base.value}"
       },
-      "$button_secondary_text-color_base": {
-        "value": "{button.secondary.text-color.base.value}"
+      "$button_secondary-danger_text-color_active": {
+        "value": "{button.secondary-danger.text-color.active.value}"
       },
-      "$button_secondary_text-color_active": {
-        "value": "{button.secondary.text-color.active.value}"
+      "$button_secondary-danger_text-color_disabled": {
+        "value": "{button.secondary-danger.text-color.disabled.value}"
       },
-      "$button_secondary_text-color_focus": {
-        "value": "{button.secondary.text-color.focus.value}"
+      "$button_secondary-danger_background-color_base": {
+        "value": "{button.secondary-danger.background-color.base.value}"
       },
-      "$button_secondary_text-color_hover": {
-        "value": "{button.secondary.text-color.hover.value}"
+      "$button_secondary-danger_background-color_disabled": {
+        "value": "{button.secondary-danger.background-color.disabled.value}"
       },
-      "$button_secondary_text-color_disabled": {
-        "value": "{button.secondary.text-color.disabled.value}"
+      "$button_secondary-danger_border-color_base": {
+        "value": "{button.secondary-danger.border-color.base.value}"
       },
-      "$button_secondary_background-color_base": {
-        "value": "{button.secondary.background-color.base.value}"
+      "$button_secondary-danger_border-color_disabled": {
+        "value": "{button.secondary-danger.border-color.disabled.value}"
       },
-      "$button_secondary_background-color_active": {
-        "value": "{button.secondary.background-color.active.value}"
+      "$button_tertiary-default_text-color_base": {
+        "value": "{button.tertiary-default.text-color.base.value}"
       },
-      "$button_secondary_background-color_focus": {
-        "value": "{button.secondary.background-color.focus.value}"
+      "$button_tertiary-default_text-color_disabled": {
+        "value": "{button.tertiary-default.text-color.disabled.value}"
       },
-      "$button_secondary_background-color_hover": {
-        "value": "{button.secondary.background-color.hover.value}"
+      "$button_tertiary-default_background-color_base": {
+        "value": "{button.tertiary-default.background-color.base.value}"
       },
-      "$button_secondary_background-color_disabled": {
-        "value": "{button.secondary.border-color.disabled.value}"
+      "$button_tertiary-default_background-color_disabled": {
+        "value": "{button.tertiary-default.background-color.disabled.value}"
       },
-      "$button_secondary_border-color_base": {
-        "value": "{button.secondary.border-color.base.value}"
+      "$button_tertiary-danger_text-color_base": {
+        "value": "{button.tertiary-danger.text-color.base.value}"
       },
-      "$button_secondary_border-color_active": {
-        "value": "{button.secondary.border-color.active.value}"
+      "$button_tertiary-danger_text-color_active": {
+        "value": "{button.secondary-danger.text-color.active.value}"
       },
-      "$button_secondary_border-color_focus": {
-        "value": "{button.secondary.border-color.focus.value}"
+      "$button_tertiary-danger_text-color_disabled": {
+        "value": "{button.tertiary-danger.text-color.disabled.value}"
       },
-      "$button_secondary_border-color_hover": {
-        "value": "{button.secondary.border-color.hover.value}"
+      "$button_tertiary-danger_background-color_base": {
+        "value": "{button.tertiary-danger.background-color.base.value}"
       },
-      "$button_secondary_border-color_disabled": {
-        "value": "{button.secondary.border-color.disabled.value}"
-      },
-      "$button_tertiary_text-color_base": {
-        "value": "{button.tertiary.text-color.base.value}"
-      },
-      "$button_tertiary_text-color_active": {
-        "value": "{button.tertiary.text-color.active.value}"
-      },
-      "$button_tertiary_text-color_focus": {
-        "value": "{button.tertiary.text-color.focus.value}"
-      },
-      "$button_tertiary_text-color_hover": {
-        "value": "{button.tertiary.text-color.hover.value}"
-      },
-      "$button_tertiary_text-color_disabled": {
-        "value": "{button.tertiary.text-color.disabled.value}"
-      },
-      "$button_tertiary_background-color_base": {
-        "value": "{button.tertiary.background-color.base.value}"
-      },
-      "$button_tertiary_background-color_active": {
-        "value": "{button.tertiary.background-color.active.value}"
-      },
-      "$button_tertiary_background-color_focus": {
-        "value": "{button.tertiary.background-color.focus.value}"
-      },
-      "$button_tertiary_background-color_hover": {
-        "value": "{button.tertiary.background-color.hover.value}"
-      },
-      "$button_tertiary_background-color_disabled": {
-        "value": "{button.tertiary.border-color.disabled.value}"
-      },
-      "$button_tertiary_border-color_base": {
-        "value": "{button.tertiary.border-color.base.value}"
-      },
-      "$button_tertiary_border-color_active": {
-        "value": "{button.tertiary.border-color.active.value}"
-      },
-      "$button_tertiary_border-color_focus": {
-        "value": "{button.tertiary.border-color.focus.value}"
-      },
-      "$button_tertiary_border-color_hover": {
-        "value": "{button.tertiary.border-color.hover.value}"
-      },
-      "$button_tertiary_border-color_disabled": {
-        "value": "{button.tertiary.border-color.disabled.value}"
-      },
-      "$button_danger_text-color_base": {
-        "value": "{button.danger.text-color.base.value}"
-      },
-      "$button_danger_text-color_active": {
-        "value": "{button.danger.text-color.active.value}"
-      },
-      "$button_danger_text-color_focus": {
-        "value": "{button.danger.text-color.focus.value}"
-      },
-      "$button_danger_text-color_hover": {
-        "value": "{button.danger.text-color.hover.value}"
-      },
-      "$button_danger_text-color_disabled": {
-        "value": "{button.danger.text-color.disabled.value}"
-      },
-      "$button_danger_background-color_base": {
-        "value": "{button.danger.background-color.base.value}"
-      },
-      "$button_danger_background-color_active": {
-        "value": "{button.danger.background-color.active.value}"
-      },
-      "$button_danger_background-color_focus": {
-        "value": "{button.danger.background-color.focus.value}"
-      },
-      "$button_danger_background-color_hover": {
-        "value": "{button.danger.background-color.hover.value}"
-      },
-      "$button_danger_background-color_disabled": {
-        "value": "{button.danger.border-color.disabled.value}"
-      },
-      "$button_danger_border-color_base": {
-        "value": "{button.danger.border-color.base.value}"
-      },
-      "$button_danger_border-color_active": {
-        "value": "{button.danger.border-color.active.value}"
-      },
-      "$button_danger_border-color_focus": {
-        "value": "{button.danger.border-color.focus.value}"
-      },
-      "$button_danger_border-color_hover": {
-        "value": "{button.danger.border-color.hover.value}"
-      },
-      "$button_danger_border-color_disabled": {
-        "value": "{button.danger.border-color.disabled.value}"
+      "$button_tertiary-danger_background-color_disabled": {
+        "value": "{button.tertiary-danger.background-color.disabled.value}"
       }
     },
     "checkbox": {

@@ -6,8 +6,11 @@
     "secondary": {
       "value": "{secondary.color.base.value}"
     },
+    "danger": {
+      "value": "{secondary.color.base.value}"
+    },
     "dark": {
-      "value": "{theme.color-20.value}"
+      "value": "{danger.color.base.value}"
     },
     "light": {
       "value": "{theme.color-8.value}"
