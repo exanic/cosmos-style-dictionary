@@ -82,7 +82,7 @@ function getStyleDictionaryConfig(theme, includeFile, outputFileName, outputRefe
                         'filter': { 'filePath': includeFile },
                         'options':
                         {
-                            //'outputReferences': outputReferences,
+                            'outputReferences': outputReferences,
                             'category': category
                         }
                     }
@@ -203,16 +203,15 @@ StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
         // Create Figma Tokens (only Value and Type)
-        var figmaTokens = toFigmaDictionary(dictionary, dictionary.tokens, options.outputReferences);
+        var figmaTokens = toFigmaDictionary(dictionary.tokens, options.outputReferences);
 
         // Remove Root Level, create Figma specific 'json' Format
         var figmaTransformed = '';
-
         for (const [key, value] of Object.entries(figmaTokens)) {
             if (figmaTransformed !== '')
                 figmaTransformed += ',';
             figmaTransformed += '"' + key.toString() + '": ';
-            figmaTransformed += JSON.stringify(value, null, 2);
+            figmaTransformed += JSON.stringify(value, null, ' ');
         }
 
         // Category
@@ -332,7 +331,7 @@ function capitalizeFirstLetter(string) {
 console.log('\n==============================================\n');
 console.log('Build started...');
 
-// --- Angular Material ---------------------------------------------------------
+// ANGULAR MATERIAL
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
         const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
@@ -352,7 +351,7 @@ console.log('Build started...');
     });
 });
 
-// --- FIGMA ---------------------------------------------------------
+// FIGMA
 const fs = require('fs');
 const dirPreBuild = 'pre-build';
 const dirGlobal = '01_Global';
@@ -415,13 +414,13 @@ fs.readdirSync(figmaPreBuildDirecotry).forEach(file => {
     figmaBuildFiles.push(`${figmaPreBuildDirecotry}/${file}`);
 });
 
-// pass the "files" to json concat
-const jsonConcat = require('json-concat');
+const jsonMerger = require("json-merger");
+var result = jsonMerger.mergeFiles(figmaBuildFiles);
 
-jsonConcat({
-    src: figmaBuildFiles,
-    dest: `${figmaBuildDirectory}/${figmaTokensFileName}`
-}, function () {
+fs.writeFile(`${figmaBuildDirectory}/${figmaTokensFileName}`, JSON.stringify(result, null, ' '), (err) => {
+    if (err) {
+        throw err;
+    }
     console.log('Figma Bundle completed!');
     console.log('\n==============================================');
 });

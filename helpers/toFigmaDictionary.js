@@ -32,11 +32,7 @@ String.prototype.replaceAll = function (search, replacement) {
     return target.split(search).join(replacement);
 };
 
-function toFigmaDictionary(dictionary, useReference) {
-    return toFigmaTokens(dictionary, dictionary.tokens, useReference);
-}
-
-function toFigmaTokens(dictionary, token, useReference) {
+function toFigmaDictionary(token, useReference) {
     if (typeof token !== 'object' || Array.isArray(token)) {
         return token;
     }
@@ -48,13 +44,11 @@ function toFigmaTokens(dictionary, token, useReference) {
         var reference = '';
         if (useReference) {
 
-            if (dictionary.usesReference(token.original.value)) {
-                var referenceToken = dictionary.getReferences(token.original.value);
-                reference = referenceToken[0].original.value;
-                if (typeof reference === 'string' && reference !== '') {
-                    reference = reference.replaceAll('\.value', '');
-                    reference = reference.replace('\.', '\.$');
-                }
+            reference = token.original.value;
+            if (typeof reference === 'string' && reference !== '') {
+                reference = reference.replaceAll('\.value', '');
+                reference = reference.replaceAll('\.', '-');
+                reference = reference.replace('\-', '\.$');
             }
         }
 
@@ -67,7 +61,7 @@ function toFigmaTokens(dictionary, token, useReference) {
 
         for (var name in token) {
             if (token.hasOwnProperty(name)) {
-                toRet[name] = toFigmaTokens(dictionary, token[name], useReference);
+                toRet[name] = toFigmaDictionary(token[name], useReference);
             }
         }
 
