@@ -203,16 +203,15 @@ StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
     formatter: function ({ dictionary, platform, options, file }) {
         // Create Figma Tokens (only Value and Type)
-        var figmaTokens = toFigmaDictionary(dictionary, dictionary.tokens, options.outputReferences);
+        var figmaTokens = toFigmaDictionary(dictionary.tokens, options.outputReferences);
 
         // Remove Root Level, create Figma specific 'json' Format
         var figmaTransformed = '';
-
         for (const [key, value] of Object.entries(figmaTokens)) {
             if (figmaTransformed !== '')
                 figmaTransformed += ',';
             figmaTransformed += '"' + key.toString() + '": ';
-            figmaTransformed += JSON.stringify(value, null, 2);
+            figmaTransformed += JSON.stringify(value, null, ' ');
         }
 
         // Category
@@ -332,14 +331,14 @@ function capitalizeFirstLetter(string) {
 console.log('\n==============================================\n');
 console.log('Build started...');
 
-// Angular Material
+// ANGULAR MATERIAL
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
@@ -347,28 +346,62 @@ console.log('Build started...');
         StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`, false));
         StyleDictionary.buildPlatform('web/material/classes');
     });
 });
 
-// Figma
-['global_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, file, false, 'Global'));
-    StyleDictionary.buildPlatform('json/figma');
-});
+// FIGMA
+const fs = require('fs');
+const dirPreBuild = 'pre-build';
+const dirGlobal = '01_Global';
+const dirTheme = '02_Theme';
+const dirComponent = '03_Component';
+const figmaTokensFileName = 'tokens.json';
+const figmaBuildDirectory = 'build/json/figma';
+const figmaPreBuildDirecotry = `${figmaBuildDirectory}/${dirPreBuild}`;
 
-['light', 'dark'].map(function (theme) {
-    ['theme_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Figma/${file}.json`, `${file}_${theme}`, true, capitalizeFirstLetter(theme)));
-        StyleDictionary.buildPlatform('json/figma');
+// Delete old Build Files
+fs.readdirSync(figmaPreBuildDirecotry).forEach(file => {
+    fs.unlink(`${figmaPreBuildDirecotry}/${file}`, err => {
+        if (err) throw err;
     });
 });
 
-['component_tokens'].map(function (file) {
-    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Figma/${file}.json`, `${file}`, true, 'Component'));
-    StyleDictionary.buildPlatform('json/figma');
+// Global Tokens
+fs.readdirSync(dirGlobal).forEach(file => {
+    if (file.endsWith('.json')) {
+        var fileName = file.replace('.json', '');
+
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirGlobal}/${file}`, `${dirPreBuild}/global_${fileName}`, false, 'Global'));
+        StyleDictionary.buildPlatform('json/figma');
+    }
 });
+
+// Theme Tokens
+['light', 'dark'].map(function (theme) {
+    var dirThemeSub = `${dirTheme}/${theme}`;
+
+    fs.readdirSync(dirThemeSub).forEach(file => {
+        if (file.endsWith('.json')) {
+            var fileName = file.replace('.json', '');
+
+            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
+            StyleDictionary.buildPlatform('json/figma');
+        }
+    });
+});
+
+// Component Tokens
+fs.readdirSync(dirComponent).forEach(file => {
+    if (file.endsWith('.json')) {
+        var fileName = file.replace('.json', '');
+
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirComponent}/${file}`, `${dirPreBuild}/component_${fileName}`, true, 'Component'));
+        StyleDictionary.buildPlatform('json/figma');
+    }
+});
+
 
 console.log('\nStyle Dicionary Build completed!');
 console.log('\n==============================================\n');
@@ -376,23 +409,18 @@ console.log('\n==============================================\n');
 // Merge json Files
 console.log('Figma Bundle started...');
 
-const jsonConcat = require('json-concat');
+var figmaBuildFiles = [];
+fs.readdirSync(figmaPreBuildDirecotry).forEach(file => {
+    figmaBuildFiles.push(`${figmaPreBuildDirecotry}/${file}`);
+});
 
-// an array of filenames to concat
-const figmaTokensFileName = 'tokens.json';
-const figmaBuildDirectory = 'build/json/figma/'; // or whatever directory you want to read
-const figmaBuildFiles = [
-    figmaBuildDirectory + 'global_tokens.json',
-    figmaBuildDirectory + 'theme_tokens_dark.json',
-    figmaBuildDirectory + 'theme_tokens_light.json',
-    figmaBuildDirectory + 'component_tokens.json',
-];
+const jsonMerger = require("json-merger");
+var result = jsonMerger.mergeFiles(figmaBuildFiles);
 
-// pass the "files" to json concat
-jsonConcat({
-    src: figmaBuildFiles,
-    dest: figmaBuildDirectory + figmaTokensFileName
-}, function () {
+fs.writeFile(`${figmaBuildDirectory}/${figmaTokensFileName}`, JSON.stringify(result, null, ' '), (err) => {
+    if (err) {
+        throw err;
+    }
     console.log('Figma Bundle completed!');
     console.log('\n==============================================');
 });

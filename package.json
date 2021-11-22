@@ -20,6 +20,6 @@
     "style-dictionary": "^3.0.3"
   },
   "dependencies": {
-    "json-concat": "0.0.1"
+    "json-merger": "^1.1.7"
   }
 }
