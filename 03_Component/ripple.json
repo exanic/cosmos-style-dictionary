@@ -1,16 +1,16 @@
 {
   "ripple": {
     "primary": {
-      "value": "{primary.color.base.value},{opacity.25.value})"
+      "value": "{primary.color.base.value}"
     },
     "secondary": {
       "value": "{secondary.color.base.value}"
     },
     "danger": {
-      "value": "{secondary.color.base.value}"
+      "value": "{danger.color.base.value}"
     },
     "dark": {
-      "value": "{danger.color.base.value}"
+      "value": "{theme.color-20.value}"
     },
     "light": {
       "value": "{theme.color-8.value}"
