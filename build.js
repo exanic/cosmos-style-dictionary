@@ -362,11 +362,13 @@ const figmaBuildDirectory = 'build/json/figma';
 const figmaPreBuildDirecotry = `${figmaBuildDirectory}/${dirPreBuild}`;
 
 // Delete old Build Files
-fs.readdirSync(figmaPreBuildDirecotry).forEach(file => {
-    fs.unlink(`${figmaPreBuildDirecotry}/${file}`, err => {
-        if (err) throw err;
+if (fs.existsSync(figmaPreBuildDirecotry)) {
+    fs.readdirSync(figmaPreBuildDirecotry).forEach(file => {
+        fs.unlink(`${figmaPreBuildDirecotry}/${file}`, err => {
+            if (err) throw err;
+        });
     });
-});
+}
 
 // Global Tokens
 fs.readdirSync(dirGlobal).forEach(file => {
