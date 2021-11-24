@@ -107,7 +107,7 @@
     },
     "theme-foreground-palette": {
       "base": {
-        "value": "{color.black.base.value}"
+        "value": "{color.black-base.value}"
       },
       "divider": {
         "value": "{content.divider.value}"
@@ -125,7 +125,7 @@
         "value": "{content.disabled.value}"
       },
       "elevation": {
-        "value": "{color.black.base.value}"
+        "value": "{color.black-base.value}"
       },
       "hint-text": {
         "value": "{content.subtle.value}"
@@ -176,7 +176,7 @@
         "value": "{theme.color-5.value}"
       },
       "raised-button": {
-        "value": "{color.white.base.value}"
+        "value": "{color.white-base.value}"
       },
       "focused-button": {
         "value": "{theme.color-6.value}"
