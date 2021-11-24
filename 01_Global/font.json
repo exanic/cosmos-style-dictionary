@@ -1,20 +1,25 @@
 {
   "font": {
     "family": {
-      "value": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", \"Roboto\", \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif"
+      "value": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", \"Roboto\", \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "type": "fontFamilies"
     },
     "weight": {
       "light": {
-        "value": "300"
+        "value": "300",
+        "type": "fontWeights"
       },
       "regular": {
-        "value": "400"
+        "value": "400",
+        "type": "fontWeights"
       },
       "medium": {
-        "value": "600"
+        "value": "600",
+        "type": "fontWeights"
       },
       "bold": {
-        "value": "700"
+        "value": "700",
+        "type": "fontWeights"
       }
     }
   }

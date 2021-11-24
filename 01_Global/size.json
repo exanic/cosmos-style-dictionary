@@ -2,71 +2,92 @@
   "size": {
     "spacing": {
       "none": {
-        "value": "0px"
+        "value": "0px",
+        "type": "spacing"
       },
       "xxs": {
-        "value": "4px"
+        "value": "4px",
+        "type": "spacing"
       },
       "xs": {
-        "value": "8px"
+        "value": "8px",
+        "type": "spacing"
       },
       "s": {
-        "value": "12px"
+        "value": "12px",
+        "type": "spacing"
       },
       "m": {
-        "value": "16px"
+        "value": "16px",
+        "type": "spacing"
       },
       "l": {
-        "value": "24px"
+        "value": "24px",
+        "type": "spacing"
       },
       "xl": {
-        "value": "32px"
+        "value": "32px",
+        "type": "spacing"
       },
       "xxl": {
-        "value": "48px"
+        "value": "48px",
+        "type": "spacing"
       }
     },
     "border-radius": {
       "none": {
-        "value": "0px"
+        "value": "0px",
+        "type": "border-radius"
       },
       "xs": {
-        "value": "2px"
+        "value": "2px",
+        "type": "border-radius"
       },
       "s": {
-        "value": "4px"
+        "value": "4px",
+        "type": "border-radius"
       },
       "m": {
-        "value": "8px"
+        "value": "8px",
+        "type": "border-radius"
       },
       "l": {
-        "value": "16px"
+        "value": "16px",
+        "type": "border-radius"
       },
       "xl": {
-        "value": "24px"
+        "value": "24px",
+        "type": "border-radius"
       },
       "circle": {
-        "value": "50%"
+        "value": "50%",
+        "type": "border-radius"
       }
     },
     "sizing": {
       "none": {
-        "value": "0px"
+        "value": "0px",
+        "type": "sizing"
       },
       "xs": {
-        "value": "8px"
+        "value": "8px",
+        "type": "sizing"
       },
       "s": {
-        "value": "16px"
+        "value": "16px",
+        "type": "sizing"
       },
       "m": {
-        "value": "24px"
+        "value": "24px",
+        "type": "sizing"
       },
       "l": {
-        "value": "32px"
+        "value": "32px",
+        "type": "sizing"
       },
       "xl": {
-        "value": "48px"
+        "value": "48px",
+        "type": "sizing"
       }
     }
   }

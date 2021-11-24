@@ -373,7 +373,7 @@ fs.readdirSync(dirGlobal).forEach(file => {
     if (file.endsWith('.json')) {
         var fileName = file.replace('.json', '');
 
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirGlobal}/${file}`, `${dirPreBuild}/global_${fileName}`, false, 'Global'));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirGlobal}/${file}`, `${dirPreBuild}/01_global_${fileName}`, false, 'Global'));
         StyleDictionary.buildPlatform('json/figma');
     }
 });
@@ -386,7 +386,7 @@ fs.readdirSync(dirGlobal).forEach(file => {
         if (file.endsWith('.json')) {
             var fileName = file.replace('.json', '');
 
-            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
+            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
             StyleDictionary.buildPlatform('json/figma');
         }
     });
@@ -397,7 +397,7 @@ fs.readdirSync(dirComponent).forEach(file => {
     if (file.endsWith('.json')) {
         var fileName = file.replace('.json', '');
 
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirComponent}/${file}`, `${dirPreBuild}/component_${fileName}`, true, 'Component'));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirComponent}/${file}`, `${dirPreBuild}/03_component_${fileName}`, true, 'Component'));
         StyleDictionary.buildPlatform('json/figma');
     }
 });

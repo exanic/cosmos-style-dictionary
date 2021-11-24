@@ -1,25 +1,32 @@
 {
   "content": {
     "contrast": {
-      "value": "{color.white.o100.value}"
+      "value": "{color.white.o100.value}",
+      "type": "color"
     },
     "standard": {
-      "value": "{color.white.o75.value}"
+      "value": "{color.white.o75.value}",
+      "type": "color"
     },
     "subtle": {
-      "value": "{color.white.o50.value}"
+      "value": "{color.white.o50.value}",
+      "type": "color"
     },
     "disabled": {
-      "value": "{color.white.o25.value}"
+      "value": "{color.white.o25.value}",
+      "type": "color"
     },
     "placeholder": {
-      "value": "{color.white.o25.value}"
+      "value": "{color.white.o25.value}",
+      "type": "color"
     },
     "divider": {
-      "value": "{color.white.o25.value}"
+      "value": "{color.white.o25.value}",
+      "type": "color"
     },
     "link": {
-      "value": "{primary.color.base.value}"
+      "value": "{primary.color.base.value}",
+      "type": "color"
     }
   }
 }
