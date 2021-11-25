@@ -43,7 +43,6 @@ function toFigmaDictionary(token, useReference) {
 
         var reference = '';
         if (useReference) {
-
             reference = token.original.value;
             if (typeof reference === 'string' && reference !== '') {
                 reference = reference.replaceAll('\.value', '');
@@ -53,9 +52,9 @@ function toFigmaDictionary(token, useReference) {
         }
 
         if (reference !== '')
-            return new Object({ value: reference, type: token.attributes.category });
+            return new Object({ value: reference, type: token.type });
         else
-            return new Object({ value: token.value, type: token.attributes.category });
+            return new Object({ value: token.value, type: token.type });
 
     } else {
 
