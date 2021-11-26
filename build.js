@@ -198,6 +198,30 @@ StyleDictionaryPackage.registerFormat({
     }
 });
 
+function toFigmaTransform(prefix, token) {
+
+    var figmaTransformed = '';
+
+    if (token.hasOwnProperty('value')) {
+
+        figmaTransformed += `"${prefix}": ${JSON.stringify(token, null, 2)},`;
+
+    } else {
+
+        for (const [key, value] of Object.entries(token)) {
+            var subPrefix = key;
+
+            if (prefix !== '')
+                subPrefix = `${prefix}_${subPrefix}`;
+            
+            figmaTransformed += toFigmaTransform(subPrefix, value);
+        }
+
+    }
+
+    return figmaTransformed;
+}
+
 // Figma Output Format
 StyleDictionaryPackage.registerFormat({
     name: 'json/figma',
@@ -205,26 +229,12 @@ StyleDictionaryPackage.registerFormat({
         // Create Figma Tokens (only Value and Type)
         var figmaTokens = toFigmaDictionary(dictionary.tokens, options.outputReferences);
 
-        // Remove Root Level, create Figma specific 'json' Format
-        var figmaTransformed = '';
-        for (const [parentKey, parentValue] of Object.entries(figmaTokens)) {
-            for (const [childKey, childValue] of Object.entries(parentValue)) {
-                if (childValue.hasOwnProperty('value')) {
-                    // Tier 2 Property
-                    if (figmaTransformed !== '')
-                        figmaTransformed += ',';
-                    figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}": `;
-                    figmaTransformed += JSON.stringify(childValue, null, 2);
-                } else {
-                    // Tier 3 Property
-                    for (const [grandChildKey, grandChildValue] of Object.entries(childValue)) {
-                        if (figmaTransformed !== '')
-                            figmaTransformed += ',';
-                        figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}_${grandChildKey.toString()}": `;
-                        figmaTransformed += JSON.stringify(grandChildValue, null, 2);
-                    }
-                }
-            }
+        // create Figma specific 'json' Format
+        var figmaTransformed = toFigmaTransform('', figmaTokens);
+
+        // letzten Separator entfernen
+        if (figmaTransformed.slice(-1) === ',') {
+            figmaTransformed = figmaTransformed.substring(0, figmaTransformed.length - 1);
         }
 
         // Category

@@ -1,88 +1,88 @@
 {
-    "theme": {
-        "color-0": {
-            "value": "{color.gray-650.value}",
-            "type": "color"
-        },
-        "color-1": {
-            "value": "{color.gray-650.value}",
-            "type": "color"
-        },
-        "color-2": {
-            "value": "{color.gray-700.value}",
-            "type": "color"
-        },
-        "color-3": {
-            "value": "{color.gray-750.value}",
-            "type": "color"
-        },
-        "color-4": {
-            "value": "{color.gray-800.value}",
-            "type": "color"
-        },
-        "color-5": {
-            "value": "{color.gray-850.value}",
-            "type": "color"
-        },
-        "color-6": {
-            "value": "{color.gray-900.value}",
-            "type": "color"
-        },
-        "color-7": {
-            "value": "{color.gray-950.value}",
-            "type": "color"
-        },
-        "color-8": {
-            "value": "{color.gray-350.value}",
-            "type": "color"
-        },
-        "color-9": {
-            "value": "{color.gray-400.value}",
-            "type": "color"
-        },
-        "color-10": {
-            "value": "{color.gray-450.value}",
-            "type": "color"
-        },
-        "color-11": {
-            "value": "{color.gray-500.value}",
-            "type": "color"
-        },
-        "color-12": {
-            "value": "{color.gray-550.value}",
-            "type": "color"
-        },
-        "color-13": {
-            "value": "{color.gray-600.value}",
-            "type": "color"
-        },
-        "color-14": {
-            "value": "{color.gray-300.value}",
-            "type": "color"
-        },
-        "color-15": {
-            "value": "{color.gray-250.value}",
-            "type": "color"
-        },
-        "color-16": {
-            "value": "{color.gray-200.value}",
-            "type": "color"
-        },
-        "color-17": {
-            "value": "{color.gray-150.value}",
-            "type": "color"
-        },
-        "color-18": {
-            "value": "{color.gray-100.value}",
-            "type": "color"
-        },
-        "color-19": {
-            "value": "{color.gray-50.value}",
-            "type": "color"
-        },
-        "color-20": {
-            "value": "{color.gray-0.value}",
-            "type": "color"
-        }
+  "theme": {
+    "color-0": {
+      "value": "{color.gray-650.value}",
+      "type": "color"
+    },
+    "color-1": {
+      "value": "{color.gray-650.value}",
+      "type": "color"
+    },
+    "color-2": {
+      "value": "{color.gray-700.value}",
+      "type": "color"
+    },
+    "color-3": {
+      "value": "{color.gray-750.value}",
+      "type": "color"
+    },
+    "color-4": {
+      "value": "{color.gray-800.value}",
+      "type": "color"
+    },
+    "color-5": {
+      "value": "{color.gray-850.value}",
+      "type": "color"
+    },
+    "color-6": {
+      "value": "{color.gray-900.value}",
+      "type": "color"
+    },
+    "color-7": {
+      "value": "{color.gray-950.value}",
+      "type": "color"
+    },
+    "color-8": {
+      "value": "{color.gray-350.value}",
+      "type": "color"
+    },
+    "color-9": {
+      "value": "{color.gray-400.value}",
+      "type": "color"
+    },
+    "color-10": {
+      "value": "{color.gray-450.value}",
+      "type": "color"
+    },
+    "color-11": {
+      "value": "{color.gray-500.value}",
+      "type": "color"
+    },
+    "color-12": {
+      "value": "{color.gray-550.value}",
+      "type": "color"
+    },
+    "color-13": {
+      "value": "{color.gray-600.value}",
+      "type": "color"
+    },
+    "color-14": {
+      "value": "{color.gray-300.value}",
+      "type": "color"
+    },
+    "color-15": {
+      "value": "{color.gray-250.value}",
+      "type": "color"
+    },
+    "color-16": {
+      "value": "{color.gray-200.value}",
+      "type": "color"
+    },
+    "color-17": {
+      "value": "{color.gray-150.value}",
+      "type": "color"
+    },
+    "color-18": {
+      "value": "{color.gray-100.value}",
+      "type": "color"
+    },
+    "color-19": {
+      "value": "{color.gray-50.value}",
+      "type": "color"
+    },
+    "color-20": {
+      "value": "{color.gray-0.value}",
+      "type": "color"
     }
+  }
 }

@@ -1,156 +1,156 @@
 {
-    "snackbar": {
-        "padding": {
-            "value": "{size.spacing.s.value}",
-            "type": "spacing"
+  "snackbar": {
+    "padding": {
+      "value": "{size.spacing.s.value}",
+      "type": "spacing"
+    },
+    "border-radius": {
+      "value": "{size.border-radius.s.value}",
+      "type": "borderRadius"
+    },
+    "success": {
+      "text-color": {
+        "value": "{success.text-color.base.value}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{success.text-color.base.value}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{success.color.base.value}",
+        "type": "color"
+      },
+      "action-background-color": {
+        "base": {
+          "value": "{success.color.base.value}",
+          "type": "color"
         },
-        "border-radius": {
-            "value": "{size.border-radius.s.value}",
-            "type": "borderRadius"
+        "active": {
+          "value": "{success.color.active.value}",
+          "type": "color"
         },
-        "success": {
-            "text-color": {
-                "value": "{success.text-color.base.value}",
-                "type": "color"
-            },
-            "icon-color": {
-                "value": "{success.text-color.base.value}",
-                "type": "color"
-            },
-            "background-color": {
-                "value": "{success.color.base.value}",
-                "type": "color"
-            },
-            "action-background-color": {
-                "base": {
-                    "value": "{success.color.base.value}",
-                    "type": "color"
-                },
-                "active": {
-                    "value": "{success.color.active.value}",
-                    "type": "color"
-                },
-                "focus": {
-                    "value": "{success.color.focus.value}",
-                    "type": "color"
-                },
-                "hover": {
-                    "value": "{success.color.hover.value}",
-                    "type": "color"
-                },
-                "disabled": {
-                    "value": "{success.color.disabled.value}",
-                    "type": "color"
-                }
-            }
+        "focus": {
+          "value": "{success.color.focus.value}",
+          "type": "color"
         },
-        "info": {
-            "text-color": {
-                "value": "{info.text-color.base.value}",
-                "type": "color"
-            },
-            "icon-color": {
-                "value": "{info.text-color.base.value}",
-                "type": "color"
-            },
-            "background-color": {
-                "value": "{info.color.base.value}",
-                "type": "color"
-            },
-            "action-background-color": {
-                "base": {
-                    "value": "{info.color.base.value}",
-                    "type": "color"
-                },
-                "active": {
-                    "value": "{info.color.active.value}",
-                    "type": "color"
-                },
-                "focus": {
-                    "value": "{info.color.focus.value}",
-                    "type": "color"
-                },
-                "hover": {
-                    "value": "{info.color.hover.value}",
-                    "type": "color"
-                },
-                "disabled": {
-                    "value": "{info.color.disabled.value}",
-                    "type": "color"
-                }
-            }
+        "hover": {
+          "value": "{success.color.hover.value}",
+          "type": "color"
         },
-        "warning": {
-            "text-color": {
-                "value": "{warning.text-color.base.value}",
-                "type": "color"
-            },
-            "icon-color": {
-                "value": "{warning.text-color.base.value}",
-                "type": "color"
-            },
-            "background-color": {
-                "value": "{warning.color.base.value}",
-                "type": "color"
-            },
-            "action-background-color": {
-                "base": {
-                    "value": "{warning.color.base.value}",
-                    "type": "color"
-                },
-                "active": {
-                    "value": "{warning.color.active.value}",
-                    "type": "color"
-                },
-                "focus": {
-                    "value": "{warning.color.focus.value}",
-                    "type": "color"
-                },
-                "hover": {
-                    "value": "{warning.color.hover.value}",
-                    "type": "color"
-                },
-                "disabled": {
-                    "value": "{warning.color.disabled.value}",
-                    "type": "color"
-                }
-            }
-        },
-        "danger": {
-            "text-color": {
-                "value": "{danger.text-color.base.value}",
-                "type": "color"
-            },
-            "icon-color": {
-                "value": "{danger.text-color.base.value}",
-                "type": "color"
-            },
-            "background-color": {
-                "value": "{danger.color.base.value}",
-                "type": "color"
-            },
-            "action-background-color": {
-                "base": {
-                    "value": "{danger.color.base.value}",
-                    "type": "color"
-                },
-                "active": {
-                    "value": "{danger.color.active.value}",
-                    "type": "color"
-                },
-                "focus": {
-                    "value": "{danger.color.focus.value}",
-                    "type": "color"
-                },
-                "hover": {
-                    "value": "{danger.color.hover.value}",
-                    "type": "color"
-                },
-                "disabled": {
-                    "value": "{danger.color.disabled.value}",
-                    "type": "color"
-                }
-            }
+        "disabled": {
+          "value": "{success.color.disabled.value}",
+          "type": "color"
         }
+      }
+    },
+    "info": {
+      "text-color": {
+        "value": "{info.text-color.base.value}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{info.text-color.base.value}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{info.color.base.value}",
+        "type": "color"
+      },
+      "action-background-color": {
+        "base": {
+          "value": "{info.color.base.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{info.color.active.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{info.color.focus.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{info.color.hover.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{info.color.disabled.value}",
+          "type": "color"
+        }
+      }
+    },
+    "warning": {
+      "text-color": {
+        "value": "{warning.text-color.base.value}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{warning.text-color.base.value}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{warning.color.base.value}",
+        "type": "color"
+      },
+      "action-background-color": {
+        "base": {
+          "value": "{warning.color.base.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{warning.color.active.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{warning.color.focus.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{warning.color.hover.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{warning.color.disabled.value}",
+          "type": "color"
+        }
+      }
+    },
+    "danger": {
+      "text-color": {
+        "value": "{danger.text-color.base.value}",
+        "type": "color"
+      },
+      "icon-color": {
+        "value": "{danger.text-color.base.value}",
+        "type": "color"
+      },
+      "background-color": {
+        "value": "{danger.color.base.value}",
+        "type": "color"
+      },
+      "action-background-color": {
+        "base": {
+          "value": "{danger.color.base.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{danger.color.active.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{danger.color.focus.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{danger.color.hover.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{danger.color.disabled.value}",
+          "type": "color"
+        }
+      }
     }
+  }
 }
