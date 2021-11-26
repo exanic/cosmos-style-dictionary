@@ -1,10 +1,12 @@
 {
   "body": {
     "background-color": {
-      "value": "{theme.color-5.value}"
+      "value": "{theme.color-5.value}",
+      "type": "color"
     },
     "border-color": {
-      "value": "{theme.color-5.value}"
+      "value": "{theme.color-5.value}",
+      "type": "color"
     }
   }
 }

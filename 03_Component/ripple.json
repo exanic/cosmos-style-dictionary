@@ -1,22 +1,28 @@
 {
   "ripple": {
     "primary": {
-      "value": "{primary.color.base.value}"
+      "value": "{primary.color.base.value}",
+      "type": "color"
     },
     "secondary": {
-      "value": "{secondary.color.base.value}"
+      "value": "{secondary.color.base.value}",
+      "type": "color"
     },
     "danger": {
-      "value": "{danger.color.base.value}"
+      "value": "{danger.color.base.value}",
+      "type": "color"
     },
     "dark": {
-      "value": "{theme.color-20.value}"
+      "value": "{theme.color-20.value}",
+      "type": "color"
     },
     "light": {
-      "value": "{theme.color-8.value}"
+      "value": "{theme.color-8.value}",
+      "type": "color"
     },
     "white": {
-      "value": "{theme.color-0.value}"
+      "value": "{theme.color-0.value}",
+      "type": "color"
     }
   }
 }

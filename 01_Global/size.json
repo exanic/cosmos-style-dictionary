@@ -37,31 +37,31 @@
     "border-radius": {
       "none": {
         "value": "0px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "xs": {
         "value": "2px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "s": {
         "value": "4px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "m": {
         "value": "8px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "l": {
         "value": "16px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "xl": {
         "value": "24px",
-        "type": "border-radius"
+        "type": "borderRadius"
       },
       "circle": {
         "value": "50%",
-        "type": "border-radius"
+        "type": "borderRadius"
       }
     },
     "sizing": {

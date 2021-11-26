@@ -1,7 +1,8 @@
 {
   "card": {
     "background-color": {
-      "value": "{theme.color-0.value}"
+      "value": "{theme.color-0.value}",
+      "type": "color"
     }
   }
 }
