@@ -209,10 +209,21 @@ StyleDictionaryPackage.registerFormat({
         var figmaTransformed = '';
         for (const [parentKey, parentValue] of Object.entries(figmaTokens)) {
             for (const [childKey, childValue] of Object.entries(parentValue)) {
-                if (figmaTransformed !== '')
-                    figmaTransformed += ',';
-                figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}": `;
-                figmaTransformed += JSON.stringify(childValue, null, 2);
+                if (childValue.hasOwnProperty('value')) {
+                    // Tier 2 Property
+                    if (figmaTransformed !== '')
+                        figmaTransformed += ',';
+                    figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}": `;
+                    figmaTransformed += JSON.stringify(childValue, null, 2);
+                } else {
+                    // Tier 3 Property
+                    for (const [grandChildKey, grandChildValue] of Object.entries(childValue)) {
+                        if (figmaTransformed !== '')
+                            figmaTransformed += ',';
+                        figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}_${grandChildKey.toString()}": `;
+                        figmaTransformed += JSON.stringify(grandChildValue, null, 2);
+                    }
+                }
             }
         }
 
