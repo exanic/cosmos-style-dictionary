@@ -207,11 +207,13 @@ StyleDictionaryPackage.registerFormat({
 
         // Remove Root Level, create Figma specific 'json' Format
         var figmaTransformed = '';
-        for (const [key, value] of Object.entries(figmaTokens)) {
-            if (figmaTransformed !== '')
-                figmaTransformed += ',';
-            figmaTransformed += '"' + key.toString() + '": ';
-            figmaTransformed += JSON.stringify(value, null, ' ');
+        for (const [parentKey, parentValue] of Object.entries(figmaTokens)) {
+            for (const [childKey, childValue] of Object.entries(parentValue)) {
+                if (figmaTransformed !== '')
+                    figmaTransformed += ',';
+                figmaTransformed += `"${parentKey.toString()}_${childKey.toString()}": `;
+                figmaTransformed += JSON.stringify(childValue, null, 2);
+            }
         }
 
         // Category
