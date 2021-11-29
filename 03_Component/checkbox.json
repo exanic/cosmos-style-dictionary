@@ -419,41 +419,41 @@
     "danger-on": {
       "icon-color": {
         "base": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "disabled": {
-          "value": "{secondary.text-color.disabled.value}",
+          "value": "{danger.text-color.disabled.value}",
           "type": "color"
         }
       },
       "background-color": {
         "base": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "disabled": {
@@ -463,19 +463,19 @@
       },
       "border-color": {
         "base": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "disabled": {
@@ -487,41 +487,41 @@
     "danger-indeterminate": {
       "icon-color": {
         "base": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.text-color.base.value}",
+          "value": "{danger.text-color.base.value}",
           "type": "color"
         },
         "disabled": {
-          "value": "{secondary.text-color.disabled.value}",
+          "value": "{danger.text-color.disabled.value}",
           "type": "color"
         }
       },
       "background-color": {
         "base": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "disabled": {
@@ -531,19 +531,19 @@
       },
       "border-color": {
         "base": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "active": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "focus": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "hover": {
-          "value": "{secondary.color.base.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "disabled": {
