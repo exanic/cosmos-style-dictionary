@@ -155,7 +155,7 @@
       },
       "border-color": {
         "base": {
-          "value": "{theme.color-8.value}",
+          "value": "{primary.color.base.value}",
           "type": "color"
         },
         "disabled": {
@@ -191,7 +191,7 @@
       },
       "border-color": {
         "base": {
-          "value": "{theme.color-8.value}",
+          "value": "{danger.color.base.value}",
           "type": "color"
         },
         "disabled": {

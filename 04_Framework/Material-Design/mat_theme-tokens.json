@@ -191,7 +191,7 @@
         "value": "{theme.color-5.value}"
       },
       "unselected-chip": {
-        "value": "{chip.background-color.base.value}"
+        "value": "{chip.item.background-color.base.value}"
       },
       "disabled-list-option": {
         "value": "{theme.color-5.value}"

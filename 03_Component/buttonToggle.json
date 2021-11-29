@@ -22,38 +22,14 @@
           "value": "{primary.text-color.base.value}",
           "type": "color"
         },
-        "active": {
-          "value": "{primary.text-color.base.value}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{primary.text-color.base.value}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{primary.text-color.base.value}",
-          "type": "color"
-        },
         "disabled": {
-          "value": "{content.disabled.value}",
+          "value": "{color.white-o25.value}",
           "type": "color"
         }
       },
       "background-color": {
         "base": {
           "value": "{primary.color.base.value}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{primary.color.active.value}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{primary.color.focus.value}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{primary.color.hover.value}",
           "type": "color"
         },
         "disabled": {
@@ -68,18 +44,6 @@
           "value": "{content.standard.value}",
           "type": "color"
         },
-        "active": {
-          "value": "{content.standard.value}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{content.standard.value}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{content.standard.value}",
-          "type": "color"
-        },
         "disabled": {
           "value": "{content.disabled.value}",
           "type": "color"
@@ -87,23 +51,11 @@
       },
       "background-color": {
         "base": {
-          "value": "{primary.color.base.value}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{primary.color.active.value}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{primary.color.focus.value}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{primary.color.hover.value}",
+          "value": "{theme.color-4.value}",
           "type": "color"
         },
         "disabled": {
-          "value": "{theme.color-8.value}",
+          "value": "{theme.color-5.value}",
           "type": "color"
         }
       }
