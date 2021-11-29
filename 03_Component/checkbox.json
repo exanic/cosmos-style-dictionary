@@ -1,5 +1,11 @@
 {
   "checkbox": {
+    "ripple": {
+      "border-radius": {
+        "value": "{size.border-radius.circle.value}",
+        "type": "borderRadius"
+      }
+    },
     "primary-off": {
       "background-color": {
         "base": {
