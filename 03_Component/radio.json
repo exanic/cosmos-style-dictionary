@@ -1,7 +1,33 @@
 {
   "radio": {
+    "ripple-border-radius": {
+      "value": "{size.border-radius.circle.value}",
+      "type": "borderRadius"
+    },
     "off": {
-      "icon-color": {
+      "background-color": {
+        "base": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        }
+      },
+      "border-color": {
         "base": {
           "value": "{content.standard.value}",
           "type": "color"
@@ -19,12 +45,56 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{content.disabled.value}",
+          "value": "{theme.color-5.value}",
           "type": "color"
         }
       }
     },
     "on": {
+      "background-color": {
+        "base": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.transparent.value}",
+          "type": "color"
+        }
+      },
+      "border-color": {
+        "base": {
+          "value": "{primary.color.base.value}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{primary.color.base.value}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{primary.color.base.value}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{primary.color.base.value}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{theme.color-5.value}",
+          "type": "color"
+        }
+      },
       "icon-color": {
         "base": {
           "value": "{primary.color.base.value}",
@@ -43,7 +113,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{content.disabled.value}",
+          "value": "{theme.color-5.value}",
           "type": "color"
         }
       }
