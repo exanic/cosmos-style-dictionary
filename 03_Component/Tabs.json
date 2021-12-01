@@ -16,9 +16,17 @@
             "value": "{size.border-radius.none.value}",
             "type": "borderRadius"
         },
-        "height": {
-            "value": "{size.sizing.xl.value}",
-            "type": "sizing"
+        "medium": {
+            "height": {
+                "value": "{size.sizing.xl.value}",
+                "type": "sizing"
+            }
+        },
+        "small": {
+            "height": {
+                "value": "{size.sizing.l.value}",
+                "type": "sizing"
+            }
         },
         "default": {
             "text-color": {
