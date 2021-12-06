@@ -32,7 +32,7 @@
         "type": "spacing"
       },
       "padding-left": {
-        "value": "{size.spacing.xs.value}",
+        "value": "{size.spacing.s.value}",
         "type": "spacing"
       },
       "gap": {
