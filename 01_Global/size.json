@@ -88,6 +88,10 @@
       "xl": {
         "value": "48px",
         "type": "sizing"
+      },
+      "xxl": {
+        "value": "56px",
+        "type": "sizing"
       }
     }
   }

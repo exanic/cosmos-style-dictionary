@@ -4,10 +4,6 @@
       "base": {
         "value": "{theme.color-3.value}",
         "type": "color"
-      },
-      "hover": {
-        "value": "{theme.color-3.value}",
-        "type": "color"
       }
     },
     "border-color": {
