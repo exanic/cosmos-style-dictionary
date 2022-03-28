@@ -2,11 +2,11 @@ const StyleDictionaryPackage = require('style-dictionary');
 const { fileHeader, toFigmaDictionary } = require('./helpers');
 
 // CONFIG
-function getStyleDictionaryConfig(theme, includeFile, outputFileName, outputReferences, category) {
+function getStyleDictionaryConfig(brand, theme, includeFile, outputFileName, outputReferences, category) {
     return {
         'source': [
             '01_Global/*.json',
-            `02_Theme/${theme}/*.json`,
+            `02_Theme/${brand}/${theme}/*.json`,
             '03_Component/*.json',
         ],
         'include': [
@@ -351,25 +351,27 @@ function capitalizeFirstLetter(string) {
 }
 
 // START BUILD
+const defaultBrand = 'team-admin';
+
 console.log('\n==============================================\n');
 console.log('Build started...');
 
 // ANGULAR MATERIAL
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, 'light', `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, theme, `04_Framework/Material-Design/${file}.json`, `${theme}/_design_classes`, false));
         StyleDictionary.buildPlatform('web/material/classes');
     });
 });
@@ -398,20 +400,20 @@ fs.readdirSync(dirGlobal).forEach(file => {
     if (file.endsWith('.json')) {
         var fileName = file.replace('.json', '');
 
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirGlobal}/${file}`, `${dirPreBuild}/01_global_${fileName}`, false, 'Global'));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, 'light', `${dirGlobal}/${file}`, `${dirPreBuild}/01_global_${fileName}`, false, 'Global'));
         StyleDictionary.buildPlatform('json/figma');
     }
 });
 
 // Theme Tokens
 ['light', 'dark'].map(function (theme) {
-    var dirThemeSub = `${dirTheme}/${theme}`;
+    var dirThemeSub = `${dirTheme}/${defaultBrand}/${theme}`;
 
     fs.readdirSync(dirThemeSub).forEach(file => {
         if (file.endsWith('.json')) {
             var fileName = file.replace('.json', '');
 
-            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
+            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
             StyleDictionary.buildPlatform('json/figma');
         }
     });
@@ -422,7 +424,7 @@ fs.readdirSync(dirComponent).forEach(file => {
     if (file.endsWith('.json')) {
         var fileName = file.replace('.json', '');
 
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig('light', `${dirComponent}/${file}`, `${dirPreBuild}/03_component_${fileName}`, true, 'Component'));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, 'light', `${dirComponent}/${file}`, `${dirPreBuild}/03_component_${fileName}`, true, 'Component'));
         StyleDictionary.buildPlatform('json/figma');
     }
 });
