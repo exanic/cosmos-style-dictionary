@@ -429,15 +429,29 @@ fs.readdirSync(dirGlobal).forEach(file => {
     }
 });
 
-// Theme Tokens
+// Admin Theme Tokens
 ['light', 'dark'].map(function (theme) {
-    var dirThemeSub = `${dirTheme}/${defaultBrand}/${theme}`;
+    var dirThemeSub = `${dirTheme}/${adminBrand}/${theme}`;
 
     fs.readdirSync(dirThemeSub).forEach(file => {
         if (file.endsWith('.json')) {
             var fileName = file.replace('.json', '');
 
-            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(defaultBrand, theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${theme}`, true, capitalizeFirstLetter(theme)));
+            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${adminBrand}_${theme}`, true, `${adminBrand} ${capitalizeFirstLetter(theme)}`));
+            StyleDictionary.buildPlatform('json/figma');
+        }
+    });
+});
+
+// Bidder Theme Tokens
+['light'].map(function (theme) {
+    var dirThemeSub = `${dirTheme}/${bidderBrand}/${theme}`;
+
+    fs.readdirSync(dirThemeSub).forEach(file => {
+        if (file.endsWith('.json')) {
+            var fileName = file.replace('.json', '');
+
+            const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `${dirThemeSub}/${file}`, `${dirPreBuild}/02_theme_${fileName}_${bidderBrand}_${theme}`, true, `${bidderBrand} ${capitalizeFirstLetter(theme)}`));
             StyleDictionary.buildPlatform('json/figma');
         }
     });
