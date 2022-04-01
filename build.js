@@ -363,19 +363,19 @@ console.log('Build started...');
 // Default Theme
 ['light', 'dark'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, 'light', `04_Framework/Material-Design/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, 'light', `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/${file}.json`, `${adminBrand}/${theme}/_${file}`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/${file}.json`, `${adminBrand}/${theme}/_design_classes`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_design_classes`, false));
         StyleDictionary.buildPlatform('web/material/classes');
     });
 });
@@ -383,19 +383,19 @@ console.log('Build started...');
 // Bidder Theme
 ['light'].map(function (theme) {
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, 'light', `04_Framework/Material-Design/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, 'light', `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/theme');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/${file}.json`, `${bidderBrand}/${theme}/_${file}`, true));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_${file}`, true));
         StyleDictionary.buildPlatform('web/material/tokens');
     });
     ['design_tokens'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/${file}.json`, `${bidderBrand}/${theme}/_design_classes`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_design_classes`, false));
         StyleDictionary.buildPlatform('web/material/classes');
     });
 });
