@@ -37,16 +37,16 @@
       "value": "{color.blue-900.value}"
     },
     "a100": {
-      "value": "{color.blue-a100.value}"
+      "value": "{primary-accent.color-1.value}"
     },
     "a200": {
-      "value": "{color.blue-a200.value}"
+      "value": "{primary-accent.color-2.value}"
     },
     "a400": {
-      "value": "{color.blue-a400.value}"
+      "value": "{primary-accent.color-3.value}"
     },
     "a700": {
-      "value": "{color.blue-a700.value}"
+      "value": "{primary-accent.color-4.value}"
     },
     "contrast": {
       "50": {
