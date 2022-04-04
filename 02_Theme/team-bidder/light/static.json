@@ -12,7 +12,7 @@
     },
     "color": {
       "base": {
-        "value": "{color.gray-700.value}",
+        "value": "{color.gray-850.value}",
         "type": "color"
       },
       "active": {
