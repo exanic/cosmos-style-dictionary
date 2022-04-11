@@ -12,10 +12,6 @@
             "value": "{size.spacing.m.value}",
             "type": "spacing"
         },
-        "border-radius": {
-            "value": "{size.border-radius.none.value}",
-            "type": "borderRadius"
-        },
         "medium": {
             "height": {
                 "value": "{size.sizing.xl.value}",

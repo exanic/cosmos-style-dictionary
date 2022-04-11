@@ -1,10 +1,6 @@
 {
   "size": {
     "spacing": {
-      "none": {
-        "value": "0px",
-        "type": "spacing"
-      },
       "xxs": {
         "value": "4px",
         "type": "spacing"
@@ -35,10 +31,6 @@
       }
     },
     "border-radius": {
-      "none": {
-        "value": "0px",
-        "type": "borderRadius"
-      },
       "xs": {
         "value": "2px",
         "type": "borderRadius"
@@ -65,10 +57,6 @@
       }
     },
     "sizing": {
-      "none": {
-        "value": "0px",
-        "type": "sizing"
-      },
       "xs": {
         "value": "8px",
         "type": "sizing"

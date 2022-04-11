@@ -1,13 +1,5 @@
 {
   "progressBar": {
-    "track-border-radius": {
-      "value": "{size.border-radius.none.value}",
-      "type": "borderRadius"
-    },
-    "indicator-radius": {
-      "value": "{size.border-radius.none.value}",
-      "type": "borderRadius"
-    },
     "track-background-color": {
       "value": "{color.blue-50.value}",
       "type": "color"
