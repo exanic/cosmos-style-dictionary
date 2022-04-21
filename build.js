@@ -108,6 +108,161 @@ StyleDictionaryPackage.registerFormat({
 
 var utilities = [
     {
+        'name': 'static_primary_color',
+        'tokenType': 'primary',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'primary_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'static_primary_text-color',
+        'tokenType': 'primary',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'primary_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'static_primary_accent-color',
+        'tokenType': 'primary-accent',
+        'classes': [
+            {
+                'className': 'primary-accent',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'static_secondary_color',
+        'tokenType': 'secondary',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'secondary_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'static_secondary_text-color',
+        'tokenType': 'secondary',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'secondary_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'static_secondary_accent-color',
+        'tokenType': 'secondary-accent',
+        'classes': [
+            {
+                'className': 'secondary-accent',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+
+
+    {
+        'name': 'semantic_danger_color',
+        'tokenType': 'danger',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'danger_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_danger_text-color',
+        'tokenType': 'danger',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'danger_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_info_color',
+        'tokenType': 'info',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'info_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_info_text-color',
+        'tokenType': 'info',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'info_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_warning_color',
+        'tokenType': 'warning',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'warning_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_warning_text-color',
+        'tokenType': 'warning',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'warning_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_success_color',
+        'tokenType': 'success',
+        'tokenSubType': 'color',
+        'classes': [
+            {
+                'className': 'success_color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+    {
+        'name': 'semantic_success_text-color',
+        'tokenType': 'success',
+        'tokenSubType': 'text-color',
+        'classes': [
+            {
+                'className': 'success_text-color',
+                'cssProperty': 'color',
+            }
+        ]
+    },
+
+    {
         'name': 'content_color',
         'tokenType': 'content',
         'classes': [
@@ -117,6 +272,7 @@ var utilities = [
             }
         ]
     },
+
     {
         'name': 'margin',
         'tokenType': 'size',
@@ -213,7 +369,7 @@ function toFigmaTransform(prefix, token) {
 
             if (prefix !== '')
                 subPrefix = `${prefix}_${subPrefix}`;
-            
+
             figmaTransformed += toFigmaTransform(subPrefix, value);
         }
 
