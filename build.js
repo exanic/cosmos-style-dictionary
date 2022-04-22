@@ -29,6 +29,22 @@ function getStyleDictionaryConfig(brand, theme, includeFile, outputFileName, out
                     }
                 ]
             },
+            'web/material/typography': {
+                'transformGroup': 'scss-material-tokens',
+                'buildPath': `build/scss/material-design/`,
+                'files': [
+                    {
+                        'destination': `${outputFileName}.scss`,
+                        'format': 'scss/map-deep-angular-typography',
+                        'filter': { 'filePath': includeFile },
+                        'mapName': 'typography-palette',
+                        'options':
+                        {
+                            'outputReferences': outputReferences
+                        }
+                    }
+                ]
+            },
             'web/material/theme': {
                 'transformGroup': 'scss-material-base',
                 'buildPath': `build/scss/material-design/`,
@@ -102,6 +118,16 @@ StyleDictionaryPackage.registerFormat({
         const fs = require('fs');
         const _template = require('lodash/template');
         const template = _template(fs.readFileSync(__dirname + '/templates/map-deep-angular-color.template'));
+        return template({ dictionary, file, options, fileHeader });
+    }
+});
+
+StyleDictionaryPackage.registerFormat({
+    name: 'scss/map-deep-angular-typography',
+    formatter: function ({ dictionary, options, file }) {
+        const fs = require('fs');
+        const _template = require('lodash/template');
+        const template = _template(fs.readFileSync(__dirname + '/templates/map-deep-angular-typography.template'));
         return template({ dictionary, file, options, fileHeader });
     }
 });
@@ -516,10 +542,14 @@ console.log('Build started...');
 
 // ANGULAR MATERIAL
 
-// Default Theme
+// Admin Theme
 ['light', 'dark'].map(function (theme) {
+    ['typography-palette'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
+        StyleDictionary.buildPlatform('web/material/typography');
+    });
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, 'light', `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
@@ -538,8 +568,12 @@ console.log('Build started...');
 
 // Bidder Theme
 ['light'].map(function (theme) {
+    ['typography-palette'].map(function (file) {
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(adminBrand, theme, `04_Framework/Material-Design/team-admin/${file}.json`, `${adminBrand}/${theme}/_${file}`, false));
+        StyleDictionary.buildPlatform('web/material/typography');
+    });
     ['mat_color-palette'].map(function (file) {
-        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, 'light', `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
+        const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(bidderBrand, theme, `04_Framework/Material-Design/team-bidder/${file}.json`, `${bidderBrand}/${theme}/_${file}`, false));
         StyleDictionary.buildPlatform('web/material/palette');
     });
     ['mat_theme-tokens'].map(function (file) {
