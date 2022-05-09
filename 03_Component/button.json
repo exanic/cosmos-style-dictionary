@@ -4,6 +4,12 @@
       "value": "{size.border-radius.s.value}",
       "type": "borderRadius"
     },
+    "large": {
+      "height": {
+        "value": "{size.sizing.l.value}",
+        "type": "sizing"
+      }
+    },
     "medium": {
       "height": {
         "value": "{size.sizing.l.value}",
