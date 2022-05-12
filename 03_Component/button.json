@@ -6,7 +6,7 @@
     },
     "large": {
       "height": {
-        "value": "{size.sizing.l.value}",
+        "value": "{size.sizing.xl.value}",
         "type": "sizing"
       }
     },
