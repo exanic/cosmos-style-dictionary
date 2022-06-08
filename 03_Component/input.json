@@ -24,6 +24,10 @@
       "value": "{size.border-radius.s.value}",
       "type": "borderRadius"
     },
+    "background-color":{
+      "value": "color.transparent.value",
+      "type": "color"
+    },
     "border-color": {
       "base": {
         "value": "{theme.color-8.value}",
