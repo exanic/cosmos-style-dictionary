@@ -25,7 +25,7 @@
       "type": "borderRadius"
     },
     "background-color":{
-      "value": "color.transparent.value",
+      "value": "{color.transparent.value}",
       "type": "color"
     },
     "border-color": {
