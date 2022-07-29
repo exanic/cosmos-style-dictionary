@@ -16,17 +16,6 @@
     "typography": {
       "display-1": {
         "font-size": {
-          "value": "{typography.headline-2.font-size.value}"
-        },
-        "line-height": {
-          "value": "{typography.headline-2.line-height.value}"
-        },
-        "font-weight": {
-          "value": "{typography.headline-2.font-weight.value}"
-        }
-      },
-      "headline": {
-        "font-size": {
           "value": "{typography.headline-3.font-size.value}"
         },
         "line-height": {
@@ -34,6 +23,17 @@
         },
         "font-weight": {
           "value": "{typography.headline-3.font-weight.value}"
+        }
+      },
+      "headline": {
+        "font-size": {
+          "value": "{typography.headline-4.font-size.value}"
+        },
+        "line-height": {
+          "value": "{typography.headline-4.line-height.value}"
+        },
+        "font-weight": {
+          "value": "{typography.headline-4.font-weight.value}"
         }
       },
       "title": {
