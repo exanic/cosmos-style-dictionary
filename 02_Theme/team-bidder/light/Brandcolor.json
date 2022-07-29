@@ -1,5 +1,6 @@
 {
-  "color": {
+  "brand": {
+    "color": {
     "UEFA-teal": {
       "value": "rgb(90, 247, 220)",
       "type": "color"
@@ -12,5 +13,6 @@
       "value": "rgb(79, 126, 124)",
       "type": "color"
     }
+  }
   }
 }
