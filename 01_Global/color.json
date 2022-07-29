@@ -416,14 +416,6 @@
       "value": "rgb(0, 200, 83)",
       "type": "color"
     },
-    "UEFA-teal": {
-      "value": "rgb(90, 247, 220)",
-      "type": "color"
-    },
-    "UEFA-yellow": {
-      "value": "rgb(249, 212, 72)",
-      "type": "color"
-    },
     "transparent": {
       "value": "transparent",
       "type": "color"
