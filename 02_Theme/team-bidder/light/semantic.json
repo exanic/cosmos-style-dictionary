@@ -36,33 +36,33 @@
   "info": {
     "text-color": {
       "base": {
-        "value": "{brand-info.text-color.value}",
+        "value": "{overwrite-info.text-color.value}",
         "type": "color"
       },
       "disabled": {
-        "value": "{brand-info.text-color.value}",
+        "value": "{overwrite-info.text-color.value}",
         "type": "color"
       }
     },
     "color": {
       "base": {
-        "value": "{brand-info.color.value}",
+        "value": "{overwrite-info.color.value}",
         "type": "color"
       },
       "active": {
-        "value": "{brand-info.color.value}",
+        "value": "{overwrite-info.color.value}",
         "type": "color"
       },
       "focus": {
-        "value": "{brand-info.color.value}",
+        "value": "{overwrite-info.color.value}",
         "type": "color"
       },
       "hover": {
-        "value": "{brand-info.color.value}",
+        "value": "{overwrite-info.color.value}",
         "type": "color"
       },
       "disabled": {
-        "value": "{brand-info.color.value}",
+        "value": "{overwrite-info.color.value}",
         "type": "color"
       }
     }
