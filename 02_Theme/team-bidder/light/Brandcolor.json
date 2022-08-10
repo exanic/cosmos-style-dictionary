@@ -1,18 +1,64 @@
 {
-  "brand": {
+  "UCL": {
+    "text-color": {
+      "base": {
+        "value": "{color.black-o75.value}",
+        "type": "color"
+      },
+      "contrast": {
+        "value": "{color.black-o100.value}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.black-o25.value}",
+        "type": "color"
+      }
+    },
     "color": {
-    "UEFA-teal": {
-      "value": "rgb(90, 247, 220)",
+      "base": {
+        "value": "rgb(91, 247, 221)",
+        "type": "color"
+      },
+      "alt": {
+        "value": "rgba(91, 247, 221, 0.25)",
+        "type": "color"
+      }
+    }
+  },
+  "UEL": {
+    "text-color": {
+      "base": {
+        "value": "{color.white-o75.value}",
+        "type": "color"
+      },
+      "contrast": {
+        "value": "{color.white-o100.value}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.white-o25.value}",
+        "type": "color"
+      }
+    },
+    "color": {
+      "base": {
+        "value": "{color.black-base.value}",
+        "type": "color"
+      },
+      "alt": {
+        "value": "{color.black-o75.value}",
+        "type": "color"
+      }
+    }
+  },
+  "overwrite-info": {
+    "text-color": {
+      "value": "{color.white-o100.value}",
       "type": "color"
     },
-    "UEFA-yellow": {
-      "value": "rgb(249, 212, 72)",
-      "type": "color"
-    },
-    "bidder-info": {
+    "color": {
       "value": "rgb(79, 126, 124)",
       "type": "color"
     }
-  }
   }
 }

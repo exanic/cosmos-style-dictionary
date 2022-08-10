@@ -36,33 +36,33 @@
   "info": {
     "text-color": {
       "base": {
-        "value": "{color.white-o100.value}",
+        "value": "overwrite-info.text-color.value}",
         "type": "color"
       },
       "disabled": {
-        "value": "{color.white-o25.value}",
+        "value": "overwrite-info.text-color.value}",
         "type": "color"
       }
     },
     "color": {
       "base": {
-        "value": "{brand.color.bidder-info.value}",
+        "value": "overwrite-info.color.value}",
         "type": "color"
       },
       "active": {
-        "value": "{brand.color.bidder-info.value}",
+        "value": "overwrite-info.color.value}",
         "type": "color"
       },
       "focus": {
-        "value": "{brand.color.bidder-info.value}",
+        "value": "overwrite-info.color.value}",
         "type": "color"
       },
       "hover": {
-        "value": "{brand.color.bidder-info.value}",
+        "value": "overwrite-info.color.value}",
         "type": "color"
       },
       "disabled": {
-        "value": "{brand.color.bidder-info.value}",
+        "value": "overwrite-info.color.value}",
         "type": "color"
       }
     }
