@@ -51,7 +51,7 @@
       }
     }
   },
-  "overwrite-info": {
+  "brand-info": {
     "text-color": {
       "value": "{color.white-o100.value}",
       "type": "color"
